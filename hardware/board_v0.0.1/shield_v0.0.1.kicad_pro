@@ -239,7 +239,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "board_v0.0.1.kicad_pro",
+    "filename": "shield_v0.0.1.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -383,7 +383,7 @@
   },
   "sheets": [
     [
-      "d19d1a29-c29f-4294-a037-59974014112d",
+      "6d630c12-a45c-427a-b9be-34cb09b918b4",
       "Root"
     ]
   ],
