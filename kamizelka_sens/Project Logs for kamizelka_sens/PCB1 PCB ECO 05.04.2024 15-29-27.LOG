@@ -1,0 +1,28 @@
+Added Component: Designator=J1(USB_C)
+Added Component: Designator=R1(RAXIS06)
+Added Component: Designator=R2(RAXIS06)
+Added Component: Designator=R?(RAXIS06)
+Added Component: Designator=U1(BQ25172)
+Added Pin To Net: NetName=GND Pin=J1-A12
+Added Pin To Net: NetName=GND Pin=J1-B12
+Added Pin To Net: NetName=GND Pin=R1-1
+Added Pin To Net: NetName=GND Pin=R2-1
+Added Pin To Net: NetName=GND Pin=R?-1
+Added Net: Name=GND
+Added Pin To Net: NetName=NetJ1_A5 Pin=J1-A5
+Added Pin To Net: NetName=NetJ1_A5 Pin=R2-2
+Added Net: Name=NetJ1_A5
+Added Pin To Net: NetName=NetJ1_B5 Pin=J1-B5
+Added Pin To Net: NetName=NetJ1_B5 Pin=R1-2
+Added Net: Name=NetJ1_B5
+Added Pin To Net: NetName=NetJ1_SHIELD Pin=J1-SHIELD
+Added Pin To Net: NetName=NetJ1_SHIELD Pin=J1-SHIELD
+Added Pin To Net: NetName=NetJ1_SHIELD Pin=J1-SHIELD
+Added Pin To Net: NetName=NetJ1_SHIELD Pin=J1-SHIELD
+Added Pin To Net: NetName=NetJ1_SHIELD Pin=R?-2
+Added Net: Name=NetJ1_SHIELD
+Added Pin To Net: NetName=VBUS Pin=J1-A9
+Added Pin To Net: NetName=VBUS Pin=J1-B9
+Added Pin To Net: NetName=VBUS Pin=U1-1
+Added Net: Name=VBUS
+Added Class: Name=Sheet1
