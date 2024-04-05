@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP BQ25172DSGR
+D Battery Management 0.8-A, one- to six-cell NiMH stand-alone linear charger in a QFN package
+K
+F https://www.arrow.com/en/products/bq25172dsgr/texas-instruments?region=nac
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "BQ25172DSGR")(type "KiCad")(uri "${KIPRJMOD}/extra_components/BQ25172DSGR/BQ25172DSGR.kicad_sym")(options "")(descr ""))
+  (lib (name "TPS2117DRLR")(type "KiCad")(uri "${KIPRJMOD}/extra_components/TPS2117DRLR/TPS2117DRLR.kicad_sym")(options "")(descr ""))
+)
