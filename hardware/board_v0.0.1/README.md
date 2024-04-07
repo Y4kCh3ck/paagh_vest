@@ -12,6 +12,7 @@
 [Power MUX](https://www.mouser.pl/ProductDetail/Texas-Instruments/TPS2117DRLR?qs=HoCaDK9Nz5c%2FKe5lpCPPWQ%3D%3D)
 [NiMH Charger](https://www.mouser.pl/ProductDetail/Texas-Instruments/BQ25172DSGR?qs=tlsG%2FOw5FFgckLJXIVn4PA%3D%3D)
 [Voltage Regulator](https://www.mouser.pl/ProductDetail/Analog-Devices/ADP160AUJZ-3.3-R7?qs=WIvQP4zGanjwQREaBvEWig%3D%3D)
+[Zener Diode](https://www.mouser.pl/ProductDetail/Microchip-Technology/1N705A?qs=TXMzd3F6EykCdtSTNuNRuQ%3D%3D)
 
 [stm32l053r8](https://www.mouser.pl/ProductDetail/STMicroelectronics/STM32L053R8T6TR?qs=mwoc%252BQmZlGIhiUxZ6iQiJA%3D%3D)
 

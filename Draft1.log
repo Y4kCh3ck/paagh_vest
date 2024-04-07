@@ -1,0 +1,9 @@
+LTspice 24.0.9 for Windows
+Circuit: * Z:\home\yakcheck\Projects\studia\paagh_vest\Draft1.asc
+Start Time: Sun Apr  7 11:55:12 2024
+solver = Normal
+Maximum thread count: 4
+tnom = 27
+temp = 27
+method = modified trap
+Fatal Error: Missing inductance value for "l1"
