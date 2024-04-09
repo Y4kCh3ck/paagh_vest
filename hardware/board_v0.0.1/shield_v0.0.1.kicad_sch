@@ -8073,9 +8073,9 @@
 		)
 		(uuid 83361c87-b882-4ee1-a1ef-788c17f9635f)
 	)
-	(text "Connectors"
+	(text "Sensor connectors"
 		(exclude_from_sim no)
-		(at 141.224 122.682 0)
+		(at 145.034 122.682 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -15064,7 +15064,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "SLW-826947-5A-RA-D"
+		(property "Value" "ON/OFF_SWITCH"
 			(at 337.4741 85.09 90)
 			(effects
 				(font
