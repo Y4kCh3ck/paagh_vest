@@ -3,4 +3,5 @@
   (lib (name "BQ25172DSGR")(type "KiCad")(uri "${KIPRJMOD}/extra_components/BQ25172DSGR")(options "")(descr ""))
   (lib (name "TPS2117DRLR")(type "KiCad")(uri "${KIPRJMOD}/extra_components/TPS2117DRLR")(options "")(descr ""))
   (lib (name "LIB_ADP160AUJZ-3.3-R7")(type "KiCad")(uri "${KIPRJMOD}/extra_components/LIB_ADP160AUJZ-3.3-R7")(options "")(descr ""))
+  (lib (name "nasze")(type "KiCad")(uri "${KIPRJMOD}/nasze.pretty")(options "")(descr ""))
 )
