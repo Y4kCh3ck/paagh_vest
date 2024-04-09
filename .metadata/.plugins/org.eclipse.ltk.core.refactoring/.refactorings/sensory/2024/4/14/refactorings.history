@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;sensory/Core/Src/gps_neo6.c&apos; to &apos;NEO6.c&apos;" description="Rename resource &apos;gps_neo6.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/gps_neo6.c" name="NEO6.c" stamp="1712341280896" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;sensory/Core/Inc/gps_neo6.h&apos; to &apos;NEO6.h&apos;" description="Rename resource &apos;gps_neo6.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Inc/gps_neo6.h" name="NEO6.h" stamp="1712341304839" updateReferences="true"/>
+</session>

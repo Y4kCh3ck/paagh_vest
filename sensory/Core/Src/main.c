@@ -19,6 +19,8 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "i2c.h"
+#include "spi.h"
+#include "tim.h"
 #include "usart.h"
 #include "gpio.h"
 
@@ -67,6 +69,8 @@ volatile uint8_t Uart2ReceivedChar;
 
 uint8_t Message[64];
 uint8_t MessageLength;
+volatile float Temp = 0.0f;
+volatile float Hum = 0.0f;
 
 int __io_putchar(int ch) // to pc
 {
@@ -84,6 +88,15 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
   if(huart == GpsState.neo6_huart)
   {
     NEO6_ReceiveUartChar(&GpsState);
+  }
+}
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+  if (htim == &htim6) {
+    HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
+    AHT20_Read(&Temp, &Hum); // reads AHT20 measurements every second
+    printf("Temperature = %.1fC\n Hum = %.1f\n", Temp, Hum);
   }
 }
 
@@ -118,9 +131,10 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_I2C1_Init();
-  MX_I2C2_Init();
   MX_USART1_UART_Init();
   MX_USART2_UART_Init();
+  MX_SPI1_Init();
+  MX_TIM6_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
@@ -130,18 +144,15 @@ int main(void)
 
   AHT20_Init();
   NEO6_Init(&GpsState, &huart1);
+  HAL_TIM_Base_Start_IT(&htim6);
 
   uint32_t Timer = HAL_GetTick();
-  float Temp = 0.0f;
-  float Hum = 0.0f;
 
   while (1)
   {
 //	  MessageLength = sprintf((char*)Message, "\033[2J\033[;H"); // Clear terminal and home cursor
 //	  HAL_UART_Transmit(&huart2, Message, MessageLength, 1000);
-	  AHT20_Read(&Temp, &Hum);
-	  printf("Temperature = %.1fC\n Hum = %.1f\n", Temp, Hum);
-	  HAL_Delay(500);
+
 //	  NEO6_Task(&GpsState);
 //
 //	 	  if((HAL_GetTick() - Timer) > 1000)

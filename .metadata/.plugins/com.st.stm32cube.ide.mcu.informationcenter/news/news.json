@@ -1,0 +1,22 @@
+data='[ \
+	{ \
+		"image": "news/Visual_1.png", \
+		"link": "", \
+		"caption": "" \
+	}, \
+	{ \
+		"image": "news/Visual_2.png", \
+		"link": "", \
+		"caption": "" \
+	}, \
+	{ \
+		"image": "news/Visual_3.png", \
+		"link": "", \
+		"caption": "" \
+	}, \
+	{ \
+		"image": "news/Visual_4.png", \
+		"link": "", \
+		"caption": "" \
+	} \
+]';
