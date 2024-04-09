@@ -1,0 +1,1847 @@
+19:40:45 **** Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_exti.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_exti.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.o"
+arm-none-eabi-gcc -mcpu=cortex-m0plus -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32l053r8tx.d" -MT"Core/Startup/startup_stm32l053r8tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Startup/startup_stm32l053r8tx.o" "../Core/Startup/startup_stm32l053r8tx.s"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32l0xx_hal_msp.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32l0xx_hal_msp.d" -MT"Core/Src/stm32l0xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32l0xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32l0xx_it.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32l0xx_it.d" -MT"Core/Src/stm32l0xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32l0xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32l0xx.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32l0xx.d" -MT"Core/Src/system_stm32l0xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32l0xx.o"
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  10960	     20	   1788	  12768	   31e0	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+19:41:01 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10960	     20	   1788	  12768	   31e0	sensory.elf
+Finished building: default.size.stdout
+ 
+19:41:15 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10960	     20	   1788	  12768	   31e0	sensory.elf
+Finished building: default.size.stdout
+ 
+19:44:08 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10960	     20	   1788	  12768	   31e0	sensory.elf
+Finished building: default.size.stdout
+ 
+19:44:31 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10960	     20	   1788	  12768	   31e0	sensory.elf
+Finished building: default.size.stdout
+ 
+20:08:09 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/gpio.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/gpio.d" -MT"Core/Src/gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/gpio.o"
+arm-none-eabi-gcc "../Core/Src/i2c.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/i2c.d" -MT"Core/Src/i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/i2c.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32l0xx_hal_msp.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32l0xx_hal_msp.d" -MT"Core/Src/stm32l0xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32l0xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32l0xx_it.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32l0xx_it.d" -MT"Core/Src/stm32l0xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32l0xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32l0xx.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32l0xx.d" -MT"Core/Src/system_stm32l0xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32l0xx.o"
+arm-none-eabi-gcc "../Core/Src/usart.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/usart.d" -MT"Core/Src/usart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/usart.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:127:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  127 |   printf("Starting...\n");
+      |   ^~~~~~
+../Core/Src/main.c:24:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   23 | #include "gpio.h"
+  +++ |+#include <stdio.h>
+   24 | 
+../Core/Src/main.c:127:3: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  127 |   printf("Starting...\n");
+      |   ^~~~~~
+../Core/Src/main.c:127:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:131:10: warning: too many arguments for format [-Wformat-extra-args]
+  131 |   printf("m: \n", value);
+      |          ^~~~~~~
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  18592	    112	   2128	  20832	   5160	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+20:09:52 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:134:10: warning: too many arguments for format [-Wformat-extra-args]
+  134 |   printf("m: \n", value);
+      |          ^~~~~~~
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  18592	    112	   2128	  20832	   5160	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+20:10:44 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  18596	    112	   2128	  20836	   5164	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+20:10:50 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18596	    112	   2128	  20836	   5164	sensory.elf
+Finished building: default.size.stdout
+ 
+20:11:42 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18596	    112	   2128	  20836	   5164	sensory.elf
+Finished building: default.size.stdout
+ 
+20:12:38 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18596	    112	   2128	  20836	   5164	sensory.elf
+Finished building: default.size.stdout
+ 
+20:19:42 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18596	    112	   2128	  20836	   5164	sensory.elf
+Finished building: default.size.stdout
+ 
+20:20:02 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18596	    112	   2128	  20836	   5164	sensory.elf
+Finished building: default.size.stdout
+ 
+20:20:44 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18596	    112	   2128	  20836	   5164	sensory.elf
+Finished building: default.size.stdout
+ 
+20:22:03 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18596	    112	   2128	  20836	   5164	sensory.elf
+Finished building: default.size.stdout
+ 
+20:28:06 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  18632	    112	   2128	  20872	   5188	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+20:28:10 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18632	    112	   2128	  20872	   5188	sensory.elf
+Finished building: default.size.stdout
+ 
+20:30:53 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  18632	    112	   2128	  20872	   5188	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+20:31:06 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18632	    112	   2128	  20872	   5188	sensory.elf
+Finished building: default.size.stdout
+ 
+20:31:14 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18632	    112	   2128	  20872	   5188	sensory.elf
+Finished building: default.size.stdout
+ 
+20:31:17 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18632	    112	   2128	  20872	   5188	sensory.elf
+Finished building: default.size.stdout
+ 
+20:31:56 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  18644	    112	   2128	  20884	   5194	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+20:31:59 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18644	    112	   2128	  20884	   5194	sensory.elf
+Finished building: default.size.stdout
+ 
+20:39:45 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  18652	    112	   2128	  20892	   519c	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+20:39:52 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18652	    112	   2128	  20892	   519c	sensory.elf
+Finished building: default.size.stdout
+ 
+20:45:17 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  18652	    112	   2128	  20892	   519c	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+20:45:28 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18652	    112	   2128	  20892	   519c	sensory.elf
+Finished building: default.size.stdout
+ 
+20:45:30 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18652	    112	   2128	  20892	   519c	sensory.elf
+Finished building: default.size.stdout
+ 
+20:54:51 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  18760	    112	   2128	  21000	   5208	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+20:54:54 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18760	    112	   2128	  21000	   5208	sensory.elf
+Finished building: default.size.stdout
+ 
+20:57:26 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  18760	    112	   2128	  21000	   5208	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+20:57:34 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18760	    112	   2128	  21000	   5208	sensory.elf
+Finished building: default.size.stdout
+ 
+18:01:34 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18760	    112	   2128	  21000	   5208	sensory.elf
+Finished building: default.size.stdout
+ 
+18:01:57 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18760	    112	   2128	  21000	   5208	sensory.elf
+Finished building: default.size.stdout
+ 
+18:02:35 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18760	    112	   2128	  21000	   5208	sensory.elf
+Finished building: default.size.stdout
+ 
+18:02:49 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18760	    112	   2128	  21000	   5208	sensory.elf
+Finished building: default.size.stdout
+ 
+18:08:20 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18760	    112	   2128	  21000	   5208	sensory.elf
+Finished building: default.size.stdout
+ 
+18:38:39 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:137:3: error: unknown type name 'uint_8'; did you mean 'wint_t'?
+  137 |   uint_8 init_cmd = 0xBE;
+      |   ^~~~~~
+      |   wint_t
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+18:39:23 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  19396	    112	   2128	  21636	   5484	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+18:39:28 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19396	    112	   2128	  21636	   5484	sensory.elf
+Finished building: default.size.stdout
+ 
+18:41:59 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  19396	    112	   2128	  21636	   5484	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+18:42:23 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19396	    112	   2128	  21636	   5484	sensory.elf
+Finished building: default.size.stdout
+ 
+19:22:34 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'AHT20_master_transmit':
+../Core/Src/main.c:80:69: error: 'Size' undeclared (first use in this function); did you mean 'size'?
+   80 |         status = HAL_I2C_Master_Transmit(&hi2c1, AHT20_ADDR, &data, Size, HAL_MAX_DELAY);
+      |                                                                     ^~~~
+      |                                                                     size
+../Core/Src/main.c:80:69: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c: In function 'AHT20_write_reg':
+../Core/Src/main.c:88:85: error: 'value' undeclared (first use in this function)
+   88 |         status = HAL_I2C_Mem_Write(&hi2c1, AHT20_ADDR, reg, 1, &write_value, sizeof(value), HAL_MAX_DELAY);
+      |                                                                                     ^~~~~
+../Core/Src/main.c: In function 'AHT20_read_reg':
+../Core/Src/main.c:96:74: error: 'value' undeclared (first use in this function)
+   96 |         HAL_I2C_Mem_Read(&hi2c1, AHT20_ADDR, reg, 1, &read_value, sizeof(value), HAL_MAX_DELAY);
+      |                                                                          ^~~~~
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+19:23:08 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  16832	    112	   2128	  19072	   4a80	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+19:23:12 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16832	    112	   2128	  19072	   4a80	sensory.elf
+Finished building: default.size.stdout
+ 
+19:24:45 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  18412	    112	   2128	  20652	   50ac	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+19:28:20 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18412	    112	   2128	  20652	   50ac	sensory.elf
+Finished building: default.size.stdout
+ 
+19:28:22 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18412	    112	   2128	  20652	   50ac	sensory.elf
+Finished building: default.size.stdout
+ 
+19:29:45 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  18452	    112	   2128	  20692	   50d4	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+19:29:49 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18452	    112	   2128	  20692	   50d4	sensory.elf
+Finished building: default.size.stdout
+ 
+19:38:13 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:165:3: warning: implicit declaration of function 'AHT_init'; did you mean 'AHT20_init'? [-Wimplicit-function-declaration]
+  165 |   AHT_init();
+      |   ^~~~~~~~
+      |   AHT20_init
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `main':
+C:/Users/kuba/STM32CubeIDE/workspace_1.14.1/sensory/Debug/../Core/Src/main.c:165: undefined reference to `AHT_init'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: sensory.elf] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+19:38:28 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  16968	    112	   2128	  19208	   4b08	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+19:38:32 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16968	    112	   2128	  19208	   4b08	sensory.elf
+Finished building: default.size.stdout
+ 
+19:40:15 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16968	    112	   2128	  19208	   4b08	sensory.elf
+Finished building: default.size.stdout
+ 
+19:50:11 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16968	    112	   2128	  19208	   4b08	sensory.elf
+Finished building: default.size.stdout
+ 
+19:59:59 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'AHT20_trig_measure':
+../Core/Src/main.c:139:29: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+  139 |                 while(value & (1 << 7) != 0) // bit[7] indicated completed measurements
+      |                             ^
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:188:23: error: expected ';' before 'while'
+  188 |   AHT20_trig_measure()
+      |                       ^
+      |                       ;
+  189 | 
+  190 |   while (1)
+      |   ~~~~~                
+make: *** [Core/Src/subdir.mk:43: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+20:00:07 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'AHT20_trig_measure':
+../Core/Src/main.c:139:29: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+  139 |                 while(value & (1 << 7) != 0) // bit[7] indicated completed measurements
+      |                             ^
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  17196	    112	   2128	  19436	   4bec	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+20:00:51 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  17196	    112	   2128	  19436	   4bec	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+20:00:55 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17196	    112	   2128	  19436	   4bec	sensory.elf
+Finished building: default.size.stdout
+ 
+20:02:16 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  18788	    112	   2128	  21028	   5224	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+20:02:20 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18788	    112	   2128	  21028	   5224	sensory.elf
+Finished building: default.size.stdout
+ 
+20:02:45 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18788	    112	   2128	  21028	   5224	sensory.elf
+Finished building: default.size.stdout
+ 
+20:18:24 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  18752	    112	   2128	  20992	   5200	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+20:18:34 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18752	    112	   2128	  20992	   5200	sensory.elf
+Finished building: default.size.stdout
+ 
+20:22:48 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  18796	    112	   2128	  21036	   522c	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+20:23:01 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18796	    112	   2128	  21036	   522c	sensory.elf
+Finished building: default.size.stdout
+ 
+20:25:58 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'AHT20_init':
+../Core/Src/main.c:115:27: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+  115 |                 if (value & (1 << 3) != 0) // check calibration bit
+      |                           ^
+../Core/Src/main.c: In function 'AHT20_trig_measure':
+../Core/Src/main.c:144:30: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+  144 |                 while (value & (1 << 7) != 0); // bit[7] = 0 indicated completed measurements
+      |                              ^
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  18796	    112	   2128	  21036	   522c	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+20:26:34 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  18796	    112	   2128	  21036	   522c	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+20:26:38 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18796	    112	   2128	  21036	   522c	sensory.elf
+Finished building: default.size.stdout
+ 
+20:30:29 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  17180	    112	   2128	  19420	   4bdc	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+20:30:39 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17180	    112	   2128	  19420	   4bdc	sensory.elf
+Finished building: default.size.stdout
+ 
+17:05:04 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/i2c.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/i2c.d" -MT"Core/Src/i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/i2c.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  17384	    112	   2208	  19704	   4cf8	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+17:05:09 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17384	    112	   2208	  19704	   4cf8	sensory.elf
+Finished building: default.size.stdout
+ 
+17:07:14 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  17384	    112	   2208	  19704	   4cf8	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+17:07:17 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17384	    112	   2208	  19704	   4cf8	sensory.elf
+Finished building: default.size.stdout
+ 
+17:07:45 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17384	    112	   2208	  19704	   4cf8	sensory.elf
+Finished building: default.size.stdout
+ 
+17:09:20 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  17412	    112	   2208	  19732	   4d14	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+17:09:23 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17412	    112	   2208	  19732	   4d14	sensory.elf
+Finished building: default.size.stdout
+ 
+18:53:51 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/AHT20.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/AHT20.d" -MT"Core/Src/AHT20.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/AHT20.o"
+arm-none-eabi-gcc "../Core/Src/gpio.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/gpio.d" -MT"Core/Src/gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/gpio.o"
+arm-none-eabi-gcc "../Core/Src/i2c.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/i2c.d" -MT"Core/Src/i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/i2c.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32l0xx_hal_msp.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32l0xx_hal_msp.d" -MT"Core/Src/stm32l0xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32l0xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32l0xx_it.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32l0xx_it.d" -MT"Core/Src/stm32l0xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32l0xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32l0xx.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32l0xx.d" -MT"Core/Src/system_stm32l0xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32l0xx.o"
+arm-none-eabi-gcc "../Core/Src/usart.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/usart.d" -MT"Core/Src/usart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/usart.o"
+../Core/Src/AHT20.c: In function 'AHT20_master_transmit':
+../Core/Src/AHT20.c:13:50: error: 'AHT20_ADDR' undeclared (first use in this function)
+   13 |         status = HAL_I2C_Master_Transmit(&hi2c1, AHT20_ADDR, &data, size, HAL_MAX_DELAY);
+      |                                                  ^~~~~~~~~~
+../Core/Src/AHT20.c:13:50: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/AHT20.c: In function 'AHT20_master_receive':
+../Core/Src/AHT20.c:21:49: error: 'AHT20_READ_ADDR' undeclared (first use in this function)
+   21 |         status = HAL_I2C_Master_Receive(&hi2c1, AHT20_READ_ADDR, &data, size, HAL_MAX_DELAY);
+      |                                                 ^~~~~~~~~~~~~~~
+../Core/Src/AHT20.c: In function 'AHT20_write_reg':
+../Core/Src/AHT20.c:30:44: error: 'AHT20_ADDR' undeclared (first use in this function)
+   30 |         status = HAL_I2C_Mem_Write(&hi2c1, AHT20_ADDR, reg, 1, &write_value, sizeof(write_value), HAL_MAX_DELAY);
+      |                                            ^~~~~~~~~~
+../Core/Src/AHT20.c: In function 'AHT20_read_reg':
+../Core/Src/AHT20.c:38:34: error: 'AHT20_ADDR' undeclared (first use in this function)
+   38 |         HAL_I2C_Mem_Read(&hi2c1, AHT20_ADDR, reg, 1, &read_value, sizeof(read_value), HAL_MAX_DELAY);
+      |                                  ^~~~~~~~~~
+../Core/Src/AHT20.c: In function 'AHT20_init':
+../Core/Src/AHT20.c:55:40: error: 'AHT20_READ_ADDR' undeclared (first use in this function)
+   55 |                 value = AHT20_read_reg(AHT20_READ_ADDR); // AHT20_master_receive(value, sizeof(value)); // TODO: test this
+      |                                        ^~~~~~~~~~~~~~~
+../Core/Src/AHT20.c: In function 'AHT20_trig_measure':
+../Core/Src/AHT20.c:82:48: error: 'AHT20_READ_ADDR' undeclared (first use in this function)
+   82 |                         value = AHT20_read_reg(AHT20_READ_ADDR); // AHT20_master_receive(value, sizeof(value)); // TODO: test this
+      |                                                ^~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:46: Core/Src/AHT20.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+18:54:15 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/AHT20.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/AHT20.d" -MT"Core/Src/AHT20.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/AHT20.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  17412	    112	   2208	  19732	   4d14	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+21:30:01 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/AHT20.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/AHT20.d" -MT"Core/Src/AHT20.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/AHT20.o"
+arm-none-eabi-gcc "../Core/Src/NEO6.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/NEO6.d" -MT"Core/Src/NEO6.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/NEO6.o"
+arm-none-eabi-gcc "../Core/Src/gpio.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/gpio.d" -MT"Core/Src/gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/gpio.o"
+arm-none-eabi-gcc "../Core/Src/i2c.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/i2c.d" -MT"Core/Src/i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/i2c.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32l0xx_hal_msp.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32l0xx_hal_msp.d" -MT"Core/Src/stm32l0xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32l0xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32l0xx_it.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32l0xx_it.d" -MT"Core/Src/stm32l0xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32l0xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32l0xx.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32l0xx.d" -MT"Core/Src/system_stm32l0xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32l0xx.o"
+arm-none-eabi-gcc "../Core/Src/usart.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/usart.d" -MT"Core/Src/usart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/usart.o"
+../Core/Src/AHT20.c: In function 'AHT20_Init':
+../Core/Src/AHT20.c:45:13: warning: implicit declaration of function 'AHT20_master_transmit'; did you mean 'AHT20_Master_Transmit'? [-Wimplicit-function-declaration]
+   45 |         if (AHT20_master_transmit(init_cmd, sizeof(init_cmd)) != HAL_OK)
+      |             ^~~~~~~~~~~~~~~~~~~~~
+      |             AHT20_Master_Transmit
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:77:15: error: 'GpsState' undeclared (first use in this function)
+   77 |   if(huart == GpsState.neo6_huart)
+      |               ^~~~~~~~
+../Core/Src/main.c:77:15: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/AHT20.c:54:25: warning: implicit declaration of function 'AHT20_read_reg'; did you mean 'AHT20_Read_Reg'? [-Wimplicit-function-declaration]
+   54 |                 value = AHT20_read_reg(AHT20_READ_ADDR); // AHT20_master_receive(value, sizeof(value)); // TODO: test this
+      |                         ^~~~~~~~~~~~~~
+      |                         AHT20_Read_Reg
+../Core/Src/main.c:79:5: warning: implicit declaration of function 'NEO6_ReceiveUartChar' [-Wimplicit-function-declaration]
+   79 |     NEO6_ReceiveUartChar(&GpsState);
+      |     ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:83:1: error: unknown type name 'NEO6_State'
+   83 | NEO6_State *GPS;
+      | ^~~~~~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:127:3: warning: implicit declaration of function 'NEO6_Init' [-Wimplicit-function-declaration]
+  127 |   NEO6_Init(GPS, &huart1);
+      |   ^~~~~~~~~
+../Core/Src/main.c:134:11: warning: implicit declaration of function 'NEO6_Task' [-Wimplicit-function-declaration]
+  134 |           NEO6_Task(GPS);
+      |           ^~~~~~~~~
+make: *** [Core/Src/subdir.mk:49: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+21:30:59 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:64:1: error: unknown type name 'NEO6_State'
+   64 | NEO6_State *GPS;
+      | ^~~~~~~~~~
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:79:18: error: request for member 'neo6_huart' in something not a structure or union
+   79 |   if(huart == GPS.neo6_huart)
+      |                  ^
+../Core/Src/main.c:81:5: warning: implicit declaration of function 'NEO6_ReceiveUartChar' [-Wimplicit-function-declaration]
+   81 |     NEO6_ReceiveUartChar(&GpsState);
+      |     ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:81:27: error: 'GpsState' undeclared (first use in this function)
+   81 |     NEO6_ReceiveUartChar(&GpsState);
+      |                           ^~~~~~~~
+../Core/Src/main.c:81:27: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:129:3: warning: implicit declaration of function 'NEO6_Init' [-Wimplicit-function-declaration]
+  129 |   NEO6_Init(GPS, &huart1);
+      |   ^~~~~~~~~
+../Core/Src/main.c:136:11: warning: implicit declaration of function 'NEO6_Task' [-Wimplicit-function-declaration]
+  136 |           NEO6_Task(GPS);
+      |           ^~~~~~~~~
+make: *** [Core/Src/subdir.mk:49: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+21:32:15 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/NEO6.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/NEO6.d" -MT"Core/Src/NEO6.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/NEO6.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:77:15: error: 'GpsState' undeclared (first use in this function)
+   77 |   if(huart == GpsState.neo6_huart)
+      |               ^~~~~~~~
+../Core/Src/main.c:77:15: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:79:5: warning: implicit declaration of function 'NEO6_ReceiveUartChar' [-Wimplicit-function-declaration]
+   79 |     NEO6_ReceiveUartChar(&GpsState);
+      |     ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:127:3: warning: implicit declaration of function 'NEO6_Init' [-Wimplicit-function-declaration]
+  127 |   NEO6_Init(GPS, &huart1);
+      |   ^~~~~~~~~
+../Core/Src/main.c:127:13: error: 'GPS' undeclared (first use in this function)
+  127 |   NEO6_Init(GPS, &huart1);
+      |             ^~~
+../Core/Src/main.c:134:11: warning: implicit declaration of function 'NEO6_Task' [-Wimplicit-function-declaration]
+  134 |           NEO6_Task(GPS);
+      |           ^~~~~~~~~
+make: *** [Core/Src/subdir.mk:49: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+21:32:59 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/NEO6.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/NEO6.d" -MT"Core/Src/NEO6.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/NEO6.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:64:1: error: unknown type name 'NEO6_State'
+   64 | NEO6_State GpsState;
+      | ^~~~~~~~~~
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:79:23: error: request for member 'neo6_huart' in something not a structure or union
+   79 |   if(huart == GpsState.neo6_huart)
+      |                       ^
+../Core/Src/main.c:81:5: warning: implicit declaration of function 'NEO6_ReceiveUartChar' [-Wimplicit-function-declaration]
+   81 |     NEO6_ReceiveUartChar(&GpsState);
+      |     ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:129:3: warning: implicit declaration of function 'NEO6_Init' [-Wimplicit-function-declaration]
+  129 |   NEO6_Init(&GpsState, &huart1);
+      |   ^~~~~~~~~
+../Core/Src/main.c:136:11: warning: implicit declaration of function 'NEO6_Task' [-Wimplicit-function-declaration]
+  136 |           NEO6_Task(&GpsState);
+      |           ^~~~~~~~~
+make: *** [Core/Src/subdir.mk:49: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+21:33:47 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static -u _printf_float -u _scanf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/AHT20.o: in function `AHT20_Init':
+C:/Users/kuba/STM32CubeIDE/workspace_1.14.1/sensory/Debug/../Core/Src/AHT20.c:45: undefined reference to `AHT20_master_transmit'
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/kuba/STM32CubeIDE/workspace_1.14.1/sensory/Debug/../Core/Src/AHT20.c:54: undefined reference to `AHT20_read_reg'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: sensory.elf] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+21:35:19 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/AHT20.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/AHT20.d" -MT"Core/Src/AHT20.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/AHT20.o"
+arm-none-eabi-gcc "../Core/Src/NEO6.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/NEO6.d" -MT"Core/Src/NEO6.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/NEO6.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static -u _printf_float -u _scanf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  49656	    476	   2848	  52980	   cef4	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+21:38:45 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static -u _printf_float -u _scanf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  49656	    476	   2848	  52980	   cef4	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+21:39:04 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  49656	    476	   2848	  52980	   cef4	sensory.elf
+Finished building: default.size.stdout
+ 
+21:50:15 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  49656	    476	   2848	  52980	   cef4	sensory.elf
+Finished building: default.size.stdout
+ 
+21:55:40 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static -u _printf_float -u _scanf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  49676	    476	   2848	  53000	   cf08	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+21:55:51 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  49676	    476	   2848	  53000	   cf08	sensory.elf
+Finished building: default.size.stdout
+ 
+21:56:08 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  49676	    476	   2848	  53000	   cf08	sensory.elf
+Finished building: default.size.stdout
+ 
+21:56:14 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  49676	    476	   2848	  53000	   cf08	sensory.elf
+Finished building: default.size.stdout
+ 
+21:56:35 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  49676	    476	   2848	  53000	   cf08	sensory.elf
+Finished building: default.size.stdout
+ 
+21:58:00 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static -u _printf_float -u _scanf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  49688	    476	   2848	  53012	   cf14	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+21:58:07 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  49688	    476	   2848	  53012	   cf14	sensory.elf
+Finished building: default.size.stdout
+ 
+22:01:58 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static -u _printf_float -u _scanf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  50748	    476	   2912	  54136	   d378	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+22:02:05 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  50748	    476	   2912	  54136	   d378	sensory.elf
+Finished building: default.size.stdout
+ 
+22:33:58 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/AHT20.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/AHT20.d" -MT"Core/Src/AHT20.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/AHT20.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/AHT20.c: In function 'AHT20_Init':
+../Core/Src/AHT20.c:45:35: warning: passing argument 1 of 'AHT20_Master_Transmit' makes integer from pointer without a cast [-Wint-conversion]
+   45 |         if (AHT20_Master_Transmit(init_cmd, sizeof(init_cmd)) != HAL_OK)
+      |                                   ^~~~~~~~
+      |                                   |
+      |                                   uint8_t * {aka unsigned char *}
+../Core/Src/AHT20.c:10:49: note: expected 'uint8_t' {aka 'unsigned char'} but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   10 | HAL_StatusTypeDef AHT20_Master_Transmit(uint8_t data, uint16_t size)
+      |                                         ~~~~~~~~^~~~
+../Core/Src/AHT20.c: In function 'AHT20_Trig_Measure':
+../Core/Src/AHT20.c:69:35: warning: passing argument 1 of 'AHT20_Master_Transmit' makes integer from pointer without a cast [-Wint-conversion]
+   69 |         if (AHT20_Master_Transmit(trig_measure_cmd, sizeof(trig_measure_cmd)) != HAL_OK)
+      |                                   ^~~~~~~~~~~~~~~~
+      |                                   |
+      |                                   uint8_t * {aka unsigned char *}
+../Core/Src/AHT20.c:10:49: note: expected 'uint8_t' {aka 'unsigned char'} but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   10 | HAL_StatusTypeDef AHT20_Master_Transmit(uint8_t data, uint16_t size)
+      |                                         ~~~~~~~~^~~~
+../Core/Src/AHT20.c: In function 'AHT20_Read':
+../Core/Src/AHT20.c:84:30: warning: passing argument 1 of 'AHT20_Master_Receive' makes integer from pointer without a cast [-Wint-conversion]
+   84 |         AHT20_Master_Receive(read_buffer, sizeof(read_buffer));
+      |                              ^~~~~~~~~~~
+      |                              |
+      |                              uint8_t * {aka unsigned char *}
+../Core/Src/AHT20.c:18:48: note: expected 'uint8_t' {aka 'unsigned char'} but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   18 | HAL_StatusTypeDef AHT20_Master_Receive(uint8_t data, uint16_t size)
+      |                                        ~~~~~~~~^~~~
+../Core/Src/AHT20.c:86:41: error: expected expression before '==' token
+   86 |         if((read_buffer[0]) & (1 << 7)) == 0)
+      |                                         ^~
+../Core/Src/AHT20.c:86:9: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+   86 |         if((read_buffer[0]) & (1 << 7)) == 0)
+      |         ^~
+../Core/Src/AHT20.c:86:45: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   86 |         if((read_buffer[0]) & (1 << 7)) == 0)
+      |                                             ^
+../Core/Src/AHT20.c:86:45: error: expected statement before ')' token
+../Core/Src/AHT20.c:89:55: warning: suggest parentheses around '+' inside '>>' [-Wparentheses]
+   89 |                 data = ((uint32_t)read_buffer[3] >> 4 + (uint32_t)read_buffer[2] << 4 + (uint32_t)read_buffer[1] << 12);
+      |                                                     ~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/AHT20.c:89:87: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+   89 |                 data = ((uint32_t)read_buffer[3] >> 4 + (uint32_t)read_buffer[2] << 4 + (uint32_t)read_buffer[1] << 12);
+      |                                                                                     ~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/AHT20.c:88:26: warning: variable 'data' set but not used [-Wunused-but-set-variable]
+   88 |                 uint32_t data = 0;
+      |                          ^~~~
+make: *** [Core/Src/subdir.mk:49: Core/Src/AHT20.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+22:34:28 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/AHT20.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/AHT20.d" -MT"Core/Src/AHT20.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/AHT20.o"
+../Core/Src/AHT20.c: In function 'AHT20_Init':
+../Core/Src/AHT20.c:45:35: warning: passing argument 1 of 'AHT20_Master_Transmit' makes integer from pointer without a cast [-Wint-conversion]
+   45 |         if (AHT20_Master_Transmit(init_cmd, sizeof(init_cmd)) != HAL_OK)
+      |                                   ^~~~~~~~
+      |                                   |
+      |                                   uint8_t * {aka unsigned char *}
+../Core/Src/AHT20.c:10:49: note: expected 'uint8_t' {aka 'unsigned char'} but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   10 | HAL_StatusTypeDef AHT20_Master_Transmit(uint8_t data, uint16_t size)
+      |                                         ~~~~~~~~^~~~
+../Core/Src/AHT20.c: In function 'AHT20_Trig_Measure':
+../Core/Src/AHT20.c:69:35: warning: passing argument 1 of 'AHT20_Master_Transmit' makes integer from pointer without a cast [-Wint-conversion]
+   69 |         if (AHT20_Master_Transmit(trig_measure_cmd, sizeof(trig_measure_cmd)) != HAL_OK)
+      |                                   ^~~~~~~~~~~~~~~~
+      |                                   |
+      |                                   uint8_t * {aka unsigned char *}
+../Core/Src/AHT20.c:10:49: note: expected 'uint8_t' {aka 'unsigned char'} but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   10 | HAL_StatusTypeDef AHT20_Master_Transmit(uint8_t data, uint16_t size)
+      |                                         ~~~~~~~~^~~~
+../Core/Src/AHT20.c: In function 'AHT20_Read':
+../Core/Src/AHT20.c:84:30: warning: passing argument 1 of 'AHT20_Master_Receive' makes integer from pointer without a cast [-Wint-conversion]
+   84 |         AHT20_Master_Receive(read_buffer, sizeof(read_buffer));
+      |                              ^~~~~~~~~~~
+      |                              |
+      |                              uint8_t * {aka unsigned char *}
+../Core/Src/AHT20.c:18:48: note: expected 'uint8_t' {aka 'unsigned char'} but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   18 | HAL_StatusTypeDef AHT20_Master_Receive(uint8_t data, uint16_t size)
+      |                                        ~~~~~~~~^~~~
+../Core/Src/AHT20.c:86:29: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+   86 |         if((read_buffer[0]) & (1 << 7) == 0)
+      |                             ^
+../Core/Src/AHT20.c:89:55: warning: suggest parentheses around '+' inside '>>' [-Wparentheses]
+   89 |                 data = ((uint32_t)read_buffer[3] >> 4 + (uint32_t)read_buffer[2] << 4 + (uint32_t)read_buffer[1] << 12);
+      |                                                     ~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/AHT20.c:89:87: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+   89 |                 data = ((uint32_t)read_buffer[3] >> 4 + (uint32_t)read_buffer[2] << 4 + (uint32_t)read_buffer[1] << 12);
+      |                                                                                     ~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/AHT20.c:88:26: warning: variable 'data' set but not used [-Wunused-but-set-variable]
+   88 |                 uint32_t data = 0;
+      |                          ^~~~
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static -u _printf_float -u _scanf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  50704	    476	   2912	  54092	   d34c	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+22:34:46 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/AHT20.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/AHT20.d" -MT"Core/Src/AHT20.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/AHT20.o"
+../Core/Src/AHT20.c: In function 'AHT20_Init':
+../Core/Src/AHT20.c:45:35: warning: passing argument 1 of 'AHT20_Master_Transmit' makes integer from pointer without a cast [-Wint-conversion]
+   45 |         if (AHT20_Master_Transmit(init_cmd, sizeof(init_cmd)) != HAL_OK)
+      |                                   ^~~~~~~~
+      |                                   |
+      |                                   uint8_t * {aka unsigned char *}
+../Core/Src/AHT20.c:10:49: note: expected 'uint8_t' {aka 'unsigned char'} but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   10 | HAL_StatusTypeDef AHT20_Master_Transmit(uint8_t data, uint16_t size)
+      |                                         ~~~~~~~~^~~~
+../Core/Src/AHT20.c: In function 'AHT20_Trig_Measure':
+../Core/Src/AHT20.c:69:35: warning: passing argument 1 of 'AHT20_Master_Transmit' makes integer from pointer without a cast [-Wint-conversion]
+   69 |         if (AHT20_Master_Transmit(trig_measure_cmd, sizeof(trig_measure_cmd)) != HAL_OK)
+      |                                   ^~~~~~~~~~~~~~~~
+      |                                   |
+      |                                   uint8_t * {aka unsigned char *}
+../Core/Src/AHT20.c:10:49: note: expected 'uint8_t' {aka 'unsigned char'} but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   10 | HAL_StatusTypeDef AHT20_Master_Transmit(uint8_t data, uint16_t size)
+      |                                         ~~~~~~~~^~~~
+../Core/Src/AHT20.c: In function 'AHT20_Read':
+../Core/Src/AHT20.c:84:30: warning: passing argument 1 of 'AHT20_Master_Receive' makes integer from pointer without a cast [-Wint-conversion]
+   84 |         AHT20_Master_Receive(read_buffer, sizeof(read_buffer));
+      |                              ^~~~~~~~~~~
+      |                              |
+      |                              uint8_t * {aka unsigned char *}
+../Core/Src/AHT20.c:18:48: note: expected 'uint8_t' {aka 'unsigned char'} but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   18 | HAL_StatusTypeDef AHT20_Master_Receive(uint8_t data, uint16_t size)
+      |                                        ~~~~~~~~^~~~
+../Core/Src/AHT20.c:89:55: warning: suggest parentheses around '+' inside '>>' [-Wparentheses]
+   89 |                 data = ((uint32_t)read_buffer[3] >> 4 + (uint32_t)read_buffer[2] << 4 + (uint32_t)read_buffer[1] << 12);
+      |                                                     ~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/AHT20.c:89:87: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+   89 |                 data = ((uint32_t)read_buffer[3] >> 4 + (uint32_t)read_buffer[2] << 4 + (uint32_t)read_buffer[1] << 12);
+      |                                                                                     ~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/AHT20.c:88:26: warning: variable 'data' set but not used [-Wunused-but-set-variable]
+   88 |                 uint32_t data = 0;
+      |                          ^~~~
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static -u _printf_float -u _scanf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  50704	    476	   2912	  54092	   d34c	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+22:35:53 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/AHT20.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/AHT20.d" -MT"Core/Src/AHT20.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/AHT20.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/AHT20.c: In function 'AHT20_Read':
+../Core/Src/AHT20.c:89:55: warning: suggest parentheses around '+' inside '>>' [-Wparentheses]
+   89 |                 data = ((uint32_t)read_buffer[3] >> 4 + (uint32_t)read_buffer[2] << 4 + (uint32_t)read_buffer[1] << 12);
+      |                                                     ~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/AHT20.c:89:87: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+   89 |                 data = ((uint32_t)read_buffer[3] >> 4 + (uint32_t)read_buffer[2] << 4 + (uint32_t)read_buffer[1] << 12);
+      |                                                                                     ~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/AHT20.c:88:26: warning: variable 'data' set but not used [-Wunused-but-set-variable]
+   88 |                 uint32_t data = 0;
+      |                          ^~~~
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static -u _printf_float -u _scanf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  50696	    476	   2912	  54084	   d344	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+22:36:14 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/AHT20.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/AHT20.d" -MT"Core/Src/AHT20.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/AHT20.o"
+../Core/Src/AHT20.c: In function 'AHT20_Read':
+../Core/Src/AHT20.c:88:26: warning: variable 'data' set but not used [-Wunused-but-set-variable]
+   88 |                 uint32_t data = 0;
+      |                          ^~~~
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static -u _printf_float -u _scanf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  50696	    476	   2912	  54084	   d344	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+22:39:48 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/AHT20.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/AHT20.d" -MT"Core/Src/AHT20.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/AHT20.o"
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static -u _printf_float -u _scanf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  50696	    476	   2912	  54084	   d344	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+22:40:23 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/AHT20.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/AHT20.d" -MT"Core/Src/AHT20.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/AHT20.o"
+../Core/Src/AHT20.c: In function 'AHT20_Read':
+../Core/Src/AHT20.c:92:18: error: 'Tem' undeclared (first use in this function)
+   92 |                 *Tem = data * 200.0f / (1 << 20) - 50;
+      |                  ^~~
+../Core/Src/AHT20.c:92:18: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:49: Core/Src/AHT20.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+22:40:34 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/AHT20.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/AHT20.d" -MT"Core/Src/AHT20.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/AHT20.o"
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static -u _printf_float -u _scanf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  50696	    476	   2912	  54084	   d344	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+22:42:56 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/AHT20.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/AHT20.d" -MT"Core/Src/AHT20.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/AHT20.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:139:12: warning: unused variable 'Timer' [-Wunused-variable]
+  139 |   uint32_t Timer = HAL_GetTick();
+      |            ^~~~~
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static -u _printf_float -u _scanf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  51416	    476	   2848	  54740	   d5d4	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+22:43:03 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  51416	    476	   2848	  54740	   d5d4	sensory.elf
+Finished building: default.size.stdout
+ 
+22:45:36 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/AHT20.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/AHT20.d" -MT"Core/Src/AHT20.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/AHT20.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:139:12: warning: unused variable 'Timer' [-Wunused-variable]
+  139 |   uint32_t Timer = HAL_GetTick();
+      |            ^~~~~
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static -u _printf_float -u _scanf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  51400	    476	   2912	  54788	   d604	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+22:48:49 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/AHT20.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/AHT20.d" -MT"Core/Src/AHT20.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/AHT20.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:139:12: warning: unused variable 'Timer' [-Wunused-variable]
+  139 |   uint32_t Timer = HAL_GetTick();
+      |            ^~~~~
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static -u _printf_float -u _scanf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  50548	    476	   2912	  53936	   d2b0	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+22:50:18 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:139:12: warning: unused variable 'Timer' [-Wunused-variable]
+  139 |   uint32_t Timer = HAL_GetTick();
+      |            ^~~~~
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static -u _printf_float -u _scanf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  50556	    476	   2912	  53944	   d2b8	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+22:51:05 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:139:12: warning: unused variable 'Timer' [-Wunused-variable]
+  139 |   uint32_t Timer = HAL_GetTick();
+      |            ^~~~~
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static -u _printf_float -u _scanf_float --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  50564	    476	   2912	  53952	   d2c0	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+22:52:01 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static -u _printf_float -u _scanf_float --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  50564	    476	   2912	  53952	   d2c0	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+22:52:22 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:139:12: warning: unused variable 'Timer' [-Wunused-variable]
+  139 |   uint32_t Timer = HAL_GetTick();
+      |            ^~~~~
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static -u _printf_float -u _scanf_float --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  50572	    476	   2912	  53960	   d2c8	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+22:54:59 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/AHT20.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/AHT20.d" -MT"Core/Src/AHT20.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/AHT20.o"
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static -u _printf_float -u _scanf_float --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  50572	    476	   2912	  53960	   d2c8	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+22:55:57 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/AHT20.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/AHT20.d" -MT"Core/Src/AHT20.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/AHT20.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:139:12: warning: unused variable 'Timer' [-Wunused-variable]
+  139 |   uint32_t Timer = HAL_GetTick();
+      |            ^~~~~
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static -u _printf_float -u _scanf_float --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  50504	    476	   2848	  53828	   d244	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+22:57:03 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:137:12: warning: unused variable 'Timer' [-Wunused-variable]
+  137 |   uint32_t Timer = HAL_GetTick();
+      |            ^~~~~
+../Core/Src/main.c:144:11: warning: 'Temp' is used uninitialized [-Wuninitialized]
+  144 |           AHT20_Read(Temp, Hum);
+      |           ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:144:11: warning: 'Hum' is used uninitialized [-Wuninitialized]
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static -u _printf_float -u _scanf_float --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  50488	    476	   2840	  53804	   d22c	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+22:58:11 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:138:16: error: invalid suffix "f" on integer constant
+  138 |   float Temp = 0f;
+      |                ^~
+../Core/Src/main.c:139:15: error: invalid suffix "f" on integer constant
+  139 |   float Hum = 0f;
+      |               ^~
+../Core/Src/main.c:145:22: error: incompatible type for argument 1 of 'AHT20_Read'
+  145 |           AHT20_Read(Temp, Hum);
+      |                      ^~~~
+      |                      |
+      |                      float
+In file included from ../Core/Src/main.c:30:
+../Core/Inc/AHT20.h:31:24: note: expected 'float *' but argument is of type 'float'
+   31 | void AHT20_Read(float *Temp, float *Hum);
+      |                 ~~~~~~~^~~~
+../Core/Src/main.c:145:28: error: incompatible type for argument 2 of 'AHT20_Read'
+  145 |           AHT20_Read(Temp, Hum);
+      |                            ^~~
+      |                            |
+      |                            float
+In file included from ../Core/Src/main.c:30:
+../Core/Inc/AHT20.h:31:37: note: expected 'float *' but argument is of type 'float'
+   31 | void AHT20_Read(float *Temp, float *Hum);
+      |                              ~~~~~~~^~~
+../Core/Src/main.c:146:56: error: invalid type argument of unary '*' (have 'float')
+  146 |           printf("Temperature = %.1fC\n Hum = %.1f\n", *Temp, *Hum);
+      |                                                        ^~~~~
+../Core/Src/main.c:146:63: error: invalid type argument of unary '*' (have 'float')
+  146 |           printf("Temperature = %.1fC\n Hum = %.1f\n", *Temp, *Hum);
+      |                                                               ^~~~
+../Core/Src/main.c:137:12: warning: unused variable 'Timer' [-Wunused-variable]
+  137 |   uint32_t Timer = HAL_GetTick();
+      |            ^~~~~
+make: *** [Core/Src/subdir.mk:49: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+22:58:39 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:145:22: error: incompatible type for argument 1 of 'AHT20_Read'
+  145 |           AHT20_Read(Temp, Hum);
+      |                      ^~~~
+      |                      |
+      |                      float
+In file included from ../Core/Src/main.c:30:
+../Core/Inc/AHT20.h:31:24: note: expected 'float *' but argument is of type 'float'
+   31 | void AHT20_Read(float *Temp, float *Hum);
+      |                 ~~~~~~~^~~~
+../Core/Src/main.c:145:28: error: incompatible type for argument 2 of 'AHT20_Read'
+  145 |           AHT20_Read(Temp, Hum);
+      |                            ^~~
+      |                            |
+      |                            float
+In file included from ../Core/Src/main.c:30:
+../Core/Inc/AHT20.h:31:37: note: expected 'float *' but argument is of type 'float'
+   31 | void AHT20_Read(float *Temp, float *Hum);
+      |                              ~~~~~~~^~~
+../Core/Src/main.c:146:56: error: invalid type argument of unary '*' (have 'float')
+  146 |           printf("Temperature = %.1fC\n Hum = %.1f\n", *Temp, *Hum);
+      |                                                        ^~~~~
+../Core/Src/main.c:146:63: error: invalid type argument of unary '*' (have 'float')
+  146 |           printf("Temperature = %.1fC\n Hum = %.1f\n", *Temp, *Hum);
+      |                                                               ^~~~
+../Core/Src/main.c:137:12: warning: unused variable 'Timer' [-Wunused-variable]
+  137 |   uint32_t Timer = HAL_GetTick();
+      |            ^~~~~
+make: *** [Core/Src/subdir.mk:49: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+22:58:49 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:145:22: error: incompatible type for argument 1 of 'AHT20_Read'
+  145 |           AHT20_Read(Temp, Hum);
+      |                      ^~~~
+      |                      |
+      |                      float
+In file included from ../Core/Src/main.c:30:
+../Core/Inc/AHT20.h:31:24: note: expected 'float *' but argument is of type 'float'
+   31 | void AHT20_Read(float *Temp, float *Hum);
+      |                 ~~~~~~~^~~~
+../Core/Src/main.c:145:28: error: incompatible type for argument 2 of 'AHT20_Read'
+  145 |           AHT20_Read(Temp, Hum);
+      |                            ^~~
+      |                            |
+      |                            float
+In file included from ../Core/Src/main.c:30:
+../Core/Inc/AHT20.h:31:37: note: expected 'float *' but argument is of type 'float'
+   31 | void AHT20_Read(float *Temp, float *Hum);
+      |                              ~~~~~~~^~~
+../Core/Src/main.c:137:12: warning: unused variable 'Timer' [-Wunused-variable]
+  137 |   uint32_t Timer = HAL_GetTick();
+      |            ^~~~~
+make: *** [Core/Src/subdir.mk:49: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+22:59:00 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:137:12: warning: unused variable 'Timer' [-Wunused-variable]
+  137 |   uint32_t Timer = HAL_GetTick();
+      |            ^~~~~
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static -u _printf_float -u _scanf_float --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  50492	    476	   2840	  53808	   d230	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+23:02:21 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/AHT20.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/AHT20.d" -MT"Core/Src/AHT20.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/AHT20.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:134:3: warning: implicit declaration of function 'AHT20_Trig_Measure' [-Wimplicit-function-declaration]
+  134 |   AHT20_Trig_Measure();
+      |   ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:135:12: warning: unused variable 'Timer' [-Wunused-variable]
+  135 |   uint32_t Timer = HAL_GetTick();
+      |            ^~~~~
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static -u _printf_float -u _scanf_float --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `main':
+C:/Users/kuba/STM32CubeIDE/workspace_1.14.1/sensory/Debug/../Core/Src/main.c:134: undefined reference to `AHT20_Trig_Measure'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: sensory.elf] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+23:02:36 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:134:12: warning: unused variable 'Timer' [-Wunused-variable]
+  134 |   uint32_t Timer = HAL_GetTick();
+      |            ^~~~~
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static -u _printf_float -u _scanf_float --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  50480	    476	   2840	  53796	   d224	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+22:13:49 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_exti.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_exti.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.o"
+arm-none-eabi-gcc "../Core/Src/AHT20.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/AHT20.d" -MT"Core/Src/AHT20.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/AHT20.o"
+arm-none-eabi-gcc "../Core/Src/NEO6.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/NEO6.d" -MT"Core/Src/NEO6.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/NEO6.o"
+arm-none-eabi-gcc "../Core/Src/gpio.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/gpio.d" -MT"Core/Src/gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/gpio.o"
+arm-none-eabi-gcc "../Core/Src/i2c.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/i2c.d" -MT"Core/Src/i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/i2c.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/spi.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/spi.d" -MT"Core/Src/spi.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/spi.o"
+arm-none-eabi-gcc "../Core/Src/stm32l0xx_hal_msp.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32l0xx_hal_msp.d" -MT"Core/Src/stm32l0xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32l0xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32l0xx_it.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32l0xx_it.d" -MT"Core/Src/stm32l0xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32l0xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32l0xx.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32l0xx.d" -MT"Core/Src/system_stm32l0xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32l0xx.o"
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:98:16: warning: passing argument 1 of 'AHT20_Read' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   98 |     AHT20_Read(&Temp, &Hum); // reads AHT20 measurements every second
+      |                ^~~~~
+In file included from ../Core/Src/main.c:32:
+../Core/Inc/AHT20.h:29:24: note: expected 'float *' but argument is of type 'volatile float *'
+   29 | void AHT20_Read(float *Temp, float *Hum);
+      |                 ~~~~~~~^~~~
+../Core/Src/main.c:98:23: warning: passing argument 2 of 'AHT20_Read' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   98 |     AHT20_Read(&Temp, &Hum); // reads AHT20 measurements every second
+      |                       ^~~~
+In file included from ../Core/Src/main.c:32:
+../Core/Inc/AHT20.h:29:37: note: expected 'float *' but argument is of type 'volatile float *'
+   29 | void AHT20_Read(float *Temp, float *Hum);
+      |                              ~~~~~~~^~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:148:12: warning: unused variable 'Timer' [-Wunused-variable]
+  148 |   uint32_t Timer = HAL_GetTick();
+      |            ^~~~~
+arm-none-eabi-gcc "../Core/Src/tim.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/tim.d" -MT"Core/Src/tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/tim.o"
+arm-none-eabi-gcc "../Core/Src/usart.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/usart.d" -MT"Core/Src/usart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/usart.o"
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static -u _printf_float -u _scanf_float --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  52160	    476	   2920	  55556	   d904	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+22:14:39 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/AHT20.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/AHT20.d" -MT"Core/Src/AHT20.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/AHT20.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:148:12: warning: unused variable 'Timer' [-Wunused-variable]
+  148 |   uint32_t Timer = HAL_GetTick();
+      |            ^~~~~
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static -u _printf_float -u _scanf_float --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  52160	    476	   2920	  55556	   d904	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+22:14:45 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  52160	    476	   2920	  55556	   d904	sensory.elf
+Finished building: default.size.stdout
+ 
+22:15:59 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  52160	    476	   2920	  55556	   d904	sensory.elf
+Finished building: default.size.stdout
+ 
+22:16:43 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  52160	    476	   2920	  55556	   d904	sensory.elf
+Finished building: default.size.stdout
+ 
+22:18:42 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:149:12: warning: unused variable 'Timer' [-Wunused-variable]
+  149 |   uint32_t Timer = HAL_GetTick();
+      |            ^~~~~
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static -u _printf_float -u _scanf_float --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  52324	    476	   2920	  55720	   d9a8	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 

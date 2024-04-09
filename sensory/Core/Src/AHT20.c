@@ -63,7 +63,7 @@ void AHT20_Init()
 	}
 }
 
-void AHT20_Read(float *Temp, float *Hum)
+void AHT20_Read(volatile float *Temp, volatile float *Hum)
 {
 	uint8_t trig_measure_cmd[] = {0xAC, 0x33, 0x00};
 	if (AHT20_Master_Transmit(trig_measure_cmd, sizeof(trig_measure_cmd)) != HAL_OK)

@@ -26,6 +26,6 @@ uint8_t AHT20_Read_Reg(uint8_t reg);
 
 void AHT20_Init();
 
-void AHT20_Read(float *Temp, float *Hum);
+void AHT20_Read(volatile float *Temp, volatile float *Hum);
 
 #endif /* INC_AHT20_H_ */

@@ -1,0 +1,21 @@
+22:18:42 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:149:12: warning: unused variable 'Timer' [-Wunused-variable]
+  149 |   uint32_t Timer = HAL_GetTick();
+      |            ^~~~~
+arm-none-eabi-gcc -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static -u _printf_float -u _scanf_float --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  52324	    476	   2920	  55720	   d9a8	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+
+22:18:43 Build Finished. 0 errors, 1 warnings. (took 1s.33ms)
+

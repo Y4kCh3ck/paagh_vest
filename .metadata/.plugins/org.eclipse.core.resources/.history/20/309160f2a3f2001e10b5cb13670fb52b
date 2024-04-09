@@ -1,0 +1,31 @@
+/*
+ * AHT20.h
+ *
+ *  Created on: Apr 4, 2024
+ *      Author: kuba
+ */
+
+#ifndef INC_AHT20_H_
+#define INC_AHT20_H_
+
+#include "i2c.h"
+#include "usart.h"
+#include <string.h>
+#include <stdio.h>
+
+HAL_StatusTypeDef AHT20_master_transmit(uint8_t data, uint16_t size);
+
+
+HAL_StatusTypeDef AHT20_master_receive(uint8_t data, uint16_t size);
+
+
+HAL_StatusTypeDef AHT20_write_reg(uint8_t reg, uint8_t write_value);
+
+uint8_t AHT20_read_reg(uint8_t reg);
+
+void AHT20_init();
+
+void AHT20_trig_measure();
+
+
+#endif /* INC_AHT20_H_ */
