@@ -1,4 +1,4 @@
-6850439462515
+10275188374959
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -63496,6 +63496,13 @@ Integrated Circuit
 0
 5
 5
+LIB_USB4125-GF-A-0190
+USB4125GFA0190
+USB4125-GF-A-0190-2
+Connector
+0
+10
+10
 Module
 A20_OLINUXINO_LIME2
 A20 Olinuxino LIME2, 1.2GHz, 512-1024MB RAM, Micro-SD, NAND or eMMC, 1000Mbit Ethernet
@@ -87198,6 +87205,13 @@ rotary encoder
 0
 7
 6
+SLW-826947-5A-RA-D
+SLW8269475ARAD
+SLW-826947-5A-RA-D-2
+Switch
+0
+8
+8
 Sensor
 ASAIR_AM2302_P2.54mm_Lead2.75mm_TabDown
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/AM2302.pdf

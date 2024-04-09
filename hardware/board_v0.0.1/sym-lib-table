@@ -3,4 +3,6 @@
   (lib (name "BQ25172DSGR")(type "KiCad")(uri "${KIPRJMOD}/extra_components/BQ25172DSGR/BQ25172DSGR.kicad_sym")(options "")(descr ""))
   (lib (name "TPS2117DRLR")(type "KiCad")(uri "${KIPRJMOD}/extra_components/TPS2117DRLR/TPS2117DRLR.kicad_sym")(options "")(descr ""))
   (lib (name "ADP160AUJZ-3_3-R7")(type "KiCad")(uri "${KIPRJMOD}/extra_components/LIB_ADP160AUJZ-3.3-R7/ADP160AUJZ-3_3-R7.kicad_sym")(options "")(descr ""))
+  (lib (name "USB4125-GF-A-0190")(type "KiCad")(uri "${KIPRJMOD}/extra_components/LIB_USB4125-GF-A-0190/USB4125-GF-A-0190.kicad_sym")(options "")(descr ""))
+  (lib (name "SLW-826947-5A-RA-D")(type "KiCad")(uri "${KIPRJMOD}/extra_components/SLW-826947-5A-RA-D/SLW-826947-5A-RA-D.kicad_sym")(options "")(descr ""))
 )
