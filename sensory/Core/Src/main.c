@@ -18,6 +18,8 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "adc.h"
+#include "dma.h"
 #include "i2c.h"
 #include "spi.h"
 #include "tim.h"
@@ -29,6 +31,7 @@
 
 #include <string.h>
 #include <stdio.h>
+#include <stdbool.h>
 #include <AHT20.h>
 #include <NEO6.h>
 
@@ -65,12 +68,17 @@ void SystemClock_Config(void);
 /* USER CODE BEGIN 0 */
 
 NEO6_State GpsState;
-volatile uint8_t Uart2ReceivedChar;
 
 uint8_t Message[64];
 uint8_t MessageLength;
+bool ADC_EN = false;
+bool GPS_EN = false;
+bool I2C_EN = false;
+
+volatile uint8_t Uart2ReceivedChar;
 volatile float Temp = 0.0f;
 volatile float Hum = 0.0f;
+volatile uint32_t HeartBeatValue;
 
 int __io_putchar(int ch) // to pc
 {
@@ -130,11 +138,13 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_DMA_Init();
   MX_I2C1_Init();
   MX_USART1_UART_Init();
   MX_USART2_UART_Init();
   MX_SPI1_Init();
   MX_TIM6_Init();
+  MX_ADC_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
@@ -147,9 +157,13 @@ int main(void)
   HAL_TIM_Base_Start_IT(&htim6);
 
   uint32_t Timer = HAL_GetTick();
+  HAL_ADCEx_Calibration_Start(&hadc, ADC_SINGLE_ENDED);
+  HAL_ADC_Start_DMA(&hadc, (uint32_t*)&HeartBeatValue, 2);
 
   while (1)
   {
+	  printf("Heart Beat =  %d\n", HeartBeatValue);
+	  HAL_Delay(100);
 //	  MessageLength = sprintf((char*)Message, "\033[2J\033[;H"); // Clear terminal and home cursor
 //	  HAL_UART_Transmit(&huart2, Message, MessageLength, 1000);
 
@@ -224,8 +238,10 @@ void SystemClock_Config(void)
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
   */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI|RCC_OSCILLATORTYPE_HSE;
   RCC_OscInitStruct.HSEState = RCC_HSE_BYPASS;
+  RCC_OscInitStruct.HSIState = RCC_HSI_ON;
+  RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
   RCC_OscInitStruct.PLL.PLLMUL = RCC_PLLMUL_8;
