@@ -1,0 +1,105 @@
+Change Component Designator: OldDesignator=U5 NewDesignator=U7
+Change Component Designator: OldDesignator=U6 NewDesignator=U9
+Added Component: Designator=Q1(SOT95P245X112-3N)
+Added Component: Designator=Q2(SOT95P245X112-3N)
+Added Component: Designator=Q3(SOT95P245X112-3N)
+Added Component: Designator=Q4(SOT95P245X112-3N)
+Added Component: Designator=U5(2_54x4)
+Added Component: Designator=U6(2_54x4)
+Added Component: Designator=U8(2_54x4)
+Added Component: Designator=U?(2_54x2)
+Added Component: Designator=U?(nRF24L01P)
+Added Component: Designator=U?(2_54x2)
+Added Component: Designator=U?(DUO_DIODE)
+Added Component: Designator=U?(2_54x2)
+Added Component: Designator=U?(2_54x2)
+Add Pin To Net: Unknown Pin: Pin U2-2
+Add Pin To Net: Unknown Pin: Pin U2-3
+Add Pin To Net: Unknown Pin: Pin U2-4
+Added Pin To Net: NetName=3V3BUS Pin=U5-3
+Added Pin To Net: NetName=GND Pin=U5-4
+Added Pin To Net: NetName=3V3BUS Pin=U6-3
+Added Pin To Net: NetName=GND Pin=U6-4
+Added Pin To Net: NetName=3V3BUS Pin=U8-3
+Added Pin To Net: NetName=GND Pin=U8-4
+Added Pin To Net: NetName=3V3BUS Pin=U?-1
+Added Pin To Net: NetName=GND Pin=U?-1
+Added Pin To Net: NetName=GND Pin=U?-1
+Added Pin To Net: NetName=GND Pin=U?-1
+Added Pin To Net: NetName=NetU1_6 Pin=U?-1
+Added Pin To Net: NetName=GND Pin=U?-2
+Added Pin To Net: NetName=NetC5_1 Pin=U?-2
+Change Net Name : Old Net Name=NetU5_2 New Net Name=NetU7_2
+Change Net Name : Old Net Name=NetU5_3 New Net Name=NetU7_3
+Change Net Name : Old Net Name=NetU5_4 New Net Name=NetU7_4
+Change Net Name : Old Net Name=NetU5_6 New Net Name=NetU7_6
+Change Net Name : Old Net Name=NetU5_10 New Net Name=NetU7_10
+Change Net Name : Old Net Name=NetU5_11 New Net Name=NetU7_11
+Change Net Name : Old Net Name=NetU5_12 New Net Name=NetU7_12
+Change Net Name : Old Net Name=NetU5_13 New Net Name=NetU7_13
+Change Net Name : Old Net Name=NetU5_14 New Net Name=NetU7_14
+Change Net Name : Old Net Name=NetU5_15 New Net Name=NetU7_15
+Change Net Name : Old Net Name=NetU5_19 New Net Name=NetU7_19
+Change Net Name : Old Net Name=NetU5_23 New Net Name=NetU7_23
+Change Net Name : Old Net Name=NetU5_24 New Net Name=NetU7_24
+Change Net Name : Old Net Name=NetU5_26 New Net Name=NetU7_26
+Change Net Name : Old Net Name=NetU5_27 New Net Name=NetU7_27
+Change Net Name : Old Net Name=NetU5_28 New Net Name=NetU7_28
+Added Pin To Net: NetName=NetQ1_1 Pin=Q1-1
+Added Pin To Net: NetName=NetQ1_1 Pin=U7-20
+Added Net: Name=NetQ1_1
+Added Pin To Net: NetName=NetQ1_2 Pin=Q1-2
+Added Pin To Net: NetName=NetQ1_2 Pin=U5-1
+Added Net: Name=NetQ1_2
+Added Pin To Net: NetName=NetQ1_3 Pin=Q1-3
+Added Pin To Net: NetName=NetQ1_3 Pin=U7-30
+Added Net: Name=NetQ1_3
+Added Pin To Net: NetName=NetQ2_1 Pin=Q2-1
+Added Pin To Net: NetName=NetQ2_1 Pin=U7-21
+Added Net: Name=NetQ2_1
+Added Pin To Net: NetName=NetQ2_2 Pin=Q2-2
+Added Pin To Net: NetName=NetQ2_2 Pin=U6-1
+Added Net: Name=NetQ2_2
+Added Pin To Net: NetName=NetQ2_3 Pin=Q2-3
+Added Pin To Net: NetName=NetQ2_3 Pin=U7-9
+Added Net: Name=NetQ2_3
+Added Pin To Net: NetName=NetQ3_1 Pin=Q3-1
+Added Pin To Net: NetName=NetQ3_1 Pin=U7-22
+Added Net: Name=NetQ3_1
+Added Pin To Net: NetName=NetQ3_2 Pin=Q3-2
+Added Pin To Net: NetName=NetQ3_2 Pin=U8-1
+Added Net: Name=NetQ3_2
+Added Pin To Net: NetName=NetQ3_3 Pin=Q3-3
+Added Pin To Net: NetName=NetQ3_3 Pin=U7-7
+Added Net: Name=NetQ3_3
+Added Pin To Net: NetName=NetQ4_1 Pin=Q4-1
+Added Pin To Net: NetName=NetQ4_1 Pin=U7-25
+Added Net: Name=NetQ4_1
+Added Pin To Net: NetName=NetQ4_2 Pin=Q4-2
+Added Pin To Net: NetName=NetQ4_2 Pin=U?-3
+Added Net: Name=NetQ4_2
+Added Pin To Net: NetName=NetQ4_3 Pin=Q4-3
+Added Pin To Net: NetName=NetQ4_3 Pin=U?-2
+Added Net: Name=NetQ4_3
+Added Pin To Net: NetName=NetU5_2 Pin=U5-2
+Added Pin To Net: NetName=NetU5_2 Pin=U7-29
+Added Net: Name=NetU5_2
+Added Pin To Net: NetName=NetU6_2 Pin=U6-2
+Added Pin To Net: NetName=NetU6_2 Pin=U7-8
+Added Net: Name=NetU6_2
+Added Pin To Net: NetName=NetU?_2 Pin=U?-2
+Added Pin To Net: NetName=NetU?_2 Pin=U?-2
+Added Net: Name=NetU?_2
+Added Member To Class: ClassName=Sheet1 Member=Component Q1 PMOS
+Added Member To Class: ClassName=Sheet1 Member=Component Q2 PMOS
+Added Member To Class: ClassName=Sheet1 Member=Component Q3 PMOS
+Added Member To Class: ClassName=Sheet1 Member=Component Q4 PMOS
+Added Member To Class: ClassName=Sheet1 Member=Component U7 STM32L071KBT6
+Added Member To Class: ClassName=Sheet1 Member=Component U8 ADC_CONN
+Added Member To Class: ClassName=Sheet1 Member=Component U9 FSM100
+Added Member To Class: ClassName=Sheet1 Member=Component U? BATT_CONN
+Added Member To Class: ClassName=Sheet1 Member=Component U? nRF24L01P
+Added Member To Class: ClassName=Sheet1 Member=Component U? VCC_CONN
+Added Member To Class: ClassName=Sheet1 Member=Component U? DUO_DIODE
+Added Member To Class: ClassName=Sheet1 Member=Component U? PETLIER_TEG
+Added Member To Class: ClassName=Sheet1 Member=Component U? PETLIER_TEC
