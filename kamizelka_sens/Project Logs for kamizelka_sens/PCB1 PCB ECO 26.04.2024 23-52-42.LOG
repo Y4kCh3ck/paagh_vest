@@ -1,0 +1,21 @@
+Added Component: Designator=U8(nRF24L01P)
+Added Pin To Net: NetName=NetU8_1 Pin=U8-1
+Added Pin To Net: NetName=NetU8_3 Pin=U8-3
+Added Pin To Net: NetName=NetU8_4 Pin=U8-4
+Added Pin To Net: NetName=NetU8_5 Pin=U8-5
+Added Pin To Net: NetName=NetU8_6 Pin=U8-6
+Added Pin To Net: NetName=NRF_VDD Pin=U8-7
+Added Pin To Net: NetName=GND Pin=U8-8
+Added Pin To Net: NetName=NetC15_1 Pin=U8-9
+Added Pin To Net: NetName=NetC16_1 Pin=U8-10
+Added Pin To Net: NetName=NetC20_1 Pin=U8-11
+Added Pin To Net: NetName=NetL2_2 Pin=U8-12
+Added Pin To Net: NetName=NetL1_1 Pin=U8-13
+Added Pin To Net: NetName=GND Pin=U8-14
+Added Pin To Net: NetName=NRF_VDD Pin=U8-15
+Added Pin To Net: NetName=NetR12_2 Pin=U8-16
+Added Pin To Net: NetName=GND Pin=U8-17
+Added Pin To Net: NetName=NRF_VDD Pin=U8-18
+Added Pin To Net: NetName=NetC12_1 Pin=U8-19
+Added Pin To Net: NetName=GND Pin=U8-20
+Added Member To Class: ClassName=Sheet1 Member=Component U8 nRF24L01P

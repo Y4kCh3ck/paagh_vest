@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=NetQ1_2 Pin=U7-1
+Removed Pin From Net: NetName=GND Pin=U7-4
+Removed Pin From Net: NetName=NetU7_2 Pin=U12-29
+Removed Pin From Net: NetName=NetU7_3 Pin=U12-30
+Added Pin To Net: NetName=GND Pin=U7-1
+Added Pin To Net: NetName=NetQ1_2 Pin=U7-4
+Added Pin To Net: NetName=NetU7_3 Pin=U12-29
+Added Pin To Net: NetName=NetU7_2 Pin=U12-30
+Added Member To Class: ClassName=Sheet1 Member=Component U7 I2C_CONN
+Added Member To Class: ClassName=Sheet1 Member=Component U8 nRF24L01P
+Added Member To Class: ClassName=Sheet1 Member=Component U12 STM32L071KBT6

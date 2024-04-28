@@ -1,0 +1,16 @@
+Add Pin To Net: Unknown Pin: Pin U2-2
+Add Pin To Net: Unknown Pin: Pin U2-3
+Add Pin To Net: Unknown Pin: Pin U2-4
+Change Net Name : Old Net Name=NetC2_1 New Net Name=SHIELD
+Change Net Name : Old Net Name=NetJ1_A5 New Net Name=CC1
+Change Net Name : Old Net Name=NetJ1_B5 New Net Name=CC2
+Added Member To Class: ClassName=Sheet1 Member=Component R12 22k
+Added Member To Class: ClassName=Sheet1 Member=Component R13 2k2
+Added Member To Class: ClassName=Sheet1 Member=Component R14 10k
+Added Member To Class: ClassName=Sheet1 Member=Component U5 FSM100
+Added Member To Class: ClassName=Sheet1 Member=Component U7 I2C_CONN
+Added Member To Class: ClassName=Sheet1 Member=Component U8 nRF24L01P
+Added Member To Class: ClassName=Sheet1 Member=Component U10 GPS_CONN
+Added Member To Class: ClassName=Sheet1 Member=Component U12 STM32L071KBT6
+Added Member To Class: ClassName=Sheet1 Member=Component U14 OSCILATOR
+Added Member To Class: ClassName=Sheet1 Member=Component U15 ADC_CONN

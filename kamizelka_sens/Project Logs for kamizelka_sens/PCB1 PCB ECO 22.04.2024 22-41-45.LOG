@@ -1,0 +1,6 @@
+Added Component: Designator=U?(ADP160)
+Added Pin To Net: NetName=NetU1_6 Pin=U?-1
+Added Pin To Net: NetName=GND Pin=U?-2
+Added Pin To Net: NetName=NetU1_6 Pin=U?-3
+Added Pin To Net: NetName=3V3BUS Pin=U?-4
+Added Member To Class: ClassName=Sheet1 Member=Component U? ADP160

@@ -1,0 +1,5 @@
+Change Component Designator: OldDesignator=D4 NewDesignator=U4
+Add Pin To Net: Unknown Pin: Pin U2-2
+Add Pin To Net: Unknown Pin: Pin U2-3
+Add Pin To Net: Unknown Pin: Pin U2-4
+Added Member To Class: ClassName=Sheet1 Member=Component U12 STM32L071KBT6

@@ -1,0 +1,3 @@
+Change Footprint: Cannot match pads with new footprint in component :U8 Footprint:nRF24L01P
+Added Pin To Net: NetName=NetU12_29 Pin=U12-29
+Added Net: Name=NetU12_29

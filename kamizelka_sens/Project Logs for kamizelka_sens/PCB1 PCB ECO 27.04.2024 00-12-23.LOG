@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=3V3BUS Pin=U8-7
+Removed Pin From Net: NetName=3V3BUS Pin=U8-15
+Added Pin To Net: NetName=NRF_VDD Pin=U8-7
+Added Pin To Net: NetName=NRF_VDD Pin=U8-15
+Added Net: Name=NRF_VDD
