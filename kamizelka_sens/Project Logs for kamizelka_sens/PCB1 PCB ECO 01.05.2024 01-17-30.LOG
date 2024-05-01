@@ -1,0 +1,27 @@
+Change Component Footprint: Designator=C1 Old Footprint=0603 New Footprint=0402
+Change Component Footprint: Designator=C2 Old Footprint=0603 New Footprint=0402
+Change Component Footprint: Designator=C3 Old Footprint=0603 New Footprint=0402
+Change Component Footprint: Designator=C4 Old Footprint=0603 New Footprint=0402
+Change Component Footprint: Designator=C5 Old Footprint=0603 New Footprint=0402
+Change Component Footprint: Designator=C6 Old Footprint=0603 New Footprint=0402
+Change Component Footprint: Designator=C7 Old Footprint=0603 New Footprint=0402
+Change Component Footprint: Designator=C8 Old Footprint=0603 New Footprint=0402
+Change Component Footprint: Designator=C13 Old Footprint=0603 New Footprint=0402
+Change Component Footprint: Designator=C15 Old Footprint=0603 New Footprint=0402
+Change Component Footprint: Designator=C16 Old Footprint=0603 New Footprint=0402
+Change Component Footprint: Designator=C17 Old Footprint=0603 New Footprint=0402
+Change Component Footprint: Designator=C18 Old Footprint=0603 New Footprint=0402
+Change Component Footprint: Designator=C20 Old Footprint=0603 New Footprint=0402
+Change Component Footprint: Designator=C21 Old Footprint=0603 New Footprint=0402
+Change Component Designator: OldDesignator=D4 NewDesignator=U4
+Change Component Designator: OldDesignator=J6 NewDesignator=U6
+Change Component Designator: OldDesignator=J7 NewDesignator=U7
+Change Component Designator: OldDesignator=J9 NewDesignator=U9
+Change Component Designator: OldDesignator=J10 NewDesignator=U10
+Change Component Designator: OldDesignator=J11 NewDesignator=U11
+Change Component Designator: OldDesignator=J15 NewDesignator=U15
+Change Component Designator: OldDesignator=J16 NewDesignator=U16
+Change Component Designator: OldDesignator=J17 NewDesignator=U17
+Change Component Designator: OldDesignator=S5 NewDesignator=U5
+Change Component Designator: OldDesignator=S13 NewDesignator=U13
+Added Member To Class: ClassName=Sheet1 Member=Component D2 DUO_DIODE

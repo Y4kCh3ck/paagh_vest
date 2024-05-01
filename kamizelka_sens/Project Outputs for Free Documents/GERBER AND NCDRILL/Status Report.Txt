@@ -1,0 +1,13 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : PCB Document [PCB1.PcbDoc]
+   Generated File[KAMIZELKASENS-RoundHoles.TXT]
+   Generated File[KAMIZELKASENS-SlotHoles.TXT]
+   Generated File[KAMIZELKASENS.LDP]
+   Generated File[KAMIZELKASENS.DRR]
+
+
+Files Generated   : 4
+Documents Printed : 0
+
+Finished Output Generation At 02:31:16 On 01.05.2024

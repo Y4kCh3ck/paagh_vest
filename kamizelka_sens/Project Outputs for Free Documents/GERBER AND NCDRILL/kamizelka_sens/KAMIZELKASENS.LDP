@@ -1,0 +1,3 @@
+Layer Pairs Export File for PCB: C:\Users\Public\Documents\Altium\kamizelka_sens\kamizelka_sens\PCB1.PcbDoc
+LayersSetName=Top_Bot_Thru_Holes|DrillFile=kamizelkasens-roundholes.txt|DrillLayers=gtl,g1,g2,gbl
+LayersSetName=Top_Bot_Slot_Holes|DrillFile=kamizelkasens-slotholes.txt|DrillLayers=gtl,g1,g2,gbl
