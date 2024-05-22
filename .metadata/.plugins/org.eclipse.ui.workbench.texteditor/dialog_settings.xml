@@ -6,8 +6,10 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="Message"/>
+		<item key="selection" value="USART2_IRQHandler"/>
 		<list key="findhistory">
+			<item value="USART2_IRQHandler"/>
+			<item value="nvic"/>
 			<item value="Message"/>
 			<item value="NEO6_ParseGPGSV"/>
 			<item value="AHT20_READ_ADDR"/>
@@ -17,6 +19,7 @@
 			<item value="hi2c1"/>
 		</list>
 		<list key="replacehistory">
+			<item value=""/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
