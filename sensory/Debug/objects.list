@@ -5,6 +5,7 @@
 "./Core/Src/gpio.o"
 "./Core/Src/i2c.o"
 "./Core/Src/main.o"
+"./Core/Src/nRF24.o"
 "./Core/Src/spi.o"
 "./Core/Src/stm32l0xx_hal_msp.o"
 "./Core/Src/stm32l0xx_it.o"

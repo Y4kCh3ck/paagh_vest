@@ -65,6 +65,12 @@ void Error_Handler(void);
 #define USART_RX_GPIO_Port GPIOA
 #define LD2_Pin GPIO_PIN_5
 #define LD2_GPIO_Port GPIOA
+#define NRF24_CSN_Pin GPIO_PIN_6
+#define NRF24_CSN_GPIO_Port GPIOC
+#define NRF24_CE_Pin GPIO_PIN_7
+#define NRF24_CE_GPIO_Port GPIOC
+#define NRF24_IRQ_Pin GPIO_PIN_8
+#define NRF24_IRQ_GPIO_Port GPIOC
 #define TMS_Pin GPIO_PIN_13
 #define TMS_GPIO_Port GPIOA
 #define TCK_Pin GPIO_PIN_14
