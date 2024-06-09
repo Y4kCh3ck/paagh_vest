@@ -1,0 +1,29 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model SLW-826947-5A-RA-D
+#/18590272/1365714/2.50/8/4/Switch
+DEF SLW-826947-5A-RA-D S 0 30 Y Y 1 F N
+F0 "S" 850 700 50 H V L CNN
+F1 "SLW-826947-5A-RA-D" 850 600 50 H V L CNN
+F2 "SLW8269475ARAD" 850 500 50 H I L CNN
+F3 "https://www.cuidevices.com/product/resource/slw-826947-5a-ra-d.pdf" 850 400 50 H I L CNN
+F4 "Slide Switches 8.2 x 6.9 x 4.7 mm, 5 mm Raised Slide Actuator, Right-Angle, Through Hole" 850 300 50 H I L CNN "Description"
+F5 "4.9" 850 200 50 H I L CNN "Height"
+F6 "179-SLW-826947-5ARAD" 850 100 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/CUI-Devices/SLW-826947-5A-RA-D?qs=1Kr7Jg1SGW8v9IaaOZIpLQ%3D%3D" 850 0 50 H I L CNN "Mouser Price/Stock"
+F8 "CUI Devices" 850 -100 50 H I L CNN "Manufacturer_Name"
+F9 "SLW-826947-5A-RA-D" 850 -200 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X NC_1 1 400 -700 200 U 50 50 0 0 P
+X COM_1 2 500 -700 200 U 50 50 0 0 P
+X NO_1 3 600 -700 200 U 50 50 0 0 P
+X NC_2 4 400 700 200 D 50 50 0 0 P
+X COM_2 5 500 700 200 D 50 50 0 0 P
+X NO_2 6 600 700 200 D 50 50 0 0 P
+X MH1 MH1 0 0 200 R 50 50 0 0 P
+X MH2 MH2 1000 0 200 L 50 50 0 0 P
+P 5 0 1 6 200 500 800 500 800 -500 200 -500 200 500 N
+ENDDRAW
+ENDDEF
+#
+#End Library

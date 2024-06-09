@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP FSM100
+D Body Features: Case Material Polyamide | Actuator Force 160 G | Cover Material Polyester | Actuator Profile Flush | Actuator Force 5.64 OZ | Actuator Color Black | Actuator Material Polyester | Case Color Black | Product Orientation Vertical | Configuration Features: Switch Feedback Type Tactile | Number of Actuators Single | Operating Function NO | Configuration (Pole-Throw) Single Pole - Single Throw | Support Bracket Without | ESD Grounding Terminal Without | Ganged With | Contact Features: Contact Curre
+K
+F https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1308111-1_SWITCHES_CORE_PROGRAM_CATALOG&DocType=Catalog%20Section&DocLang=English&PartCntxt=1437565-2&DocFormat=pdf
+$ENDCMP
+#
+#End Doc Library
