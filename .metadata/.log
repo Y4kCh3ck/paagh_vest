@@ -1715,3 +1715,18 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\kuba\STM32Cub
 
 !ENTRY org.eclipse.cdt.core 1 0 2024-06-08 19:10:46.780
 !MESSAGE Indexed 'sensory_v2' (20 sources, 82 headers) in 3.06 sec: 4,399 declarations; 24,744 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0069%)
+!SESSION 2024-06-09 15:11:29.429 -----------------------------------------------
+eclipse.buildId=Version 1.14.1
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pl_PL
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-06-09 15:12:08.976
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-06-09 15:12:08.983
+!MESSAGE Log4j2 initialized with config file C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-06-09 15:12:22.872
+!MESSAGE Started RMI Server, listening on port 41337
