@@ -19,13 +19,22 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "adc.h"
+#include "dma.h"
 #include "i2c.h"
 #include "usart.h"
 #include "spi.h"
+#include "tim.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+
+#include <string.h>
+#include <stdio.h>
+#include <stdbool.h>
+#include <AHT20.h>
+#include <NEO6.h>
+#include <nRF24.h>
 
 /* USER CODE END Includes */
 
@@ -59,6 +68,35 @@ void SystemClock_Config(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
+NEO6_State GpsState;
+
+uint8_t Message[64];
+uint8_t MessageLength;
+bool ADC_EN = false;
+bool GPS_EN = false;
+bool I2C_EN = false;
+
+volatile uint8_t Uart2ReceivedChar;
+volatile float Temp = 0.0f;
+volatile float Hum = 0.0f;
+volatile uint32_t HeartBeatValue;
+
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+{
+  if(huart == GpsState.neo6_huart)
+  {
+    NEO6_ReceiveUartChar(&GpsState);
+  }
+}
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+  if (htim == &htim6) {
+    AHT20_Read(&Temp, &Hum); // reads AHT20 measurements every second
+    printf("Temperature = %.1fC\n Hum = %.1f\n", Temp, Hum);
+  }
+}
+
 /* USER CODE END 0 */
 
 /**
@@ -69,6 +107,8 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
+
+
 
   /* USER CODE END 1 */
 
@@ -90,16 +130,25 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_DMA_Init();
   MX_ADC_Init();
   MX_SPI1_Init();
   MX_I2C1_Init();
   MX_LPUART1_UART_Init();
+  MX_TIM6_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  AHT20_Init();
+  NEO6_Init(&GpsState, &hlpuart1);
+  HAL_TIM_Base_Start_IT(&htim6);
+
+  uint32_t Timer = HAL_GetTick();
+  HAL_ADCEx_Calibration_Start(&hadc, ADC_SINGLE_ENDED);
+  HAL_ADC_Start_DMA(&hadc, (uint32_t*)&HeartBeatValue, 2);
   while (1)
   {
     /* USER CODE END WHILE */

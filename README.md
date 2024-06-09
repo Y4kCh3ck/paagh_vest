@@ -1,4 +1,4 @@
-STM32 Nucleo L053R8 software in STM32CubeIDE for vest project
+STM32L071KBTx processor software in STM32CubeMX for vest project
 
 How to build project on windows:
 

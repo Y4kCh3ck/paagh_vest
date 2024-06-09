@@ -57,6 +57,8 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define NRF24_CSN_Pin GPIO_PIN_1
+#define NRF24_CSN_GPIO_Port GPIOA
 #define USER_LED_Pin GPIO_PIN_8
 #define USER_LED_GPIO_Port GPIOA
 #define USER_BUTTON_Pin GPIO_PIN_9
@@ -67,6 +69,8 @@ void Error_Handler(void);
 #define GPS_EN_GPIO_Port GPIOA
 #define ADC_EN_Pin GPIO_PIN_12
 #define ADC_EN_GPIO_Port GPIOA
+#define NRF24_CE_Pin GPIO_PIN_4
+#define NRF24_CE_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

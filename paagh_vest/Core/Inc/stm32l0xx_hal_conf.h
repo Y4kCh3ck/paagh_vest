@@ -51,7 +51,7 @@
 /*#define HAL_RNG_MODULE_ENABLED   */
 /*#define HAL_RTC_MODULE_ENABLED   */
 #define HAL_SPI_MODULE_ENABLED
-/*#define HAL_TIM_MODULE_ENABLED   */
+#define HAL_TIM_MODULE_ENABLED
 /*#define HAL_TSC_MODULE_ENABLED   */
 #define HAL_UART_MODULE_ENABLED
 /*#define HAL_USART_MODULE_ENABLED   */
@@ -160,7 +160,7 @@
   *        for possible callback identifiers defined in HAL_PPP_CallbackIDTypeDef
   *        for each PPP peripheral).
   */
-#define USE_HAL_ADC_REGISTER_CALLBACKS        0U
+#define USE_HAL_ADC_REGISTER_CALLBACKS        1U
 #define USE_HAL_COMP_REGISTER_CALLBACKS       0U
 #define USE_HAL_DAC_REGISTER_CALLBACKS        0U
 #define USE_HAL_I2C_REGISTER_CALLBACKS        0U

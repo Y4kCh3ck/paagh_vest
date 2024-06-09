@@ -38,6 +38,10 @@ add_custom_command(
 # add to build
 add_custom_target(hex ALL DEPENDS ${HEX_FILE})
 
+# how to build:
+# 	cmake -B build -G "Ninja"
+#	cmake --build build -t hex
+
 ########################################################################
 
 # Define the build type
@@ -67,6 +71,9 @@ add_executable(${CMAKE_PROJECT_NAME})
 # Add STM32CubeMX generated sources
 add_subdirectory(cmake/stm32cubemx)
 
+# Add stm32cubemxUserSrc generated sources
+# add_subdirectory(cmake/stm32cubemxUserSrc)
+
 # Link directories setup
 target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined library search paths
@@ -75,11 +82,15 @@ target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
 # Add sources to executable
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user sources here
+	Core/Src/AHT20.c
+	Core/Src/NEO6.c
+	Core/Src/nRF24.c
 )
 
 # Add include paths
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined include paths
+	Core/Inc
 )
 
 # Add project symbols (macros)
@@ -90,6 +101,7 @@ target_compile_definitions(${CMAKE_PROJECT_NAME} PRIVATE
 # Add linked libraries
 target_link_libraries(${CMAKE_PROJECT_NAME}
     stm32cubemx
+	# stm32cubemxUserSrc
 
     # Add user defined libraries
 )
