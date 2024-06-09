@@ -85,6 +85,7 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
 	Core/Src/AHT20.c
 	Core/Src/NEO6.c
 	Core/Src/nRF24.c
+    # Core/Src/debug.c
 )
 
 # Add include paths

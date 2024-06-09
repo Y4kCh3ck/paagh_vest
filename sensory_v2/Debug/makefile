@@ -54,8 +54,7 @@ sensory_v2.list \
 
 
 # All Target
-all:
-	+@$(MAKE) --no-print-directory pre-build && $(MAKE) --no-print-directory main-build
+all: main-build
 
 # Main-build Target
 main-build: sensory_v2.elf secondary-outputs
@@ -81,10 +80,6 @@ clean:
 	-$(RM) default.size.stdout sensory_v2.elf sensory_v2.list sensory_v2.map
 	-@echo ' '
 
-pre-build:
-	arm-none-eabi-objcopy -O ihex sensory_v2.elf sensory_v2.hex
-	-@echo ' '
-
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)
 
 fail-specified-linker-script-missing:
@@ -94,6 +89,6 @@ fail-specified-linker-script-missing:
 warn-no-linker-script-specified:
 	@echo 'Warning: No linker script specified. Check the linker settings in the build configuration.'
 
-.PHONY: all clean dependents main-build fail-specified-linker-script-missing warn-no-linker-script-specified pre-build
+.PHONY: all clean dependents main-build fail-specified-linker-script-missing warn-no-linker-script-specified
 
 -include ../makefile.targets

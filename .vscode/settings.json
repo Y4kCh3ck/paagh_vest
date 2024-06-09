@@ -1,6 +1,17 @@
 {
     "files.associations": {
         "dma.h": "c",
-        "aht20.h": "c"
+        "aht20.h": "c",
+        "string.h": "c",
+        "cstdlib": "c",
+        "cwchar": "c",
+        "vadefs.h": "c",
+        "yvals_core.h": "c",
+        "vcruntime.h": "c",
+        "ctime": "c",
+        "cstring": "c",
+        "cstdio": "c",
+        "stdarg.h": "c",
+        "stdint.h": "c"
     }
 }
