@@ -7,7 +7,7 @@ hardware/**/*_autosave*
 hardware/**/\#auto_saved_files\#
 
 # CMake files
-src/build
+src/**/build
 
 # Eclipse files
 src/**/.metadata/
