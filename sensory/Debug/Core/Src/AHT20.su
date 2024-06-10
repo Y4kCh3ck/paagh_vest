@@ -1,6 +1,0 @@
-../Core/Src/AHT20.c:10:19:AHT20_Master_Transmit	40	static
-../Core/Src/AHT20.c:18:19:AHT20_Master_Receive	40	static
-../Core/Src/AHT20.c:26:19:AHT20_Write_Reg	48	static
-../Core/Src/AHT20.c:34:9:AHT20_Read_Reg	48	static
-../Core/Src/AHT20.c:42:6:AHT20_Init	16	static
-../Core/Src/AHT20.c:66:6:AHT20_Read	40	static

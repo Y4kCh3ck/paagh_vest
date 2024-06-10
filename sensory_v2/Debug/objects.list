@@ -6,6 +6,8 @@
 "./Core/Src/i2c.o"
 "./Core/Src/main.o"
 "./Core/Src/nRF24.o"
+"./Core/Src/pv_app.o"
+"./Core/Src/pv_pm.o"
 "./Core/Src/spi.o"
 "./Core/Src/stm32l0xx_hal_msp.o"
 "./Core/Src/stm32l0xx_it.o"

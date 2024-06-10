@@ -80,6 +80,12 @@ volatile float Temp = 0.0f;
 volatile float Hum = 0.0f;
 volatile uint32_t HeartBeatValue;
 
+volatile uint8_t nrf24_rx_flag, nrf24_tx_flag, nrf24_mr_flag;
+uint8_t Nrf24_Message[NRF24_PAYLOAD_SIZE];
+uint8_t Message[32];
+uint8_t MessageLength;
+
+
 int __io_putchar(int ch) // to pc
 {
   if (ch == '\n') {
@@ -155,6 +161,14 @@ int main(void)
   AHT20_Init();
   NEO6_Init(&GpsState, &huart1);
   HAL_TIM_Base_Start_IT(&htim6);
+
+
+  // RECEIVER
+  nRF24_Init(&hspi1);
+  nRF24_SetRXAddress(0, "Odb");
+  nRF24_SetTXAddress("Nad");
+  nRF24_RX_Mode();
+
 
   uint32_t Timer = HAL_GetTick();
   HAL_ADCEx_Calibration_Start(&hadc, ADC_SINGLE_ENDED);

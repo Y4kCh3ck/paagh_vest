@@ -35,6 +35,8 @@
 #include <AHT20.h>
 #include <NEO6.h>
 #include <nRF24.h>
+#include "pv_app.h"
+#include "pv_pm.h"
 // #include <debug.h>
 
 /* USER CODE END Includes */
@@ -73,8 +75,6 @@ void SystemClock_Config(void);
 
 NEO6_State GpsState;
 
-uint8_t Message[64];
-uint8_t MessageLength;
 bool ADC_EN = false;
 bool GPS_EN = false;
 bool I2C_EN = false;
@@ -83,6 +83,11 @@ volatile uint8_t Uart2ReceivedChar;
 volatile float Temp = 0.0f;
 volatile float Hum = 0.0f;
 volatile uint32_t HeartBeatValue;
+
+volatile uint8_t nrf24_rx_flag, nrf24_tx_flag, nrf24_mr_flag;
+uint8_t Nrf24_Message[NRF24_PAYLOAD_SIZE];
+uint8_t Message[32];
+uint8_t MessageLength;
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
@@ -99,6 +104,8 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
     printf("Temperature = %.1fC\n Hum = %.1f\n", Temp, Hum);
   }
 }
+
+
 
 /* USER CODE END 0 */
 
@@ -148,6 +155,14 @@ int main(void)
   NEO6_Init(&GpsState, &hlpuart1);
   HAL_TIM_Base_Start_IT(&htim6);
 
+
+  // TRANSMITER
+  nRF24_Init(&hspi1);
+  nRF24_SetRXAddress(0, "Nad");
+  nRF24_SetTXAddress("Odb");
+  nRF24_TX_Mode();
+
+
 //  uint32_t Timer = HAL_GetTick();
 //  HAL_ADCEx_Calibration_Start(&hadc, ADC_SINGLE_ENDED);
 //  HAL_ADC_Start_DMA(&hadc, (uint32_t*)&HeartBeatValue, 2);
@@ -156,11 +171,24 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    uint8_t message[] = "UART over ST-Link \n\r";
-	  HAL_UART_Transmit(&hlpuart1, message, sizeof(message)-1, 100);
 
-	  // print("Semihosting test \n");
-	  HAL_Delay(2000);
+	  pv_run();
+
+//	  for(i=0; i<10; i++)
+//	  {
+//		  MessageLength = sprintf(Message, "%d", i );
+//		  nRF24_WriteTXPayload(Message);
+//		  HAL_Delay(1);
+//		  nRF24_WaitTX();
+//		  HAL_Delay(1000);
+//	  }
+
+
+//    uint8_t message[] = "UART over ST-Link \n\r";
+//    HAL_UART_Transmit(&hlpuart1, message, sizeof(message)-1, 100);
+//
+//    print("Semihosting test \n");
+//    HAL_Delay(2000);
   }
   /* USER CODE END 3 */
 }
