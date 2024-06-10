@@ -16,3 +16,4 @@ src/**/.settings/
 src/**/Debug/
 src/**/*.launch
 
+.metadata
