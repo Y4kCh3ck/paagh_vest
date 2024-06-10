@@ -15,5 +15,10 @@ src/**/RemoteSystemsTempFiles/
 src/**/.settings/
 src/**/Debug/
 src/**/*.launch
+**/.metadata
 
-.metadata
+# VSCode
+**/.vscode/
+**/STM32-for-VSCode.config.yaml
+**/STM32Make.make
+**/openocd.cfg

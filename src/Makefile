@@ -36,6 +36,8 @@ BUILD_DIR = build
 ######################################
 # C sources
 C_SOURCES =  \
+App/Src/pv_app.c \
+App/Src/pv_pm.c \
 Core/Src/main.c \
 Core/Src/gpio.c \
 Core/Src/adc.c \
@@ -129,6 +131,7 @@ AS_INCLUDES =
 
 # C includes
 C_INCLUDES =  \
+-IApp/Inc \
 -ICore/Inc \
 -IDrivers/STM32L0xx_HAL_Driver/Inc \
 -IDrivers/STM32L0xx_HAL_Driver/Inc/Legacy \
