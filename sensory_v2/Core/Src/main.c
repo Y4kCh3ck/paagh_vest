@@ -37,6 +37,7 @@
 #include <nRF24.h>
 #include "pv_app.h"
 #include "pv_pm.h"
+
 // #include <debug.h>
 
 /* USER CODE END Includes */
@@ -105,7 +106,17 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
   }
 }
 
-
+//int _write(int file, char *ptr, int len)
+//{
+//  (void)file;
+//  int DataIdx;
+//
+//  for (DataIdx = 0; DataIdx < len; DataIdx++)
+//  {
+//    ITM_SendChar(*ptr++);
+//  }
+//  return len;
+//}
 
 /* USER CODE END 0 */
 

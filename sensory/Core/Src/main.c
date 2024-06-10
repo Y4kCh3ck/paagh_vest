@@ -34,6 +34,7 @@
 #include <stdbool.h>
 #include <AHT20.h>
 #include <NEO6.h>
+#include <nRF24.h>
 
 /* USER CODE END Includes */
 
@@ -69,8 +70,6 @@ void SystemClock_Config(void);
 
 NEO6_State GpsState;
 
-uint8_t Message[64];
-uint8_t MessageLength;
 bool ADC_EN = false;
 bool GPS_EN = false;
 bool I2C_EN = false;
