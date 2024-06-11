@@ -10,6 +10,8 @@
 
 #include "pv_pm.h"
 #include "pv_sensors.h"
+#include "pv_button.h"
+#include <stdbool.h>
 
 // Typedefs
 typedef enum {
@@ -22,9 +24,6 @@ typedef enum {
     NUM_STATES,
 } state_t;
 
-typedef struct instance_data{
-    size_t* additional_data;
-} instance_data_t;
 
 typedef state_t state_func_t( instance_data_t *data );
 
@@ -58,9 +57,7 @@ state_t do_state_standby( instance_data_t *data ) {
     
     int humidity, temperature;
 
-    while( 1 ) {
-        if (flaga = 1)
-        {
+    while( 1 ) {        
         humidity = get_humidity();
         temperature = get_temperature();
 
@@ -87,6 +84,18 @@ state_t do_state_emergency( instance_data_t *data ) {
     // Activate Petlier
     // Try to send SOS over NRF
     // If button held goto STANDBY
+
+    // HAL_GPIO_WritePin(HEATER_EN_GPIO_Port, HEATER_EN_Pin, GPIO_PIN_SET);
+
+    //if it is possible, blinking should be done with interrupt from timer    
+    // HAL_Delay(200);
+    // HAL_GPIO_TogglePin(USER_LED_GPIO_Port, USER_LED_Pin);
+
+    read_button(RETURN_TO_STANDBY);
+    if (data->buttonPressed){
+        data->buttonPressed = false;
+        return STATE_STANDBY;
+    }
 
     printf("state emergency\n");
     return STATE_INIT;
