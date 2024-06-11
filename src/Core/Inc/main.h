@@ -69,6 +69,8 @@ void Error_Handler(void);
 #define GPS_EN_GPIO_Port GPIOA
 #define ADC_EN_Pin GPIO_PIN_12
 #define ADC_EN_GPIO_Port GPIOA
+#define HEATER_EN_Pin GPIO_PIN_15
+#define HEATER_EN_GPIO_Port GPIOA
 #define NRF24_CE_Pin GPIO_PIN_4
 #define NRF24_CE_GPIO_Port GPIOB
 #define NRF24_IRQ_Pin GPIO_PIN_5
