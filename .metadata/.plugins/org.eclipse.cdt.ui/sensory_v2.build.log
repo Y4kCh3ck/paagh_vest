@@ -1,10 +1,10 @@
-23:49:24 **** Incremental Build of configuration Debug for project sensory_v2 ****
+20:14:31 **** Incremental Build of configuration Debug for project sensory_v2 ****
 make -j12 all 
 arm-none-eabi-size  sensory_v2.elf 
    text	   data	    bss	    dec	    hex	filename
-  34876	    112	   2952	  37940	   9434	sensory_v2.elf
+  34360	    112	   2984	  37456	   9250	sensory_v2.elf
 Finished building: default.size.stdout
  
 
-23:49:25 Build Finished. 0 errors, 0 warnings. (took 360ms)
+20:14:32 Build Finished. 0 errors, 0 warnings. (took 362ms)
 

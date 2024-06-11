@@ -92,17 +92,17 @@ uint8_t MessageLength;
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
-  if(huart == GpsState.neo6_huart)
-  {
-    NEO6_ReceiveUartChar(&GpsState);
-  }
+//  if(huart == GpsState.neo6_huart)
+//  {
+//    NEO6_ReceiveUartChar(&GpsState);
+//  }
 }
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
   if (htim == &htim6) {
     AHT20_Read(&Temp, &Hum); // reads AHT20 measurements every second
-    printf("Temperature = %.1fC\n Hum = %.1f\n", Temp, Hum);
+//    printf("Temperature = %.1fC\n Hum = %.1f\n", Temp, Hum);
   }
 }
 
@@ -164,7 +164,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   AHT20_Init();
   NEO6_Init(&GpsState, &hlpuart1);
-  HAL_TIM_Base_Start_IT(&htim6);
+//  HAL_TIM_Base_Start_IT(&htim6);
 
 
   // TRANSMITER
@@ -173,27 +173,33 @@ int main(void)
   nRF24_SetTXAddress("Odb");
   nRF24_TX_Mode();
 
-
 //  uint32_t Timer = HAL_GetTick();
 //  HAL_ADCEx_Calibration_Start(&hadc, ADC_SINGLE_ENDED);
 //  HAL_ADC_Start_DMA(&hadc, (uint32_t*)&HeartBeatValue, 2);
+
+//  uint8_t Mess1[10] = "test\r\n";
+//  uint8_t Mess2[20] = "bajojajo\r\n";
   while (1)
   {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
 
-	  pv_run();
 
-//	  for(i=0; i<10; i++)
-//	  {
-//		  MessageLength = sprintf(Message, "%d", i );
-//		  nRF24_WriteTXPayload(Message);
-//		  HAL_Delay(1);
-//		  nRF24_WaitTX();
-//		  HAL_Delay(1000);
-//	  }
+//	  HAL_UART_Transmit(&hlpuart1, "test\r\n", 6, 1000);
+//	  HAL_Delay(500);
+//	  HAL_UART_Transmit(&hlpuart1, "bajojajo\r\n", 10, 1000);
+//	  HAL_Delay(500);
+//	  pv_run();
 
+	  for(int i=0; i<10; i++)
+	  {
+		  MessageLength = sprintf(Message, "%d", i );
+		  nRF24_WriteTXPayload(Message, 1);
+		  HAL_Delay(1);
+		  nRF24_WaitTX();
+		  HAL_Delay(1000);
+	  }
 
 //    uint8_t message[] = "UART over ST-Link \n\r";
 //    HAL_UART_Transmit(&hlpuart1, message, sizeof(message)-1, 100);
