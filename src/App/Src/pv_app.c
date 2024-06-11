@@ -1,6 +1,14 @@
+/**************************************************
+ *	Filename: pv_app.c
+ *	Description: Source file for main paagh_vest application
+ **************************************************
+ */
+
 #include "pv_app.h"
 
 #include <stdio.h>
+
+#include "pv_pm.h"
 
 // Typedefs
 typedef enum {
@@ -24,7 +32,11 @@ typedef state_t state_func_t( instance_data_t *data );
 state_t do_state_init( instance_data_t *data ) {
     printf("state init\n");
 
-    // SENSOR INIT?
+    // Sensor init
+    hard_reset_gps();
+    hard_reset_adc_sens();
+    hard_reset_i2c_sens();
+    power_off_heater();
 
     return STATE_STANDBY;
 
