@@ -59,6 +59,8 @@ state_t do_state_standby( instance_data_t *data ) {
     int humidity, temperature;
 
     while( 1 ) {
+        if (flaga = 1)
+        {
         humidity = get_humidity();
         temperature = get_temperature();
 
