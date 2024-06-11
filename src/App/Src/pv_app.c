@@ -6,12 +6,8 @@
 
 #include "pv_app.h"
 
-#include <stdio.h>
-
 #include "pv_pm.h"
 #include "pv_sensors.h"
-#include "pv_button.h"
-#include <stdbool.h>
 
 // Typedefs
 typedef enum {
