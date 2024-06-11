@@ -17,7 +17,6 @@ jobs:
       uses: carlosperate/arm-none-eabi-gcc-action@v1
       with:
         release: 'latest'
-    - name: configure
-      run: cd src
-    - name: make
-      run: make
+    - name: Build
+      run: |
+        cd src && make
