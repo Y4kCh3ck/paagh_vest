@@ -38,6 +38,8 @@ BUILD_DIR = build
 C_SOURCES =  \
 App/Src/pv_app.c \
 App/Src/pv_pm.c \
+App/Src/pv_sensors.c \
+App/Src/AHT20.c \
 Core/Src/main.c \
 Core/Src/gpio.c \
 Core/Src/adc.c \
