@@ -29,28 +29,6 @@ target_sources(stm32cubemx INTERFACE
     ../../Core/Src/spi.c
     ../../Core/Src/stm32l0xx_it.c
     ../../Core/Src/stm32l0xx_hal_msp.c
-    ../../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc.c
-    ../../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc_ex.c
-    ../../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.c
-    ../../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.c
-    ../../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.c
-    ../../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.c
-    ../../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.c
-    ../../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.c
-    ../../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.c
-    ../../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.c
-    ../../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.c
-    ../../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.c
-    ../../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.c
-    ../../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.c
-    ../../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.c
-    ../../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_exti.c
-    ../../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.c
-    ../../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.c
-    ../../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.c
-    ../../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.c
-    ../../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.c
-    ../../Core/Src/system_stm32l0xx.c
     ../../Core/Src/sysmem.c
     ../../Core/Src/syscalls.c
     ../../startup_stm32l071xx.s
