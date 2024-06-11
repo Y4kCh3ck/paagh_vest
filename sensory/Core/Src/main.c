@@ -85,35 +85,9 @@ volatile uint8_t nrf24_rx_flag, nrf24_tx_flag, nrf24_mr_flag;
 uint8_t Nrf24_Message[NRF24_PAYLOAD_SIZE];
 uint8_t Message[32];
 uint8_t MessageLength;
+uint8_t Mess[80];
 
-
-int __io_putchar(int ch) // to pc
-{
-  if (ch == '\n') {
-    __io_putchar('\r');
-  }
-
-  HAL_UART_Transmit(&huart2, (uint8_t*)&ch, 1, HAL_MAX_DELAY);
-
-  return 1;
-}
-
-void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
-{
-  if(huart == GpsState.neo6_huart)
-  {
-    NEO6_ReceiveUartChar(&GpsState);
-  }
-}
-
-void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
-{
-  if (htim == &htim6) {
-    HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
-//    AHT20_Read(&Temp, &Hum); // reads AHT20 measurements every second
-//    printf("Temperature = ???\n Hum = ???\n");
-  }
-}
+uint8_t value;
 
 static uint8_t line_buffer[LINE_MAX_LENGTH + 1];
 static uint32_t line_length;
@@ -140,6 +114,42 @@ void line_append(uint8_t value)
 		line_buffer[line_length++] = value;
 	}
 }
+
+int __io_putchar(int ch) // to pc
+{
+  if (ch == '\n') {
+    __io_putchar('\r');
+  }
+
+  HAL_UART_Transmit(&huart2, (uint8_t*)&ch, 1, HAL_MAX_DELAY);
+
+  return 1;
+}
+
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+{
+  if(huart == GpsState.neo6_huart)
+  {
+    NEO6_ReceiveUartChar(&GpsState);
+  }
+  else if(huart == &hlpuart1)
+  {
+	  HAL_UART_Receive_IT(&hlpuart1, Mess, sizeof(Mess)); // receive fromm pcb
+	  HAL_UART_Transmit_IT(&huart2, Mess, sizeof(Mess)); // send to pc
+  }
+}
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+  if (htim == &htim6) {
+    HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
+//    AHT20_Read(&Temp, &Hum); // reads AHT20 measurements every second
+//    printf("Temperature = ???\n Hum = ???\n");
+    HAL_UART_Transmit(&huart2, ".", 1, 100);
+  }
+}
+
+
 
 /* USER CODE END 0 */
 
@@ -179,7 +189,6 @@ int main(void)
   MX_TIM6_Init();
   MX_ADC_Init();
   MX_LPUART1_UART_Init();
-
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
@@ -190,13 +199,13 @@ int main(void)
 //  AHT20_Init();
 //  NEO6_Init(&GpsState, &huart1);
   HAL_TIM_Base_Start_IT(&htim6);
-
+  HAL_UART_Receive_IT(&hlpuart1, Mess, sizeof(Mess));
 
   // RECEIVER
-  nRF24_Init(&hspi1);
-  nRF24_SetRXAddress(0, "Odb");
-  nRF24_SetTXAddress("Nad");
-  nRF24_RX_Mode();
+//  nRF24_Init(&hspi1);
+//  nRF24_SetRXAddress(0, "Odb");
+//  nRF24_SetTXAddress("Nad");
+//  nRF24_RX_Mode();
 
   uint8_t value;
   uint8_t size = 0;
@@ -211,18 +220,18 @@ int main(void)
 //	  HAL_Delay(100);\
 
 
-//	  uint8_t value;
+
 //	  if (HAL_UART_Receive(&hlpuart1, &value, 1, 0) == HAL_OK)
 //	  {
 //		  line_append(value);
 //	  }
 
-	  if(nRF24_RXAvailible())
-	  {
-		  nRF24_ReadRXPaylaod(Nrf24_Message, &size);
-		  MessageLength = sprintf(Message, "%c\n\r", &size);
-		  HAL_UART_Transmit(&huart2, Message, MessageLength, 1000);
-	  }
+//	  if(nRF24_RXAvailible())
+//	  {
+//		  nRF24_ReadRXPaylaod(Nrf24_Message, &size);
+//		  MessageLength = sprintf(Message, "%c\n\r", &size);
+//		  HAL_UART_Transmit(&huart2, Message, MessageLength, 1000);
+//	  }
 
 //	  MessageLength = sprintf((char*)Message, "\033[2J\033[;H"); // Clear terminal and home cursor
 //	  HAL_UART_Transmit(&huart2, Message, MessageLength, 1000);

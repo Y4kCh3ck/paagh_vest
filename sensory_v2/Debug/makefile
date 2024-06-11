@@ -61,7 +61,7 @@ main-build: sensory_v2.elf secondary-outputs
 
 # Tool invocations
 sensory_v2.elf sensory_v2.map: $(OBJS) $(USER_OBJS) C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory_v2\STM32L071KBTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "sensory_v2.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory_v2\STM32L071KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory_v2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+	arm-none-eabi-gcc -o "sensory_v2.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory_v2\STM32L071KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory_v2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

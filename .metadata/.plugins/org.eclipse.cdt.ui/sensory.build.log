@@ -1,10 +1,40 @@
-20:15:31 **** Incremental Build of configuration Debug for project sensory ****
+23:24:26 **** Incremental Build of configuration Debug for project sensory ****
 make -j12 all 
+arm-none-eabi-gcc -gdwarf-4 "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:147:32: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  147 |     HAL_UART_Transmit(&huart2, ".", 1, 100);
+      |                                ^~~
+      |                                |
+      |                                char *
+In file included from ../Core/Inc/stm32l0xx_hal_conf.h:281,
+                 from ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h:1510:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1510 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:219:1: warning: multi-line comment [-Wcomment]
+  219 | //        HAL_Delay(100);\
+      | ^
+../Core/Src/main.c:210:11: warning: unused variable 'size' [-Wunused-variable]
+  210 |   uint8_t size = 0;
+      |           ^~~~
+../Core/Src/main.c:209:11: warning: unused variable 'value' [-Wunused-variable]
+  209 |   uint8_t value;
+      |           ^~~~~
+arm-none-eabi-gcc -gdwarf-4 -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static -u _printf_float -u _scanf_float --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
 arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
    text	   data	    bss	    dec	    hex	filename
-  52640	    476	   2764	  55880	   da48	sensory.elf
+  49572	    476	   3288	  53336	   d058	sensory.elf
 Finished building: default.size.stdout
  
+Finished building: sensory.list
+ 
 
-20:15:31 Build Finished. 0 errors, 0 warnings. (took 364ms)
+23:24:27 Build Finished. 0 errors, 4 warnings. (took 1s.198ms)
 

@@ -6,8 +6,10 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="USART2_IRQHandler"/>
+		<item key="selection" value="MessageLength"/>
 		<list key="findhistory">
+			<item value="MessageLength"/>
+			<item value="HAL_UART_RxCpltCallback"/>
 			<item value="USART2_IRQHandler"/>
 			<item value="nvic"/>
 			<item value="Message"/>
