@@ -17,6 +17,7 @@ float get_temperature() {
     float temp;
     // TODO: Averaging
     AHT20_Read( &temp, NULL );
+    //push try
 
     return temp;
 }
