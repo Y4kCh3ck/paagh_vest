@@ -9598,3 +9598,1116 @@ Finished building: default.size.stdout
  
 Finished building: sensory_v2.list
  
+20:07:58 **** Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc_ex.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_exti.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_exti.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.o"
+arm-none-eabi-gcc "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.o"
+arm-none-eabi-gcc -mcpu=cortex-m0plus -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32l071kbtx.d" -MT"Core/Startup/startup_stm32l071kbtx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Startup/startup_stm32l071kbtx.o" "../Core/Startup/startup_stm32l071kbtx.s"
+arm-none-eabi-gcc "../Core/Src/AHT20.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/AHT20.d" -MT"Core/Src/AHT20.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/AHT20.o"
+arm-none-eabi-gcc "../Core/Src/NEO6.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/NEO6.d" -MT"Core/Src/NEO6.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/NEO6.o"
+arm-none-eabi-gcc "../Core/Src/adc.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/adc.d" -MT"Core/Src/adc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/adc.o"
+arm-none-eabi-gcc "../Core/Src/dma.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/dma.d" -MT"Core/Src/dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/dma.o"
+arm-none-eabi-gcc "../Core/Src/gpio.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/gpio.d" -MT"Core/Src/gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/gpio.o"
+arm-none-eabi-gcc "../Core/Src/i2c.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/i2c.d" -MT"Core/Src/i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/i2c.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/nRF24.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/nRF24.d" -MT"Core/Src/nRF24.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/nRF24.o"
+arm-none-eabi-gcc "../Core/Src/pv_app.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/pv_app.d" -MT"Core/Src/pv_app.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/pv_app.o"
+arm-none-eabi-gcc "../Core/Src/pv_pm.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/pv_pm.d" -MT"Core/Src/pv_pm.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/pv_pm.o"
+arm-none-eabi-gcc "../Core/Src/spi.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/spi.d" -MT"Core/Src/spi.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/spi.o"
+arm-none-eabi-gcc "../Core/Src/stm32l0xx_hal_msp.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32l0xx_hal_msp.d" -MT"Core/Src/stm32l0xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32l0xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32l0xx_it.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32l0xx_it.d" -MT"Core/Src/stm32l0xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32l0xx_it.o"
+../Core/Src/main.c:52: warning: "DEBUG" redefined
+   52 | #define DEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:194:33: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  194 |         MessageLength = sprintf(Mess, "HeartbeatArray = %d   index = %d\n\r", HeartBeatArray[HeartBeatIndex], HeartBeatIndex);
+      |                                 ^~~~
+      |                                 |
+      |                                 uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:33:
+C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:254:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/syscalls.o"
+  254 | int     sprintf (char *__restrict, const char *__restrict, ...)
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sysmem.o"
+      |                  ^
+../Core/Src/main.c:213:30: error: 'huart2' undeclared (first use in this function); did you mean 'hlpuart1'?
+  213 |           HAL_UART_Transmit(&huart2, Message, MessageLength, 1000);
+      |                              ^~~~~~
+      |                              hlpuart1
+../Core/Src/main.c:213:30: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:217:39: error: 'Timer' undeclared (first use in this function)
+  217 |                   if((HAL_GetTick() - Timer) > 1000)
+      |                                       ^~~~~
+../Core/Src/pv_app.c: In function 'do_state_test':
+../Core/Src/pv_app.c:82:1: warning: control reaches end of non-void function [-Wreturn-type]
+   82 | }
+      | ^
+../Core/Src/pv_app.c: In function 'do_state_error':
+../Core/Src/pv_app.c:91:1: warning: control reaches end of non-void function [-Wreturn-type]
+   91 | }
+      | ^
+arm-none-eabi-gcc "../Core/Src/system_stm32l0xx.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32l0xx.d" -MT"Core/Src/system_stm32l0xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32l0xx.o"
+arm-none-eabi-gcc "../Core/Src/tim.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/tim.d" -MT"Core/Src/tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/tim.o"
+arm-none-eabi-gcc "../Core/Src/usart.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/usart.d" -MT"Core/Src/usart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/usart.o"
+make: *** [Core/Src/subdir.mk:70: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+20:08:24 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:52: warning: "DEBUG" redefined
+   52 | #define DEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:194:33: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  194 |         MessageLength = sprintf(Mess, "HeartbeatArray = %d   index = %d\n\r", HeartBeatArray[HeartBeatIndex], HeartBeatIndex);
+      |                                 ^~~~
+      |                                 |
+      |                                 uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:33:
+C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:254:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  254 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+../Core/Src/main.c:217:39: error: 'Timer' undeclared (first use in this function)
+  217 |                   if((HAL_GetTick() - Timer) > 1000)
+      |                                       ^~~~~
+../Core/Src/main.c:217:39: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:70: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+20:08:37 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:52: warning: "DEBUG" redefined
+   52 | #define DEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:194:33: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  194 |         MessageLength = sprintf(Mess, "HeartbeatArray = %d   index = %d\n\r", HeartBeatArray[HeartBeatIndex], HeartBeatIndex);
+      |                                 ^~~~
+      |                                 |
+      |                                 uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:33:
+C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:254:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  254 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+../Core/Src/main.c:236:51: warning: ' m above sea level
+
+' directive writing 20 bytes into a region of size between 0 and 19 [-Wformat-overflow=]
+  236 |                                   MessageLength = sprintf((char*)Message, "Altitude: %.2f m above sea level\n\r", GpsState.Altitude);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:236:51: note: 'sprintf' output between 34 and 344 bytes into a destination of size 32
+../Core/Src/main.c:239:51: warning: ' km/h
+
+' directive writing 7 bytes into a region of size between 0 and 11 [-Wformat-overflow=]
+  239 |                                   MessageLength = sprintf((char*)Message, "Speed: %.2f knots, %f km/h\n\r", GpsState.SpeedKnots, GpsState.SpeedKilometers);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:239:51: note: 'sprintf' output between 29 and 653 bytes into a destination of size 32
+../Core/Src/main.c:248:51: warning: 'Horizontal dilution of preci...' directive writing 34 bytes into a region of size 32 [-Wformat-overflow=]
+  248 |                                   MessageLength = sprintf((char*)Message, "Horizontal dilution of precision: %.2f\n\r", GpsState.Hdop);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:248:51: note: assuming directive output of 4 bytes
+../Core/Src/main.c:248:51: note: 'sprintf' output between 40 and 350 bytes into a destination of size 32
+../Core/Src/main.c:251:51: warning: '%.2f' directive writing between 3 and 313 bytes into a region of size 0 [-Wformat-overflow=]
+  251 |                                   MessageLength = sprintf((char*)Message, "Vertical dilution of precision: %.2f\n\r", GpsState.Vdop);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:251:51: note: assuming directive output of 4 bytes
+../Core/Src/main.c:251:51: note: 'sprintf' output between 38 and 348 bytes into a destination of size 32
+arm-none-eabi-gcc -o "sensory_v2.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory_v2\STM32L071KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory_v2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory_v2.elf
+ 
+arm-none-eabi-size  sensory_v2.elf 
+arm-none-eabi-objdump -h -S sensory_v2.elf  > "sensory_v2.list"
+   text	   data	    bss	    dec	    hex	filename
+  59136	    476	   3112	  62724	   f504	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory_v2.list
+ 
+20:09:58 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-size  sensory_v2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  59136	    476	   3112	  62724	   f504	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+20:10:57 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-size  sensory_v2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  59136	    476	   3112	  62724	   f504	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+20:13:02 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-size  sensory_v2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  59136	    476	   3112	  62724	   f504	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+20:35:56 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:52: warning: "DEBUG" redefined
+   52 | #define DEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:236:51: warning: ' m above sea level
+
+' directive writing 20 bytes into a region of size between 0 and 19 [-Wformat-overflow=]
+  236 |                                   MessageLength = sprintf((char*)Message, "Altitude: %.2f m above sea level\n\r", GpsState.Altitude);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:236:51: note: 'sprintf' output between 34 and 344 bytes into a destination of size 32
+../Core/Src/main.c:239:51: warning: ' km/h
+
+' directive writing 7 bytes into a region of size between 0 and 11 [-Wformat-overflow=]
+  239 |                                   MessageLength = sprintf((char*)Message, "Speed: %.2f knots, %f km/h\n\r", GpsState.SpeedKnots, GpsState.SpeedKilometers);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:239:51: note: 'sprintf' output between 29 and 653 bytes into a destination of size 32
+../Core/Src/main.c:248:51: warning: 'Horizontal dilution of preci...' directive writing 34 bytes into a region of size 32 [-Wformat-overflow=]
+  248 |                                   MessageLength = sprintf((char*)Message, "Horizontal dilution of precision: %.2f\n\r", GpsState.Hdop);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:248:51: note: assuming directive output of 4 bytes
+../Core/Src/main.c:248:51: note: 'sprintf' output between 40 and 350 bytes into a destination of size 32
+../Core/Src/main.c:251:51: warning: '%.2f' directive writing between 3 and 313 bytes into a region of size 0 [-Wformat-overflow=]
+  251 |                                   MessageLength = sprintf((char*)Message, "Vertical dilution of precision: %.2f\n\r", GpsState.Vdop);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:251:51: note: assuming directive output of 4 bytes
+../Core/Src/main.c:251:51: note: 'sprintf' output between 38 and 348 bytes into a destination of size 32
+arm-none-eabi-gcc -o "sensory_v2.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory_v2\STM32L071KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory_v2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory_v2.elf
+ 
+arm-none-eabi-size  sensory_v2.elf 
+arm-none-eabi-objdump -h -S sensory_v2.elf  > "sensory_v2.list"
+   text	   data	    bss	    dec	    hex	filename
+  55500	    476	   3024	  59000	   e678	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory_v2.list
+ 
+20:37:13 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-size  sensory_v2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  55500	    476	   3024	  59000	   e678	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+20:38:01 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-size  sensory_v2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  55500	    476	   3024	  59000	   e678	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+20:40:40 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:52: warning: "DEBUG" redefined
+   52 | #define DEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:236:51: warning: ' m above sea level
+
+' directive writing 20 bytes into a region of size between 0 and 19 [-Wformat-overflow=]
+  236 |                                   MessageLength = sprintf((char*)Message, "Altitude: %.2f m above sea level\n\r", GpsState.Altitude);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:236:51: note: 'sprintf' output between 34 and 344 bytes into a destination of size 32
+../Core/Src/main.c:239:51: warning: ' km/h
+
+' directive writing 7 bytes into a region of size between 0 and 11 [-Wformat-overflow=]
+  239 |                                   MessageLength = sprintf((char*)Message, "Speed: %.2f knots, %f km/h\n\r", GpsState.SpeedKnots, GpsState.SpeedKilometers);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:239:51: note: 'sprintf' output between 29 and 653 bytes into a destination of size 32
+../Core/Src/main.c:248:51: warning: 'Horizontal dilution of preci...' directive writing 34 bytes into a region of size 32 [-Wformat-overflow=]
+  248 |                                   MessageLength = sprintf((char*)Message, "Horizontal dilution of precision: %.2f\n\r", GpsState.Hdop);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:248:51: note: assuming directive output of 4 bytes
+../Core/Src/main.c:248:51: note: 'sprintf' output between 40 and 350 bytes into a destination of size 32
+../Core/Src/main.c:251:51: warning: '%.2f' directive writing between 3 and 313 bytes into a region of size 0 [-Wformat-overflow=]
+  251 |                                   MessageLength = sprintf((char*)Message, "Vertical dilution of precision: %.2f\n\r", GpsState.Vdop);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:251:51: note: assuming directive output of 4 bytes
+../Core/Src/main.c:251:51: note: 'sprintf' output between 38 and 348 bytes into a destination of size 32
+arm-none-eabi-gcc -o "sensory_v2.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory_v2\STM32L071KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory_v2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory_v2.elf
+ 
+arm-none-eabi-size  sensory_v2.elf 
+arm-none-eabi-objdump -h -S sensory_v2.elf  > "sensory_v2.list"
+   text	   data	    bss	    dec	    hex	filename
+  55496	    476	   3024	  58996	   e674	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory_v2.list
+ 
+20:41:55 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-size  sensory_v2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  55496	    476	   3024	  58996	   e674	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+20:48:03 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:52: warning: "DEBUG" redefined
+   52 | #define DEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:213:11: error: too many arguments to function 'HAL_UART_Transmit_IT'
+  213 |           HAL_UART_Transmit_IT(&hlpuart1, Message, MessageLength, 1000);
+      |           ^~~~~~~~~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32l0xx_hal_conf.h:281,
+                 from ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h:1512:19: note: declared here
+ 1512 | HAL_StatusTypeDef HAL_UART_Transmit_IT(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size);
+      |                   ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:236:51: warning: ' m above sea level
+
+' directive writing 20 bytes into a region of size between 0 and 19 [-Wformat-overflow=]
+  236 |                                   MessageLength = sprintf((char*)Message, "Altitude: %.2f m above sea level\n\r", GpsState.Altitude);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:236:51: note: 'sprintf' output between 34 and 344 bytes into a destination of size 32
+../Core/Src/main.c:239:51: warning: ' km/h
+
+' directive writing 7 bytes into a region of size between 0 and 11 [-Wformat-overflow=]
+  239 |                                   MessageLength = sprintf((char*)Message, "Speed: %.2f knots, %f km/h\n\r", GpsState.SpeedKnots, GpsState.SpeedKilometers);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:239:51: note: 'sprintf' output between 29 and 653 bytes into a destination of size 32
+../Core/Src/main.c:248:51: warning: 'Horizontal dilution of preci...' directive writing 34 bytes into a region of size 32 [-Wformat-overflow=]
+  248 |                                   MessageLength = sprintf((char*)Message, "Horizontal dilution of precision: %.2f\n\r", GpsState.Hdop);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:248:51: note: assuming directive output of 4 bytes
+../Core/Src/main.c:248:51: note: 'sprintf' output between 40 and 350 bytes into a destination of size 32
+../Core/Src/main.c:251:51: warning: '%.2f' directive writing between 3 and 313 bytes into a region of size 0 [-Wformat-overflow=]
+  251 |                                   MessageLength = sprintf((char*)Message, "Vertical dilution of precision: %.2f\n\r", GpsState.Vdop);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:251:51: note: assuming directive output of 4 bytes
+../Core/Src/main.c:251:51: note: 'sprintf' output between 38 and 348 bytes into a destination of size 32
+make: *** [Core/Src/subdir.mk:70: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+20:48:17 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:52: warning: "DEBUG" redefined
+   52 | #define DEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:236:51: warning: ' m above sea level
+
+' directive writing 20 bytes into a region of size between 0 and 19 [-Wformat-overflow=]
+  236 |                                   MessageLength = sprintf((char*)Message, "Altitude: %.2f m above sea level\n\r", GpsState.Altitude);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:236:51: note: 'sprintf' output between 34 and 344 bytes into a destination of size 32
+../Core/Src/main.c:239:51: warning: ' km/h
+
+' directive writing 7 bytes into a region of size between 0 and 11 [-Wformat-overflow=]
+  239 |                                   MessageLength = sprintf((char*)Message, "Speed: %.2f knots, %f km/h\n\r", GpsState.SpeedKnots, GpsState.SpeedKilometers);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:239:51: note: 'sprintf' output between 29 and 653 bytes into a destination of size 32
+../Core/Src/main.c:248:51: warning: 'Horizontal dilution of preci...' directive writing 34 bytes into a region of size 32 [-Wformat-overflow=]
+  248 |                                   MessageLength = sprintf((char*)Message, "Horizontal dilution of precision: %.2f\n\r", GpsState.Hdop);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:248:51: note: assuming directive output of 4 bytes
+../Core/Src/main.c:248:51: note: 'sprintf' output between 40 and 350 bytes into a destination of size 32
+../Core/Src/main.c:251:51: warning: '%.2f' directive writing between 3 and 313 bytes into a region of size 0 [-Wformat-overflow=]
+  251 |                                   MessageLength = sprintf((char*)Message, "Vertical dilution of precision: %.2f\n\r", GpsState.Vdop);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:251:51: note: assuming directive output of 4 bytes
+../Core/Src/main.c:251:51: note: 'sprintf' output between 38 and 348 bytes into a destination of size 32
+arm-none-eabi-gcc -o "sensory_v2.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory_v2\STM32L071KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory_v2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory_v2.elf
+ 
+arm-none-eabi-size  sensory_v2.elf 
+arm-none-eabi-objdump -h -S sensory_v2.elf  > "sensory_v2.list"
+   text	   data	    bss	    dec	    hex	filename
+  55740	    476	   3024	  59240	   e768	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory_v2.list
+ 
+20:49:25 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:52: warning: "DEBUG" redefined
+   52 | #define DEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:254:35: warning: implicit declaration of function 'While' [-Wimplicit-function-declaration]
+  254 |                                   While(1); // TODO: remove this
+      |                                   ^~~~~
+../Core/Src/main.c:236:51: warning: ' m above sea level
+
+' directive writing 20 bytes into a region of size between 0 and 19 [-Wformat-overflow=]
+  236 |                                   MessageLength = sprintf((char*)Message, "Altitude: %.2f m above sea level\n\r", GpsState.Altitude);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:236:51: note: 'sprintf' output between 34 and 344 bytes into a destination of size 32
+../Core/Src/main.c:239:51: warning: ' km/h
+
+' directive writing 7 bytes into a region of size between 0 and 11 [-Wformat-overflow=]
+  239 |                                   MessageLength = sprintf((char*)Message, "Speed: %.2f knots, %f km/h\n\r", GpsState.SpeedKnots, GpsState.SpeedKilometers);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:239:51: note: 'sprintf' output between 29 and 653 bytes into a destination of size 32
+../Core/Src/main.c:248:51: warning: 'Horizontal dilution of preci...' directive writing 34 bytes into a region of size 32 [-Wformat-overflow=]
+  248 |                                   MessageLength = sprintf((char*)Message, "Horizontal dilution of precision: %.2f\n\r", GpsState.Hdop);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:248:51: note: assuming directive output of 4 bytes
+../Core/Src/main.c:248:51: note: 'sprintf' output between 40 and 350 bytes into a destination of size 32
+../Core/Src/main.c:251:51: warning: '%.2f' directive writing between 3 and 313 bytes into a region of size 0 [-Wformat-overflow=]
+  251 |                                   MessageLength = sprintf((char*)Message, "Vertical dilution of precision: %.2f\n\r", GpsState.Vdop);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:251:51: note: assuming directive output of 4 bytes
+../Core/Src/main.c:251:51: note: 'sprintf' output between 38 and 348 bytes into a destination of size 32
+arm-none-eabi-gcc -o "sensory_v2.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory_v2\STM32L071KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory_v2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.14.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `main':
+C:/Users/kuba/STM32CubeIDE/workspace_1.14.1/sensory_v2/Debug/../Core/Src/main.c:254: undefined reference to `While'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: sensory_v2.elf] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+20:49:36 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:52: warning: "DEBUG" redefined
+   52 | #define DEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:236:51: warning: ' m above sea level
+
+' directive writing 20 bytes into a region of size between 0 and 19 [-Wformat-overflow=]
+  236 |                                   MessageLength = sprintf((char*)Message, "Altitude: %.2f m above sea level\n\r", GpsState.Altitude);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:236:51: note: 'sprintf' output between 34 and 344 bytes into a destination of size 32
+../Core/Src/main.c:239:51: warning: ' km/h
+
+' directive writing 7 bytes into a region of size between 0 and 11 [-Wformat-overflow=]
+  239 |                                   MessageLength = sprintf((char*)Message, "Speed: %.2f knots, %f km/h\n\r", GpsState.SpeedKnots, GpsState.SpeedKilometers);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:239:51: note: 'sprintf' output between 29 and 653 bytes into a destination of size 32
+../Core/Src/main.c:248:51: warning: 'Horizontal dilution of preci...' directive writing 34 bytes into a region of size 32 [-Wformat-overflow=]
+  248 |                                   MessageLength = sprintf((char*)Message, "Horizontal dilution of precision: %.2f\n\r", GpsState.Hdop);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:248:51: note: assuming directive output of 4 bytes
+../Core/Src/main.c:248:51: note: 'sprintf' output between 40 and 350 bytes into a destination of size 32
+../Core/Src/main.c:251:51: warning: '%.2f' directive writing between 3 and 313 bytes into a region of size 0 [-Wformat-overflow=]
+  251 |                                   MessageLength = sprintf((char*)Message, "Vertical dilution of precision: %.2f\n\r", GpsState.Vdop);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:251:51: note: assuming directive output of 4 bytes
+../Core/Src/main.c:251:51: note: 'sprintf' output between 38 and 348 bytes into a destination of size 32
+arm-none-eabi-gcc -o "sensory_v2.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory_v2\STM32L071KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory_v2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory_v2.elf
+ 
+arm-none-eabi-size  sensory_v2.elf 
+arm-none-eabi-objdump -h -S sensory_v2.elf  > "sensory_v2.list"
+   text	   data	    bss	    dec	    hex	filename
+  55740	    476	   3024	  59240	   e768	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory_v2.list
+ 
+20:53:07 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:52: warning: "DEBUG" redefined
+   52 | #define DEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:236:51: warning: ' m above sea level
+
+' directive writing 20 bytes into a region of size between 0 and 19 [-Wformat-overflow=]
+  236 |                                   MessageLength = sprintf((char*)Message, "Altitude: %.2f m above sea level\n\r", GpsState.Altitude);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:236:51: note: 'sprintf' output between 34 and 344 bytes into a destination of size 32
+../Core/Src/main.c:239:51: warning: ' km/h
+
+' directive writing 7 bytes into a region of size between 0 and 11 [-Wformat-overflow=]
+  239 |                                   MessageLength = sprintf((char*)Message, "Speed: %.2f knots, %f km/h\n\r", GpsState.SpeedKnots, GpsState.SpeedKilometers);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:239:51: note: 'sprintf' output between 29 and 653 bytes into a destination of size 32
+../Core/Src/main.c:248:51: warning: 'Horizontal dilution of preci...' directive writing 34 bytes into a region of size 32 [-Wformat-overflow=]
+  248 |                                   MessageLength = sprintf((char*)Message, "Horizontal dilution of precision: %.2f\n\r", GpsState.Hdop);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:248:51: note: assuming directive output of 4 bytes
+../Core/Src/main.c:248:51: note: 'sprintf' output between 40 and 350 bytes into a destination of size 32
+../Core/Src/main.c:251:51: warning: '%.2f' directive writing between 3 and 313 bytes into a region of size 0 [-Wformat-overflow=]
+  251 |                                   MessageLength = sprintf((char*)Message, "Vertical dilution of precision: %.2f\n\r", GpsState.Vdop);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:251:51: note: assuming directive output of 4 bytes
+../Core/Src/main.c:251:51: note: 'sprintf' output between 38 and 348 bytes into a destination of size 32
+arm-none-eabi-gcc -o "sensory_v2.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory_v2\STM32L071KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory_v2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory_v2.elf
+ 
+arm-none-eabi-size  sensory_v2.elf 
+arm-none-eabi-objdump -h -S sensory_v2.elf  > "sensory_v2.list"
+   text	   data	    bss	    dec	    hex	filename
+  55496	    476	   3024	  58996	   e674	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory_v2.list
+ 
+20:56:36 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:52: warning: "DEBUG" redefined
+   52 | #define DEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:108:33: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  108 |         MessageLength = sprintf(Mess, "HeartbeatArray = %d   index = %d\n\r", HeartBeatArray[HeartBeatIndex], HeartBeatIndex);
+      |                                 ^~~~
+      |                                 |
+      |                                 uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:33:
+C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:254:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  254 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:181:12: warning: unused variable 'Timer' [-Wunused-variable]
+  181 |   uint32_t Timer = HAL_GetTick();
+      |            ^~~~~
+arm-none-eabi-gcc -o "sensory_v2.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory_v2\STM32L071KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory_v2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory_v2.elf
+ 
+arm-none-eabi-size  sensory_v2.elf 
+arm-none-eabi-objdump -h -S sensory_v2.elf  > "sensory_v2.list"
+   text	   data	    bss	    dec	    hex	filename
+  53092	    476	   3064	  56632	   dd38	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory_v2.list
+ 
+20:58:30 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:52: warning: "DEBUG" redefined
+   52 | #define DEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:194:33: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  194 |         MessageLength = sprintf(Mess, "HeartbeatArray = %d   index = %d\n\r", HeartBeatArray[HeartBeatIndex], HeartBeatIndex);
+      |                                 ^~~~
+      |                                 |
+      |                                 uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:33:
+C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:254:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  254 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+../Core/Src/main.c:180:12: warning: unused variable 'Timer' [-Wunused-variable]
+  180 |   uint32_t Timer = HAL_GetTick();
+      |            ^~~~~
+arm-none-eabi-gcc -o "sensory_v2.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory_v2\STM32L071KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory_v2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory_v2.elf
+ 
+arm-none-eabi-size  sensory_v2.elf 
+arm-none-eabi-objdump -h -S sensory_v2.elf  > "sensory_v2.list"
+   text	   data	    bss	    dec	    hex	filename
+  53076	    476	   3064	  56616	   dd28	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory_v2.list
+ 
+21:00:06 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:52: warning: "DEBUG" redefined
+   52 | #define DEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:194:33: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  194 |         MessageLength = sprintf(Mess, "HeartbeatArray = %d   index = %d\n\r", HeartBeatArray[HeartBeatIndex], HeartBeatIndex);
+      |                                 ^~~~
+      |                                 |
+      |                                 uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:33:
+C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:254:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  254 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+arm-none-eabi-gcc -o "sensory_v2.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory_v2\STM32L071KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory_v2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory_v2.elf
+ 
+arm-none-eabi-size  sensory_v2.elf 
+arm-none-eabi-objdump -h -S sensory_v2.elf  > "sensory_v2.list"
+   text	   data	    bss	    dec	    hex	filename
+  52888	    476	   3064	  56428	   dc6c	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory_v2.list
+ 
+21:02:13 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-size  sensory_v2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  52888	    476	   3064	  56428	   dc6c	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+21:04:00 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:52: warning: "DEBUG" redefined
+   52 | #define DEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:194:33: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  194 |         MessageLength = sprintf(Mess, "HeartbeatArray = %d   index = %d\n\r", HeartBeatArray[HeartBeatIndex], HeartBeatIndex);
+      |                                 ^~~~
+      |                                 |
+      |                                 uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:33:
+C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:254:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  254 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+arm-none-eabi-gcc -o "sensory_v2.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory_v2\STM32L071KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory_v2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory_v2.elf
+ 
+arm-none-eabi-size  sensory_v2.elf 
+arm-none-eabi-objdump -h -S sensory_v2.elf  > "sensory_v2.list"
+   text	   data	    bss	    dec	    hex	filename
+  53064	    476	   3064	  56604	   dd1c	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory_v2.list
+ 
+21:07:04 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:52: warning: "DEBUG" redefined
+   52 | #define DEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:236:51: warning: ' m above sea level
+
+' directive writing 20 bytes into a region of size between 0 and 19 [-Wformat-overflow=]
+  236 |                                   MessageLength = sprintf((char*)Message, "Altitude: %.2f m above sea level\n\r", GpsState.Altitude);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:236:51: note: 'sprintf' output between 34 and 344 bytes into a destination of size 32
+../Core/Src/main.c:239:51: warning: ' km/h
+
+' directive writing 7 bytes into a region of size between 0 and 11 [-Wformat-overflow=]
+  239 |                                   MessageLength = sprintf((char*)Message, "Speed: %.2f knots, %f km/h\n\r", GpsState.SpeedKnots, GpsState.SpeedKilometers);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:239:51: note: 'sprintf' output between 29 and 653 bytes into a destination of size 32
+../Core/Src/main.c:248:51: warning: 'Horizontal dilution of preci...' directive writing 34 bytes into a region of size 32 [-Wformat-overflow=]
+  248 |                                   MessageLength = sprintf((char*)Message, "Horizontal dilution of precision: %.2f\n\r", GpsState.Hdop);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:248:51: note: assuming directive output of 4 bytes
+../Core/Src/main.c:248:51: note: 'sprintf' output between 40 and 350 bytes into a destination of size 32
+../Core/Src/main.c:251:51: warning: '%.2f' directive writing between 3 and 313 bytes into a region of size 0 [-Wformat-overflow=]
+  251 |                                   MessageLength = sprintf((char*)Message, "Vertical dilution of precision: %.2f\n\r", GpsState.Vdop);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:251:51: note: assuming directive output of 4 bytes
+../Core/Src/main.c:251:51: note: 'sprintf' output between 38 and 348 bytes into a destination of size 32
+arm-none-eabi-gcc -o "sensory_v2.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory_v2\STM32L071KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory_v2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory_v2.elf
+ 
+arm-none-eabi-size  sensory_v2.elf 
+arm-none-eabi-objdump -h -S sensory_v2.elf  > "sensory_v2.list"
+   text	   data	    bss	    dec	    hex	filename
+  55672	    476	   3024	  59172	   e724	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory_v2.list
+ 
+21:31:16 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:52: warning: "DEBUG" redefined
+   52 | #define DEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:176:25: warning: pointer targets in passing argument 2 of 'nRF24_SetRXAddress' differ in signedness [-Wpointer-sign]
+  176 |   nRF24_SetRXAddress(0, "Nad");
+      |                         ^~~~~
+      |                         |
+      |                         char *
+In file included from ../Core/Src/main.c:37:
+../Core/Inc/nRF24.h:188:48: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  188 | void nRF24_SetRXAddress(uint8_t pipe, uint8_t* address); // Remember to define RX address before TX
+      |                                       ~~~~~~~~~^~~~~~~
+../Core/Src/main.c:177:22: warning: pointer targets in passing argument 1 of 'nRF24_SetTXAddress' differ in signedness [-Wpointer-sign]
+  177 |   nRF24_SetTXAddress("Odb");
+      |                      ^~~~~
+      |                      |
+      |                      char *
+In file included from ../Core/Src/main.c:37:
+../Core/Inc/nRF24.h:189:34: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  189 | void nRF24_SetTXAddress(uint8_t* address);
+      |                         ~~~~~~~~~^~~~~~~
+../Core/Src/main.c:202:35: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  202 |           MessageLength = sprintf(Message, "%d", 1 );
+      |                                   ^~~~~~~
+      |                                   |
+      |                                   uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:33:
+C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:254:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  254 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+../Core/Src/main.c:180:12: warning: unused variable 'Timer' [-Wunused-variable]
+  180 |   uint32_t Timer = HAL_GetTick();
+      |            ^~~~~
+arm-none-eabi-gcc -o "sensory_v2.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory_v2\STM32L071KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory_v2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory_v2.elf
+ 
+arm-none-eabi-size  sensory_v2.elf 
+arm-none-eabi-objdump -h -S sensory_v2.elf  > "sensory_v2.list"
+   text	   data	    bss	    dec	    hex	filename
+  57864	    476	   3024	  61364	   efb4	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory_v2.list
+ 
+21:31:42 **** Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-4 "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal.o"
+arm-none-eabi-gcc -gdwarf-4 "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc.o"
+arm-none-eabi-gcc -gdwarf-4 "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc_ex.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_adc_ex.o"
+arm-none-eabi-gcc -gdwarf-4 "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_cortex.o"
+arm-none-eabi-gcc -gdwarf-4 "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_dma.o"
+arm-none-eabi-gcc -gdwarf-4 "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_exti.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_exti.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_exti.o"
+arm-none-eabi-gcc -gdwarf-4 "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash.o"
+arm-none-eabi-gcc -gdwarf-4 "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ex.o"
+arm-none-eabi-gcc -gdwarf-4 "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc -gdwarf-4 "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_gpio.o"
+arm-none-eabi-gcc -gdwarf-4 "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c.o"
+arm-none-eabi-gcc -gdwarf-4 "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_i2c_ex.o"
+arm-none-eabi-gcc -gdwarf-4 "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr.o"
+arm-none-eabi-gcc -gdwarf-4 "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_pwr_ex.o"
+arm-none-eabi-gcc -gdwarf-4 "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc.o"
+arm-none-eabi-gcc -gdwarf-4 "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_rcc_ex.o"
+arm-none-eabi-gcc -gdwarf-4 "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_spi.o"
+arm-none-eabi-gcc -gdwarf-4 "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim.o"
+arm-none-eabi-gcc -gdwarf-4 "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_tim_ex.o"
+arm-none-eabi-gcc -gdwarf-4 "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart.o"
+arm-none-eabi-gcc -gdwarf-4 "../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.d" -MT"Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_hal_uart_ex.o"
+arm-none-eabi-gcc -gdwarf-4 -mcpu=cortex-m0plus -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32l053r8tx.d" -MT"Core/Startup/startup_stm32l053r8tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Startup/startup_stm32l053r8tx.o" "../Core/Startup/startup_stm32l053r8tx.s"
+arm-none-eabi-gcc -gdwarf-4 "../Core/Src/AHT20.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/AHT20.d" -MT"Core/Src/AHT20.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/AHT20.o"
+arm-none-eabi-gcc -gdwarf-4 "../Core/Src/NEO6.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/NEO6.d" -MT"Core/Src/NEO6.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/NEO6.o"
+arm-none-eabi-gcc -gdwarf-4 "../Core/Src/adc.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/adc.d" -MT"Core/Src/adc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/adc.o"
+arm-none-eabi-gcc -gdwarf-4 "../Core/Src/dma.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/dma.d" -MT"Core/Src/dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/dma.o"
+arm-none-eabi-gcc -gdwarf-4 "../Core/Src/gpio.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/gpio.d" -MT"Core/Src/gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/gpio.o"
+arm-none-eabi-gcc -gdwarf-4 "../Core/Src/i2c.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/i2c.d" -MT"Core/Src/i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/i2c.o"
+arm-none-eabi-gcc -gdwarf-4 "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -gdwarf-4 "../Core/Src/nRF24.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/nRF24.d" -MT"Core/Src/nRF24.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/nRF24.o"
+arm-none-eabi-gcc -gdwarf-4 "../Core/Src/spi.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/spi.d" -MT"Core/Src/spi.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/spi.o"
+arm-none-eabi-gcc -gdwarf-4 "../Core/Src/stm32l0xx_hal_msp.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32l0xx_hal_msp.d" -MT"Core/Src/stm32l0xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32l0xx_hal_msp.o"
+arm-none-eabi-gcc -gdwarf-4 "../Core/Src/stm32l0xx_it.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32l0xx_it.d" -MT"Core/Src/stm32l0xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32l0xx_it.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:116:15: error: 'GpsState' undeclared (first use in this function)
+  116 |   if(huart == GpsState.neo6_huart)
+      |               ^~~~~~~~
+../Core/Src/main.c:116:15: note: each undeclared identifier is reported only once for each function it appears in
+arm-none-eabi-gcc -gdwarf-4 "../Core/Src/syscalls.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/syscalls.o"
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:132:32: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  132 |     HAL_UART_Transmit(&huart2, ".", 1, 100);
+      |                                ^~~
+      |                                |
+      |                                char *
+In file included from ../Core/Inc/stm32l0xx_hal_conf.h:281,
+                 from ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h:1510:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1510 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:188:25: warning: pointer targets in passing argument 2 of 'nRF24_SetRXAddress' differ in signedness [-Wpointer-sign]
+  188 |   nRF24_SetRXAddress(0, "Odb");
+      |                         ^~~~~
+      |                         |
+      |                         char *
+In file included from ../Core/Src/main.c:37:
+../Core/Inc/nRF24.h:188:48: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  188 | void nRF24_SetRXAddress(uint8_t pipe, uint8_t* address); // Remember to define RX address before TX
+      |                                       ~~~~~~~~~^~~~~~~
+../Core/Src/main.c:189:22: warning: pointer targets in passing argument 1 of 'nRF24_SetTXAddress' differ in signedness [-Wpointer-sign]
+  189 |   nRF24_SetTXAddress("Nad");
+      |                      ^~~~~
+      |                      |
+      |                      char *
+In file included from ../Core/Src/main.c:37:
+../Core/Inc/nRF24.h:189:34: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  189 | void nRF24_SetTXAddress(uint8_t* address);
+      |                         ~~~~~~~~~^~~~~~~
+../Core/Src/main.c:198:39: error: 'Nrf24_Message' undeclared (first use in this function)
+  198 |                   nRF24_ReadRXPaylaod(Nrf24_Message, &size);
+      |                                       ^~~~~~~~~~~~~
+../Core/Src/main.c:198:55: error: 'size' undeclared (first use in this function); did you mean 'size_t'?
+  198 |                   nRF24_ReadRXPaylaod(Nrf24_Message, &size);
+      |                                                       ^~~~
+      |                                                       size_t
+../Core/Src/main.c:199:43: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  199 |                   MessageLength = sprintf(Message, "%c\n\r", &size);
+      |                                           ^~~~~~~
+      |                                           |
+      |                                           uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:33:
+C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:254:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  254 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+arm-none-eabi-gcc -gdwarf-4 "../Core/Src/sysmem.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sysmem.o"
+make: *** [Core/Src/subdir.mk:64: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+21:32:01 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-4 "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -gdwarf-4 "../Core/Src/system_stm32l0xx.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32l0xx.d" -MT"Core/Src/system_stm32l0xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32l0xx.o"
+arm-none-eabi-gcc -gdwarf-4 "../Core/Src/tim.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/tim.d" -MT"Core/Src/tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/tim.o"
+arm-none-eabi-gcc -gdwarf-4 "../Core/Src/usart.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/usart.d" -MT"Core/Src/usart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/usart.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:118:15: error: 'GpsState' undeclared (first use in this function)
+  118 |   if(huart == GpsState.neo6_huart)
+      |               ^~~~~~~~
+../Core/Src/main.c:118:15: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:134:32: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  134 |     HAL_UART_Transmit(&huart2, ".", 1, 100);
+      |                                ^~~
+      |                                |
+      |                                char *
+In file included from ../Core/Inc/stm32l0xx_hal_conf.h:281,
+                 from ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h:1510:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1510 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:190:25: warning: pointer targets in passing argument 2 of 'nRF24_SetRXAddress' differ in signedness [-Wpointer-sign]
+  190 |   nRF24_SetRXAddress(0, "Odb");
+      |                         ^~~~~
+      |                         |
+      |                         char *
+In file included from ../Core/Src/main.c:37:
+../Core/Inc/nRF24.h:188:48: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  188 | void nRF24_SetRXAddress(uint8_t pipe, uint8_t* address); // Remember to define RX address before TX
+      |                                       ~~~~~~~~~^~~~~~~
+../Core/Src/main.c:191:22: warning: pointer targets in passing argument 1 of 'nRF24_SetTXAddress' differ in signedness [-Wpointer-sign]
+  191 |   nRF24_SetTXAddress("Nad");
+      |                      ^~~~~
+      |                      |
+      |                      char *
+In file included from ../Core/Src/main.c:37:
+../Core/Inc/nRF24.h:189:34: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  189 | void nRF24_SetTXAddress(uint8_t* address);
+      |                         ~~~~~~~~~^~~~~~~
+../Core/Src/main.c:200:55: error: 'size' undeclared (first use in this function); did you mean 'size_t'?
+  200 |                   nRF24_ReadRXPaylaod(Nrf24_Message, &size);
+      |                                                       ^~~~
+      |                                                       size_t
+../Core/Src/main.c:201:43: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  201 |                   MessageLength = sprintf(Message, "%c\n\r", &size);
+      |                                           ^~~~~~~
+      |                                           |
+      |                                           uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:33:
+C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:254:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  254 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+make: *** [Core/Src/subdir.mk:64: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+21:34:10 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-4 "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:118:15: error: 'GpsState' undeclared (first use in this function)
+  118 |   if(huart == GpsState.neo6_huart)
+      |               ^~~~~~~~
+../Core/Src/main.c:118:15: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:134:32: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  134 |     HAL_UART_Transmit(&huart2, ".", 1, 100);
+      |                                ^~~
+      |                                |
+      |                                char *
+In file included from ../Core/Inc/stm32l0xx_hal_conf.h:281,
+                 from ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h:1510:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1510 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:190:25: warning: pointer targets in passing argument 2 of 'nRF24_SetRXAddress' differ in signedness [-Wpointer-sign]
+  190 |   nRF24_SetRXAddress(0, "Odb");
+      |                         ^~~~~
+      |                         |
+      |                         char *
+In file included from ../Core/Src/main.c:37:
+../Core/Inc/nRF24.h:188:48: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  188 | void nRF24_SetRXAddress(uint8_t pipe, uint8_t* address); // Remember to define RX address before TX
+      |                                       ~~~~~~~~~^~~~~~~
+../Core/Src/main.c:191:22: warning: pointer targets in passing argument 1 of 'nRF24_SetTXAddress' differ in signedness [-Wpointer-sign]
+  191 |   nRF24_SetTXAddress("Nad");
+      |                      ^~~~~
+      |                      |
+      |                      char *
+In file included from ../Core/Src/main.c:37:
+../Core/Inc/nRF24.h:189:34: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  189 | void nRF24_SetTXAddress(uint8_t* address);
+      |                         ~~~~~~~~~^~~~~~~
+../Core/Src/main.c:202:43: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  202 |                   MessageLength = sprintf(Message, "%c\n\r", &size);
+      |                                           ^~~~~~~
+      |                                           |
+      |                                           uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:33:
+C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:254:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  254 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+../Core/Src/main.c:202:54: warning: format '%c' expects argument of type 'int', but argument 3 has type 'uint8_t *' {aka 'unsigned char *'} [-Wformat=]
+  202 |                   MessageLength = sprintf(Message, "%c\n\r", &size);
+      |                                                     ~^       ~~~~~
+      |                                                      |       |
+      |                                                      int     uint8_t * {aka unsigned char *}
+      |                                                     %hhn
+make: *** [Core/Src/subdir.mk:64: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+21:34:36 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-4 "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:132:32: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  132 |     HAL_UART_Transmit(&huart2, ".", 1, 100);
+      |                                ^~~
+      |                                |
+      |                                char *
+In file included from ../Core/Inc/stm32l0xx_hal_conf.h:281,
+                 from ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h:1510:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1510 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:188:25: warning: pointer targets in passing argument 2 of 'nRF24_SetRXAddress' differ in signedness [-Wpointer-sign]
+  188 |   nRF24_SetRXAddress(0, "Odb");
+      |                         ^~~~~
+      |                         |
+      |                         char *
+In file included from ../Core/Src/main.c:37:
+../Core/Inc/nRF24.h:188:48: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  188 | void nRF24_SetRXAddress(uint8_t pipe, uint8_t* address); // Remember to define RX address before TX
+      |                                       ~~~~~~~~~^~~~~~~
+../Core/Src/main.c:189:22: warning: pointer targets in passing argument 1 of 'nRF24_SetTXAddress' differ in signedness [-Wpointer-sign]
+  189 |   nRF24_SetTXAddress("Nad");
+      |                      ^~~~~
+      |                      |
+      |                      char *
+In file included from ../Core/Src/main.c:37:
+../Core/Inc/nRF24.h:189:34: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  189 | void nRF24_SetTXAddress(uint8_t* address);
+      |                         ~~~~~~~~~^~~~~~~
+../Core/Src/main.c:200:43: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  200 |                   MessageLength = sprintf(Message, "%c\n\r", &size);
+      |                                           ^~~~~~~
+      |                                           |
+      |                                           uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:33:
+C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:254:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  254 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+../Core/Src/main.c:200:54: warning: format '%c' expects argument of type 'int', but argument 3 has type 'uint8_t *' {aka 'unsigned char *'} [-Wformat=]
+  200 |                   MessageLength = sprintf(Message, "%c\n\r", &size);
+      |                                                     ~^       ~~~~~
+      |                                                      |       |
+      |                                                      int     uint8_t * {aka unsigned char *}
+      |                                                     %hhn
+arm-none-eabi-gcc -gdwarf-4 -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static -u _printf_float -u _scanf_float --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  55144	    476	   3512	  59132	   e6fc	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+21:37:23 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-size  sensory_v2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  57864	    476	   3024	  61364	   efb4	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+21:41:04 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-size  sensory_v2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  57864	    476	   3024	  61364	   efb4	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+21:43:46 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-4 "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:132:35: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit_IT' differ in signedness [-Wpointer-sign]
+  132 |     HAL_UART_Transmit_IT(&huart2, ".", 1);
+      |                                   ^~~
+      |                                   |
+      |                                   char *
+In file included from ../Core/Inc/stm32l0xx_hal_conf.h:281,
+                 from ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h:1512:82: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1512 | HAL_StatusTypeDef HAL_UART_Transmit_IT(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size);
+      |                                                                   ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:195:25: warning: pointer targets in passing argument 2 of 'nRF24_SetRXAddress' differ in signedness [-Wpointer-sign]
+  195 |   nRF24_SetRXAddress(0, "Nad");
+      |                         ^~~~~
+      |                         |
+      |                         char *
+In file included from ../Core/Src/main.c:37:
+../Core/Inc/nRF24.h:188:48: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  188 | void nRF24_SetRXAddress(uint8_t pipe, uint8_t* address); // Remember to define RX address before TX
+      |                                       ~~~~~~~~~^~~~~~~
+../Core/Src/main.c:196:22: warning: pointer targets in passing argument 1 of 'nRF24_SetTXAddress' differ in signedness [-Wpointer-sign]
+  196 |   nRF24_SetTXAddress("Odb");
+      |                      ^~~~~
+      |                      |
+      |                      char *
+In file included from ../Core/Src/main.c:37:
+../Core/Inc/nRF24.h:189:34: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  189 | void nRF24_SetTXAddress(uint8_t* address);
+      |                         ~~~~~~~~~^~~~~~~
+../Core/Src/main.c:209:35: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  209 |           MessageLength = sprintf(Message, "%d", 1 );
+      |                                   ^~~~~~~
+      |                                   |
+      |                                   uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:33:
+C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:254:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  254 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+arm-none-eabi-gcc -gdwarf-4 -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static -u _printf_float -u _scanf_float --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  55048	    476	   3504	  59028	   e694	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+21:44:14 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  55048	    476	   3504	  59028	   e694	sensory.elf
+Finished building: default.size.stdout
+ 
+21:46:20 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-4 "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:132:35: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit_IT' differ in signedness [-Wpointer-sign]
+  132 |     HAL_UART_Transmit_IT(&huart2, ".", 1);
+      |                                   ^~~
+      |                                   |
+      |                                   char *
+In file included from ../Core/Inc/stm32l0xx_hal_conf.h:281,
+                 from ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h:1512:82: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1512 | HAL_StatusTypeDef HAL_UART_Transmit_IT(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size);
+      |                                                                   ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:188:25: warning: pointer targets in passing argument 2 of 'nRF24_SetRXAddress' differ in signedness [-Wpointer-sign]
+  188 |   nRF24_SetRXAddress(0, "Odb");
+      |                         ^~~~~
+      |                         |
+      |                         char *
+In file included from ../Core/Src/main.c:37:
+../Core/Inc/nRF24.h:188:48: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  188 | void nRF24_SetRXAddress(uint8_t pipe, uint8_t* address); // Remember to define RX address before TX
+      |                                       ~~~~~~~~~^~~~~~~
+../Core/Src/main.c:189:22: warning: pointer targets in passing argument 1 of 'nRF24_SetTXAddress' differ in signedness [-Wpointer-sign]
+  189 |   nRF24_SetTXAddress("Nad");
+      |                      ^~~~~
+      |                      |
+      |                      char *
+In file included from ../Core/Src/main.c:37:
+../Core/Inc/nRF24.h:189:34: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  189 | void nRF24_SetTXAddress(uint8_t* address);
+      |                         ~~~~~~~~~^~~~~~~
+../Core/Src/main.c:200:43: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  200 |                   MessageLength = sprintf(Message, "%c\n\r", &size);
+      |                                           ^~~~~~~
+      |                                           |
+      |                                           uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:33:
+C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:254:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  254 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+../Core/Src/main.c:200:54: warning: format '%c' expects argument of type 'int', but argument 3 has type 'uint8_t *' {aka 'unsigned char *'} [-Wformat=]
+  200 |                   MessageLength = sprintf(Message, "%c\n\r", &size);
+      |                                                     ~^       ~~~~~
+      |                                                      |       |
+      |                                                      int     uint8_t * {aka unsigned char *}
+      |                                                     %hhn
+arm-none-eabi-gcc -gdwarf-4 -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static -u _printf_float -u _scanf_float --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  55144	    476	   3512	  59132	   e6fc	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+22:28:57 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  55144	    476	   3512	  59132	   e6fc	sensory.elf
+Finished building: default.size.stdout
+ 
+22:29:54 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-size  sensory_v2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  57864	    476	   3024	  61364	   efb4	sensory_v2.elf
+Finished building: default.size.stdout
+ 

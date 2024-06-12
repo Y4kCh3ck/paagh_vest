@@ -6,25 +6,27 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="GpsStateHandler-&gt;UartBufferHead"/>
+		<item key="selection" value="nRF24_WaitTX"/>
 		<list key="findhistory">
-			<item value="GpsStateHandler-&gt;UartBufferHead"/>
+			<item value="nRF24_WaitTX"/>
+			<item value="nRF24_WriteTXPayload"/>
+			<item value="nRF24_SendPacket"/>
+			<item value="nRF24_SetTXAddress"/>
+			<item value="NRF24_IRQ"/>
+			<item value="sensor_init"/>
+			<item value="NRF24_CSN_Pin"/>
+			<item value="nRF24_ReadRegister"/>
+			<item value="nRF24_ReadStatus"/>
+			<item value="NEO6_Init"/>
+			<item value="NEO6_ParseLine"/>
+			<item value="NEO6_ParseGPGGA"/>
+			<item value="Quality"/>
 			<item value="NEO6_IsFix"/>
-			<item value="Uart2ReceivedChar"/>
-			<item value="Timer"/>
-			<item value="HAL_GetTick"/>
-			<item value="HAL_ADC_Start_DMA"/>
-			<item value="MessageLength"/>
-			<item value="HAL_UART_RxCpltCallback"/>
-			<item value="USART2_IRQHandler"/>
-			<item value="nvic"/>
-			<item value="Message"/>
-			<item value="NEO6_ParseGPGSV"/>
-			<item value="AHT20_READ_ADDR"/>
-			<item value="AHT20_READ_REG"/>
-			<item value="pData"/>
+			<item value="HAL_UART_Transmit_IT_IT"/>
 		</list>
 		<list key="replacehistory">
+			<item value="HAL_UART_Transmit_IT"/>
+			<item value="hlpuart1"/>
 			<item value=""/>
 		</list>
 	</section>
