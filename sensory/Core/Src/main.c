@@ -85,7 +85,7 @@ volatile uint8_t nrf24_rx_flag, nrf24_tx_flag, nrf24_mr_flag;
 uint8_t Nrf24_Message[NRF24_PAYLOAD_SIZE];
 uint8_t Message[32];
 uint8_t MessageLength;
-uint8_t Mess[80];
+uint8_t Mess[255];
 
 uint8_t value;
 

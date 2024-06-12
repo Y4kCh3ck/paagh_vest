@@ -8838,3 +8838,763 @@ Finished building: default.size.stdout
  
 Finished building: sensory_v2.list
  
+14:55:08 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:53: warning: "DEBUG" redefined
+   53 | #define DEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:191:17: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  191 |         sprintf(Mess, "Temperature = %.1fC\n\r Hum = %.1f\n\r", Temp, Hum);
+      |                 ^~~~
+      |                 |
+      |                 uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:33:
+C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:254:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  254 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+arm-none-eabi-gcc -o "sensory_v2.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory_v2\STM32L071KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory_v2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory_v2.elf
+ 
+arm-none-eabi-size  sensory_v2.elf 
+arm-none-eabi-objdump -h -S sensory_v2.elf  > "sensory_v2.list"
+   text	   data	    bss	    dec	    hex	filename
+  55356	    476	   3024	  58856	   e5e8	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory_v2.list
+ 
+14:56:29 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:53: warning: "DEBUG" redefined
+   53 | #define DEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:191:17: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  191 |         sprintf(Mess, "Temperature = %.1fC\n\r Hum = %.1f\n\r Heartbeat = %d\n\r", Temp, Hum, HeartBeatValue);
+      |                 ^~~~
+      |                 |
+      |                 uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:33:
+C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:254:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  254 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+../Core/Src/main.c:191:76: warning: format '%d' expects argument of type 'int', but argument 5 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  191 |         sprintf(Mess, "Temperature = %.1fC\n\r Hum = %.1f\n\r Heartbeat = %d\n\r", Temp, Hum, HeartBeatValue);
+      |                                                                           ~^                  ~~~~~~~~~~~~~~
+      |                                                                            |                  |
+      |                                                                            int                uint32_t {aka long unsigned int}
+      |                                                                           %ld
+arm-none-eabi-gcc -o "sensory_v2.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory_v2\STM32L071KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory_v2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory_v2.elf
+ 
+arm-none-eabi-size  sensory_v2.elf 
+arm-none-eabi-objdump -h -S sensory_v2.elf  > "sensory_v2.list"
+   text	   data	    bss	    dec	    hex	filename
+  55380	    476	   3024	  58880	   e600	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory_v2.list
+ 
+14:59:04 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:53: warning: "DEBUG" redefined
+   53 | #define DEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:192:17: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  192 |         sprintf(Mess, "Heartbeat = %d\n\r", HeartBeatValue);
+      |                 ^~~~
+      |                 |
+      |                 uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:33:
+C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:254:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  254 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+../Core/Src/main.c:192:37: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  192 |         sprintf(Mess, "Heartbeat = %d\n\r", HeartBeatValue);
+      |                                    ~^       ~~~~~~~~~~~~~~
+      |                                     |       |
+      |                                     int     uint32_t {aka long unsigned int}
+      |                                    %ld
+arm-none-eabi-gcc -o "sensory_v2.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory_v2\STM32L071KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory_v2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory_v2.elf
+ 
+arm-none-eabi-size  sensory_v2.elf 
+arm-none-eabi-objdump -h -S sensory_v2.elf  > "sensory_v2.list"
+   text	   data	    bss	    dec	    hex	filename
+  55156	    476	   3024	  58656	   e520	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory_v2.list
+ 
+14:59:29 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-size  sensory_v2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  55156	    476	   3024	  58656	   e520	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+15:18:44 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:53: warning: "DEBUG" redefined
+   53 | #define DEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:192:17: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  192 |         sprintf(Mess, "Heartbeat = %d\n\r", HeartBeatValue);
+      |                 ^~~~
+      |                 |
+      |                 uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:33:
+C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:254:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  254 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+../Core/Src/main.c:192:37: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  192 |         sprintf(Mess, "Heartbeat = %d\n\r", HeartBeatValue);
+      |                                    ~^       ~~~~~~~~~~~~~~
+      |                                     |       |
+      |                                     int     uint32_t {aka long unsigned int}
+      |                                    %ld
+arm-none-eabi-gcc -o "sensory_v2.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory_v2\STM32L071KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory_v2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory_v2.elf
+ 
+arm-none-eabi-size  sensory_v2.elf 
+arm-none-eabi-objdump -h -S sensory_v2.elf  > "sensory_v2.list"
+   text	   data	    bss	    dec	    hex	filename
+  55160	    476	   3024	  58660	   e524	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory_v2.list
+ 
+15:25:50 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:53: warning: "DEBUG" redefined
+   53 | #define DEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:192:17: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  192 |         sprintf(Mess, "Heartbeat = %d\n\r", HeartBeatValue);
+      |                 ^~~~
+      |                 |
+      |                 uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:33:
+C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:254:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  254 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+../Core/Src/main.c:192:37: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  192 |         sprintf(Mess, "Heartbeat = %d\n\r", HeartBeatValue);
+      |                                    ~^       ~~~~~~~~~~~~~~
+      |                                     |       |
+      |                                     int     uint32_t {aka long unsigned int}
+      |                                    %ld
+arm-none-eabi-gcc -o "sensory_v2.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory_v2\STM32L071KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory_v2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory_v2.elf
+ 
+arm-none-eabi-size  sensory_v2.elf 
+arm-none-eabi-objdump -h -S sensory_v2.elf  > "sensory_v2.list"
+   text	   data	    bss	    dec	    hex	filename
+  55156	    476	   3024	  58656	   e520	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory_v2.list
+ 
+15:28:48 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:53: warning: "DEBUG" redefined
+   53 | #define DEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:192:33: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  192 |         MessageLength = sprintf(Mess, "Heartbeat = %d\n\r", HeartBeatValue);
+      |                                 ^~~~
+      |                                 |
+      |                                 uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:33:
+C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:254:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  254 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+../Core/Src/main.c:192:53: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  192 |         MessageLength = sprintf(Mess, "Heartbeat = %d\n\r", HeartBeatValue);
+      |                                                    ~^       ~~~~~~~~~~~~~~
+      |                                                     |       |
+      |                                                     int     uint32_t {aka long unsigned int}
+      |                                                    %ld
+arm-none-eabi-gcc -o "sensory_v2.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory_v2\STM32L071KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory_v2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory_v2.elf
+ 
+arm-none-eabi-size  sensory_v2.elf 
+arm-none-eabi-objdump -h -S sensory_v2.elf  > "sensory_v2.list"
+   text	   data	    bss	    dec	    hex	filename
+  55172	    476	   3032	  58680	   e538	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory_v2.list
+ 
+15:29:41 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:53: warning: "DEBUG" redefined
+   53 | #define DEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:192:33: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  192 |         MessageLength = sprintf(Mess, "Heartbeat = %d\n\r", HeartBeatValue);
+      |                                 ^~~~
+      |                                 |
+      |                                 uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:33:
+C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:254:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  254 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+../Core/Src/main.c:192:53: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  192 |         MessageLength = sprintf(Mess, "Heartbeat = %d\n\r", HeartBeatValue);
+      |                                                    ~^       ~~~~~~~~~~~~~~
+      |                                                     |       |
+      |                                                     int     uint32_t {aka long unsigned int}
+      |                                                    %ld
+arm-none-eabi-gcc -o "sensory_v2.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory_v2\STM32L071KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory_v2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory_v2.elf
+ 
+arm-none-eabi-size  sensory_v2.elf 
+arm-none-eabi-objdump -h -S sensory_v2.elf  > "sensory_v2.list"
+   text	   data	    bss	    dec	    hex	filename
+  52568	    476	   3024	  56068	   db04	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory_v2.list
+ 
+15:30:57 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:53: warning: "DEBUG" redefined
+   53 | #define DEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:191:33: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  191 |         MessageLength = sprintf(Mess, "Temperature = %.1fC\n\r Hum = %.1f\n\r Heartrate = <TODO>\n\r", Temp, Hum);
+      |                                 ^~~~
+      |                                 |
+      |                                 uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:33:
+C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:254:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  254 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+arm-none-eabi-gcc -o "sensory_v2.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory_v2\STM32L071KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory_v2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory_v2.elf
+ 
+arm-none-eabi-size  sensory_v2.elf 
+arm-none-eabi-objdump -h -S sensory_v2.elf  > "sensory_v2.list"
+   text	   data	    bss	    dec	    hex	filename
+  55388	    476	   3032	  58896	   e610	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory_v2.list
+ 
+15:31:45 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:53: warning: "DEBUG" redefined
+   53 | #define DEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:191:17: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  191 |         sprintf(Mess, "Temperature = %.1fC\n\r Hum = %.1f\n\r Heartrate = <TODO>\n\r", Temp, Hum);
+      |                 ^~~~
+      |                 |
+      |                 uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:33:
+C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:254:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  254 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+arm-none-eabi-gcc -o "sensory_v2.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory_v2\STM32L071KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory_v2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory_v2.elf
+ 
+arm-none-eabi-size  sensory_v2.elf 
+arm-none-eabi-objdump -h -S sensory_v2.elf  > "sensory_v2.list"
+   text	   data	    bss	    dec	    hex	filename
+  55372	    476	   3024	  58872	   e5f8	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory_v2.list
+ 
+15:32:35 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-4 "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:148:32: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit' differ in signedness [-Wpointer-sign]
+  148 |     HAL_UART_Transmit(&huart2, ".", 1, 100);
+      |                                ^~~
+      |                                |
+      |                                char *
+In file included from ../Core/Inc/stm32l0xx_hal_conf.h:281,
+                 from ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h:1510:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
+ 1510 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:220:1: warning: multi-line comment [-Wcomment]
+  220 | //        HAL_Delay(100);\
+      | ^
+../Core/Src/main.c:211:11: warning: unused variable 'size' [-Wunused-variable]
+  211 |   uint8_t size = 0;
+      |           ^~~~
+../Core/Src/main.c:210:11: warning: unused variable 'value' [-Wunused-variable]
+  210 |   uint8_t value;
+      |           ^~~~~
+arm-none-eabi-gcc -gdwarf-4 -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static -u _printf_float -u _scanf_float --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  49492	    476	   3464	  53432	   d0b8	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+15:33:32 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:53: warning: "DEBUG" redefined
+   53 | #define DEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:191:17: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  191 |         sprintf(Mess, "Temperature = %.1fC\n\r Hum = %.1f\n\r Heartrate = <TODO>\n\r", Temp, Hum);
+      |                 ^~~~
+      |                 |
+      |                 uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:33:
+C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:254:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  254 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+arm-none-eabi-gcc -o "sensory_v2.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory_v2\STM32L071KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory_v2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory_v2.elf
+ 
+arm-none-eabi-size  sensory_v2.elf 
+arm-none-eabi-objdump -h -S sensory_v2.elf  > "sensory_v2.list"
+   text	   data	    bss	    dec	    hex	filename
+  55380	    476	   3024	  58880	   e600	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory_v2.list
+ 
+15:34:51 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:53: warning: "DEBUG" redefined
+   53 | #define DEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:191:17: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  191 |         sprintf(Mess, "Temperature = %.1fC\n\r Hum = %.1f\n\r", Temp, Hum);
+      |                 ^~~~
+      |                 |
+      |                 uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:33:
+C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:254:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  254 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+arm-none-eabi-gcc -o "sensory_v2.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory_v2\STM32L071KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory_v2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory_v2.elf
+ 
+arm-none-eabi-size  sensory_v2.elf 
+arm-none-eabi-objdump -h -S sensory_v2.elf  > "sensory_v2.list"
+   text	   data	    bss	    dec	    hex	filename
+  53936	    476	   3024	  57436	   e05c	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory_v2.list
+ 
+15:57:19 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:53: warning: "DEBUG" redefined
+   53 | #define DEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:192:33: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  192 |         MessageLength = sprintf(Mess, "Heartbeat = %d\n\r", HeartBeatValue);
+      |                                 ^~~~
+      |                                 |
+      |                                 uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:33:
+C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:254:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  254 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+../Core/Src/main.c:192:53: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  192 |         MessageLength = sprintf(Mess, "Heartbeat = %d\n\r", HeartBeatValue);
+      |                                                    ~^       ~~~~~~~~~~~~~~
+      |                                                     |       |
+      |                                                     int     uint32_t {aka long unsigned int}
+      |                                                    %ld
+arm-none-eabi-gcc -o "sensory_v2.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory_v2\STM32L071KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory_v2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory_v2.elf
+ 
+arm-none-eabi-size  sensory_v2.elf 
+arm-none-eabi-objdump -h -S sensory_v2.elf  > "sensory_v2.list"
+   text	   data	    bss	    dec	    hex	filename
+  55180	    476	   3032	  58688	   e540	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory_v2.list
+ 
+16:02:00 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:53: warning: "DEBUG" redefined
+   53 | #define DEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:191:33: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  191 |         MessageLength = sprintf(Mess, "Temperature = %.1fC\n\r Hum = %.1f\n\r Heartrate = <TODO>\n\r", Temp, Hum);
+      |                                 ^~~~
+      |                                 |
+      |                                 uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:33:
+C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:254:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  254 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+arm-none-eabi-gcc -o "sensory_v2.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory_v2\STM32L071KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory_v2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory_v2.elf
+ 
+arm-none-eabi-size  sensory_v2.elf 
+arm-none-eabi-objdump -h -S sensory_v2.elf  > "sensory_v2.list"
+   text	   data	    bss	    dec	    hex	filename
+  55396	    476	   3032	  58904	   e618	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory_v2.list
+ 
+16:04:06 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:53: warning: "DEBUG" redefined
+   53 | #define DEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:191:33: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  191 |         MessageLength = sprintf(Mess, "Temperature = %.1fC\n\r Hum = %.1f\n\r Heartrate = <TODO>\n\r", Temp, Hum);
+      |                                 ^~~~
+      |                                 |
+      |                                 uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:33:
+C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:254:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  254 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+arm-none-eabi-gcc -o "sensory_v2.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory_v2\STM32L071KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory_v2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory_v2.elf
+ 
+arm-none-eabi-size  sensory_v2.elf 
+arm-none-eabi-objdump -h -S sensory_v2.elf  > "sensory_v2.list"
+   text	   data	    bss	    dec	    hex	filename
+  53976	    476	   3024	  57476	   e084	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory_v2.list
+ 
+16:18:48 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:53: warning: "DEBUG" redefined
+   53 | #define DEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:192:33: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  192 |         MessageLength = sprintf(Mess, "Heartbeat = %d\n\r", HeartBeatValue);
+      |                                 ^~~~
+      |                                 |
+      |                                 uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:33:
+C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:254:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  254 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+../Core/Src/main.c:192:53: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  192 |         MessageLength = sprintf(Mess, "Heartbeat = %d\n\r", HeartBeatValue);
+      |                                                    ~^       ~~~~~~~~~~~~~~
+      |                                                     |       |
+      |                                                     int     uint32_t {aka long unsigned int}
+      |                                                    %ld
+arm-none-eabi-gcc -o "sensory_v2.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory_v2\STM32L071KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory_v2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory_v2.elf
+ 
+arm-none-eabi-size  sensory_v2.elf 
+arm-none-eabi-objdump -h -S sensory_v2.elf  > "sensory_v2.list"
+   text	   data	    bss	    dec	    hex	filename
+  55180	    476	   3032	  58688	   e540	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory_v2.list
+ 
+16:52:07 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:53: warning: "DEBUG" redefined
+   53 | #define DEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:207:33: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  207 |         MessageLength = sprintf(Mess, "HeartbeatArray = \n\r");
+      |                                 ^~~~
+      |                                 |
+      |                                 uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:33:
+C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:254:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  254 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+../Core/Src/main.c:208:41: warning: passing argument 2 of 'HAL_UART_Transmit_IT' from incompatible pointer type [-Wincompatible-pointer-types]
+  208 |         HAL_UART_Transmit_IT(&hlpuart1, HeartBeatArray, sizeof(HeartBeatArray));
+      |                                         ^~~~~~~~~~~~~~
+      |                                         |
+      |                                         volatile uint16_t * {aka volatile short unsigned int *}
+In file included from ../Core/Inc/stm32l0xx_hal_conf.h:281,
+                 from ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h:1512:82: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'volatile uint16_t *' {aka 'volatile short unsigned int *'}
+ 1512 | HAL_StatusTypeDef HAL_UART_Transmit_IT(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size);
+      |                                                                   ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "sensory_v2.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory_v2\STM32L071KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory_v2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory_v2.elf
+ 
+arm-none-eabi-size  sensory_v2.elf 
+arm-none-eabi-objdump -h -S sensory_v2.elf  > "sensory_v2.list"
+   text	   data	    bss	    dec	    hex	filename
+  55236	    476	   3072	  58784	   e5a0	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory_v2.list
+ 
+16:56:24 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:53: warning: "DEBUG" redefined
+   53 | #define DEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:207:33: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  207 |         MessageLength = sprintf(Mess, "HeartbeatArray = \n\r");
+      |                                 ^~~~
+      |                                 |
+      |                                 uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:33:
+C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:254:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  254 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+../Core/Src/main.c:213:63: warning: passing argument 2 of 'HAL_UART_Transmit_IT' makes pointer from integer without a cast [-Wint-conversion]
+  213 |                 HAL_UART_Transmit_IT(&hlpuart1, HeartBeatArray[i], 2);
+      |                                                 ~~~~~~~~~~~~~~^~~
+      |                                                               |
+      |                                                               uint16_t {aka short unsigned int}
+In file included from ../Core/Inc/stm32l0xx_hal_conf.h:281,
+                 from ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h:1512:82: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'uint16_t' {aka 'short unsigned int'}
+ 1512 | HAL_StatusTypeDef HAL_UART_Transmit_IT(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size);
+      |                                                                   ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "sensory_v2.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory_v2\STM32L071KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory_v2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory_v2.elf
+ 
+arm-none-eabi-size  sensory_v2.elf 
+arm-none-eabi-objdump -h -S sensory_v2.elf  > "sensory_v2.list"
+   text	   data	    bss	    dec	    hex	filename
+  55264	    476	   3072	  58812	   e5bc	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory_v2.list
+ 
+16:57:25 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:53: warning: "DEBUG" redefined
+   53 | #define DEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:207:33: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  207 |         MessageLength = sprintf(Mess, "HeartbeatArray = \n\r");
+      |                                 ^~~~
+      |                                 |
+      |                                 uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:33:
+C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:254:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  254 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+../Core/Src/main.c:213:65: error: invalid suffix "_100" on integer constant
+  213 |                 HAL_UART_Transmit(&hlpuart1, HeartBeatArray[i], 2_100);
+      |                                                                 ^~~~~
+../Core/Src/main.c:213:60: warning: passing argument 2 of 'HAL_UART_Transmit' makes pointer from integer without a cast [-Wint-conversion]
+  213 |                 HAL_UART_Transmit(&hlpuart1, HeartBeatArray[i], 2_100);
+      |                                              ~~~~~~~~~~~~~~^~~
+      |                                                            |
+      |                                                            uint16_t {aka short unsigned int}
+In file included from ../Core/Inc/stm32l0xx_hal_conf.h:281,
+                 from ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h:1510:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'uint16_t' {aka 'short unsigned int'}
+ 1510 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+../Core/Src/main.c:213:17: error: too few arguments to function 'HAL_UART_Transmit'
+  213 |                 HAL_UART_Transmit(&hlpuart1, HeartBeatArray[i], 2_100);
+      |                 ^~~~~~~~~~~~~~~~~
+In file included from ../Core/Inc/stm32l0xx_hal_conf.h:281,
+                 from ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h:1510:19: note: declared here
+ 1510 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                   ^~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:70: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+16:57:37 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:53: warning: "DEBUG" redefined
+   53 | #define DEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:207:33: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  207 |         MessageLength = sprintf(Mess, "HeartbeatArray = \n\r");
+      |                                 ^~~~
+      |                                 |
+      |                                 uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:33:
+C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:254:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  254 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+../Core/Src/main.c:213:60: warning: passing argument 2 of 'HAL_UART_Transmit' makes pointer from integer without a cast [-Wint-conversion]
+  213 |                 HAL_UART_Transmit(&hlpuart1, HeartBeatArray[i], 1, 100);
+      |                                              ~~~~~~~~~~~~~~^~~
+      |                                                            |
+      |                                                            uint16_t {aka short unsigned int}
+In file included from ../Core/Inc/stm32l0xx_hal_conf.h:281,
+                 from ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h:1510:79: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'uint16_t' {aka 'short unsigned int'}
+ 1510 | HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size, uint32_t Timeout);
+      |                                                                ~~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "sensory_v2.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory_v2\STM32L071KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory_v2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory_v2.elf
+ 
+arm-none-eabi-size  sensory_v2.elf 
+arm-none-eabi-objdump -h -S sensory_v2.elf  > "sensory_v2.list"
+   text	   data	    bss	    dec	    hex	filename
+  54992	    476	   3072	  58540	   e4ac	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory_v2.list
+ 
+16:59:03 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:53: warning: "DEBUG" redefined
+   53 | #define DEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:207:33: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  207 |         MessageLength = sprintf(Mess, "HeartbeatArray = %d\n\r", HeartBeatArray[19]);
+      |                                 ^~~~
+      |                                 |
+      |                                 uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:33:
+C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:254:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  254 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+arm-none-eabi-gcc -o "sensory_v2.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory_v2\STM32L071KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory_v2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory_v2.elf
+ 
+arm-none-eabi-size  sensory_v2.elf 
+arm-none-eabi-objdump -h -S sensory_v2.elf  > "sensory_v2.list"
+   text	   data	    bss	    dec	    hex	filename
+  55252	    476	   3072	  58800	   e5b0	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory_v2.list
+ 
+17:00:26 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:53: warning: "DEBUG" redefined
+   53 | #define DEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:123:33: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  123 |         MessageLength = sprintf(Mess, "HeartbeatArray = %d\n\r", HeartBeatArray[HeartBeatIndex]);
+      |                                 ^~~~
+      |                                 |
+      |                                 uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:33:
+C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:254:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  254 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+arm-none-eabi-gcc -o "sensory_v2.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory_v2\STM32L071KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory_v2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory_v2.elf
+ 
+arm-none-eabi-size  sensory_v2.elf 
+arm-none-eabi-objdump -h -S sensory_v2.elf  > "sensory_v2.list"
+   text	   data	    bss	    dec	    hex	filename
+  55264	    476	   3072	  58812	   e5bc	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory_v2.list
+ 
+17:02:24 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:53: warning: "DEBUG" redefined
+   53 | #define DEBUG
+      | 
+<command-line>: note: this is the location of the previous definition
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:207:33: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness [-Wpointer-sign]
+  207 |         MessageLength = sprintf(Mess, "HeartbeatArray = %d   index = %d\n\r", HeartBeatArray[HeartBeatIndex], HeartBeatIndex);
+      |                                 ^~~~
+      |                                 |
+      |                                 uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:33:
+C:\ST\STM32CubeIDE_1.14.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.100.202309141235\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/stdio.h:254:18: note: expected 'char * restrict' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+  254 | int     sprintf (char *__restrict, const char *__restrict, ...)
+      |                  ^
+arm-none-eabi-gcc -o "sensory_v2.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\sensory_v2\STM32L071KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory_v2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory_v2.elf
+ 
+arm-none-eabi-size  sensory_v2.elf 
+arm-none-eabi-objdump -h -S sensory_v2.elf  > "sensory_v2.list"
+   text	   data	    bss	    dec	    hex	filename
+  55264	    476	   3072	  58812	   e5bc	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory_v2.list
+ 

@@ -83,13 +83,16 @@ bool I2C_EN = false;
 volatile uint8_t Uart2ReceivedChar;
 volatile float Temp = 0.0f;
 volatile float Hum = 0.0f;
-volatile uint32_t HeartBeatValue;
+volatile uint16_t HeartBeatValue;
+volatile uint16_t HeartBeatArray[20] = {0};
+static uint8_t HeartBeatIndex = 0;
 
 volatile uint8_t nrf24_rx_flag, nrf24_tx_flag, nrf24_mr_flag;
 uint8_t Nrf24_Message[NRF24_PAYLOAD_SIZE];
 uint8_t Message[32];
 uint8_t MessageLength;
 uint8_t Mess[80];
+
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
@@ -105,6 +108,18 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 
 
   }
+}
+
+void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc) {
+
+
+	if(HeartBeatIndex > 19)
+	{
+		HeartBeatIndex = 0;
+	}
+	HeartBeatArray[HeartBeatIndex] = HeartBeatValue;
+	HeartBeatIndex++;
+
 }
 
 //int _write(int file, char *ptr, int len)
@@ -176,8 +191,8 @@ int main(void)
 //  nRF24_TX_Mode();
 
 //  uint32_t Timer = HAL_GetTick();
-//  HAL_ADCEx_Calibration_Start(&hadc, ADC_SINGLE_ENDED);
-//  HAL_ADC_Start_DMA(&hadc, (uint32_t*)&HeartBeatValue, 2);
+  HAL_ADCEx_Calibration_Start(&hadc, ADC_SINGLE_ENDED);
+  HAL_ADC_Start_DMA(&hadc, (uint32_t*)&HeartBeatValue, 2);
 
 
   while (1)
@@ -188,10 +203,11 @@ int main(void)
     /* USER CODE BEGIN 3 */
 
 	AHT20_Read(&Temp, &Hum); // reads AHT20 measurements every second // timer nie działa więc jest tu
-	sprintf(Mess, "Temperature = %.1fC\n\r Hum = %.1f\n\r", Temp, Hum);
-	HAL_UART_Transmit_IT(&hlpuart1, Mess, sizeof(Mess));
+//	MessageLength = sprintf(Mess, "Temperature = %.1fC\n\r Hum = %.1f\n\r Heartrate = <TODO>\n\r", Temp, Hum);
+	MessageLength = sprintf(Mess, "HeartbeatArray = %d   index = %d\n\r", HeartBeatArray[HeartBeatIndex], HeartBeatIndex);
+	HAL_UART_Transmit_IT(&hlpuart1, Mess, MessageLength);
 
-	HAL_Delay(500);
+//	HAL_Delay(500);
 
 //	  pv_run();
 
