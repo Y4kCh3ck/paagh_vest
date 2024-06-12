@@ -1,6 +1,15 @@
+/**************************************************
+ *	Filename: pv_app.c
+ *	Description: Source file for main paagh_vest application
+ **************************************************
+ */
+
 #include "pv_app.h"
 
 #include <stdio.h>
+
+#include "pv_pm.h"
+#include "pv_sensors.h"
 
 // Typedefs
 typedef enum {
@@ -24,7 +33,14 @@ typedef state_t state_func_t( instance_data_t *data );
 state_t do_state_init( instance_data_t *data ) {
     printf("state init\n");
 
-    // SENSOR INIT?
+    // Power manager setup
+    hard_reset_gps();
+    hard_reset_adc_sens();
+    hard_reset_i2c_sens();
+    power_off_heater();
+
+    // Sensor init
+    sensor_init();
 
     return STATE_STANDBY;
 
@@ -39,19 +55,18 @@ state_t do_state_standby( instance_data_t *data ) {
     // If user button held go to TEST
     // Low power
 
-    /*
-    int humidity, temperature, pressure;
+    
+    int humidity, temperature;
 
     while( 1 ) {
         humidity = get_humidity();
         temperature = get_temperature();
-        pressure = get_pressure();
 
         if( temperature < 10 )
             return STATE_RESCUE;
 
     }
-    */
+    
     return STATE_RESCUE;
 }
 
@@ -79,6 +94,8 @@ state_t do_state_test( instance_data_t *data ) {
     // Simulation of other stated without GPS and Petlie
     // Low freq led?
     // If button held go to STANDBY
+    
+    return STATE_STANDBY;
 }
 
 state_t do_state_error( instance_data_t *data ) {
@@ -86,8 +103,11 @@ state_t do_state_error( instance_data_t *data ) {
     // Constant LED
     // printf("state error");
     // Maybe something will come up later...
-//    printf()
-//    while
+
+    printf("Error");
+    while( 1 ) {
+        ;;
+    }
 }
 
 
