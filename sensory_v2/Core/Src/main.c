@@ -96,10 +96,10 @@ uint8_t Mess[80];
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
-//  if(huart == GpsState.neo6_huart)
-//  {
-//    NEO6_ReceiveUartChar(&GpsState);
-//  }
+  if(huart == GpsState.neo6_huart)
+  {
+    NEO6_ReceiveUartChar(&GpsState);
+  }
 }
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
@@ -121,18 +121,6 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc) {
 	HeartBeatIndex++;
 
 }
-
-//int _write(int file, char *ptr, int len)
-//{
-//  (void)file;
-//  int DataIdx;
-//
-//  for (DataIdx = 0; DataIdx < len; DataIdx++)
-//  {
-//    ITM_SendChar(*ptr++);
-//  }
-//  return len;
-//}
 
 /* USER CODE END 0 */
 
@@ -184,7 +172,7 @@ int main(void)
 //  HAL_TIM_Base_Start_IT(&htim6);
 
 
-  // TRANSMITER
+  // NRF TRANSMITER
 //  nRF24_Init(&hspi1);
 //  nRF24_SetRXAddress(0, "Nad");
 //  nRF24_SetTXAddress("Odb");
@@ -220,11 +208,58 @@ int main(void)
 //		  HAL_Delay(1000);
 //	  }
 
-//    uint8_t message[] = "UART over ST-Link \n\r";
-//    HAL_UART_Transmit(&hlpuart1, message, sizeof(message)-1, 100);
-//
-//    print("Semihosting test \n");
-//    HAL_Delay(2000);
+	//////////////////// GPS ////////////////////
+
+	  MessageLength = sprintf((char*)Message, "\033[2J\033[;H"); // Clear terminal and home cursor
+	  HAL_UART_Transmit(&huart2, Message, MessageLength, 1000);
+
+	  NEO6_Task(&GpsState);
+
+		  if((HAL_GetTick() - Timer) > 1000)
+		  {
+			  MessageLength = sprintf((char*)Message, "\033[2J\033[;H"); // Clear terminal and home cursor
+			  HAL_UART_Transmit(&huart2, Message, MessageLength, 1000);
+
+			  if(NEO6_IsFix(&GpsState))
+			  {
+				  MessageLength = sprintf((char*)Message, "UTC Time: %02d:%02d:%02d\n\r", GpsState.Hour, GpsState.Minute, GpsState.Second);
+				  HAL_UART_Transmit(&huart2, Message, MessageLength, 1000);
+
+				  MessageLength = sprintf((char*)Message, "Date: %02d.%02d.20%02d\n\r", GpsState.Day, GpsState.Month, GpsState.Year);
+				  HAL_UART_Transmit(&huart2, Message, MessageLength, 1000);
+
+				  MessageLength = sprintf((char*)Message, "Latitude: %.2f %c\n\r", GpsState.Latitude, GpsState.LatitudeDirection);
+				  HAL_UART_Transmit(&huart2, Message, MessageLength, 1000);
+
+				  MessageLength = sprintf((char*)Message, "Longitude: %.2f %c\n\r", GpsState.Longitude, GpsState.LongitudeDirection);
+				  HAL_UART_Transmit(&huart2, Message, MessageLength, 1000);
+
+				  MessageLength = sprintf((char*)Message, "Altitude: %.2f m above sea level\n\r", GpsState.Altitude);
+				  HAL_UART_Transmit(&huart2, Message, MessageLength, 1000);
+
+				  MessageLength = sprintf((char*)Message, "Speed: %.2f knots, %f km/h\n\r", GpsState.SpeedKnots, GpsState.SpeedKilometers);
+				  HAL_UART_Transmit(&huart2, Message, MessageLength, 1000);
+
+				  MessageLength = sprintf((char*)Message, "Satelites: %d\n\r", GpsState.SatelitesNumber);
+				  HAL_UART_Transmit(&huart2, Message, MessageLength, 1000);
+
+				  MessageLength = sprintf((char*)Message, "Dilution of precision: %.2f\n\r", GpsState.Dop);
+				  HAL_UART_Transmit(&huart2, Message, MessageLength, 1000);
+
+				  MessageLength = sprintf((char*)Message, "Horizontal dilution of precision: %.2f\n\r", GpsState.Hdop);
+				  HAL_UART_Transmit(&huart2, Message, MessageLength, 1000);
+
+				  MessageLength = sprintf((char*)Message, "Vertical dilution of precision: %.2f\n\r", GpsState.Vdop);
+				  HAL_UART_Transmit(&huart2, Message, MessageLength, 1000);
+			  }
+			  else
+			  {
+				  MessageLength = sprintf((char*)Message, "No Fix\n\r");
+				  HAL_UART_Transmit(&huart2, Message, MessageLength, 1000);
+			  }
+
+			  Timer = HAL_GetTick();
+		  }
   }
   /* USER CODE END 3 */
 }

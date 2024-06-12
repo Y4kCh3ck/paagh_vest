@@ -6,8 +6,13 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="MessageLength"/>
+		<item key="selection" value="GpsStateHandler-&gt;UartBufferHead"/>
 		<list key="findhistory">
+			<item value="GpsStateHandler-&gt;UartBufferHead"/>
+			<item value="NEO6_IsFix"/>
+			<item value="Uart2ReceivedChar"/>
+			<item value="Timer"/>
+			<item value="HAL_GetTick"/>
 			<item value="HAL_ADC_Start_DMA"/>
 			<item value="MessageLength"/>
 			<item value="HAL_UART_RxCpltCallback"/>
@@ -18,16 +23,14 @@
 			<item value="AHT20_READ_ADDR"/>
 			<item value="AHT20_READ_REG"/>
 			<item value="pData"/>
-			<item value="DevAddress"/>
-			<item value="hi2c1"/>
 		</list>
 		<list key="replacehistory">
 			<item value=""/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="1002"/>
-		<item key="DIALOG_Y_ORIGIN" value="357"/>
+		<item key="DIALOG_X_ORIGIN" value="1502"/>
+		<item key="DIALOG_Y_ORIGIN" value="261"/>
 		<item key="DIALOG_WIDTH" value="414"/>
 		<item key="DIALOG_HEIGHT" value="454"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>

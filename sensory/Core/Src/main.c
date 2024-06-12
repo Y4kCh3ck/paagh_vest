@@ -70,19 +70,10 @@ void SystemClock_Config(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
-NEO6_State GpsState;
-
-bool ADC_EN = false;
-bool GPS_EN = false;
-bool I2C_EN = false;
-
-volatile uint8_t Uart2ReceivedChar;
 volatile float Temp = 0.0f;
 volatile float Hum = 0.0f;
 volatile uint32_t HeartBeatValue;
 
-volatile uint8_t nrf24_rx_flag, nrf24_tx_flag, nrf24_mr_flag;
-uint8_t Nrf24_Message[NRF24_PAYLOAD_SIZE];
 uint8_t Message[32];
 uint8_t MessageLength;
 uint8_t Mess[255];
@@ -95,22 +86,16 @@ static uint32_t line_length;
 void line_append(uint8_t value)
 {
 	if (value == '\r' || value == '\n') {
-		// odebraliśmy znak końca linii
 		if (line_length > 0) {
-			// jeśli bufor nie jest pusty to dodajemy 0 na końcu linii
-//			line_buffer[line_length] = '\0';
-			// przetwarzamy dane
+			line_buffer[line_length] = '\0';
 			printf("Otrzymano: %s\n", line_buffer);
-			// zaczynamy zbieranie danych od nowa
 			line_length = 0;
 		}
 	}
 	else {
 		if (line_length >= LINE_MAX_LENGTH) {
-			// za dużo danych, usuwamy wszystko co odebraliśmy dotychczas
 			line_length = 0;
 		}
-		// dopisujemy wartość do bufora
 		line_buffer[line_length++] = value;
 	}
 }
@@ -134,7 +119,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
   }
   else if(huart == &hlpuart1)
   {
-	  HAL_UART_Receive_IT(&hlpuart1, Mess, sizeof(Mess)); // receive fromm pcb
+	  HAL_UART_Receive_IT(&hlpuart1, Mess, sizeof(Mess)); // receive from pcb
 	  HAL_UART_Transmit_IT(&huart2, Mess, sizeof(Mess)); // send to pc
   }
 }
@@ -143,8 +128,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
   if (htim == &htim6) {
     HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
-//    AHT20_Read(&Temp, &Hum); // reads AHT20 measurements every second
-//    printf("Temperature = ???\n Hum = ???\n");
+
     HAL_UART_Transmit(&huart2, ".", 1, 100);
   }
 }
@@ -196,35 +180,18 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 
-//  AHT20_Init();
-//  NEO6_Init(&GpsState, &huart1);
   HAL_TIM_Base_Start_IT(&htim6);
   HAL_UART_Receive_IT(&hlpuart1, Mess, sizeof(Mess));
 
-  // RECEIVER
+  // NRF RECEIVER
 //  nRF24_Init(&hspi1);
 //  nRF24_SetRXAddress(0, "Odb");
 //  nRF24_SetTXAddress("Nad");
 //  nRF24_RX_Mode();
 
-  uint8_t value;
-  uint8_t size = 0;
-
-//  uint32_t Timer = HAL_GetTick();
-//  HAL_ADCEx_Calibration_Start(&hadc, ADC_SINGLE_ENDED);
-//  HAL_ADC_Start_DMA(&hadc, (uint32_t*)&HeartBeatValue, 2);
-
   while (1)
   {
-//	  printf("Heart Beat =  ???\n");
-//	  HAL_Delay(100);\
-
-
-
-//	  if (HAL_UART_Receive(&hlpuart1, &value, 1, 0) == HAL_OK)
-//	  {
-//		  line_append(value);
-//	  }
+	  /////////////// NRF ///////////////
 
 //	  if(nRF24_RXAvailible())
 //	  {
@@ -233,56 +200,7 @@ int main(void)
 //		  HAL_UART_Transmit(&huart2, Message, MessageLength, 1000);
 //	  }
 
-//	  MessageLength = sprintf((char*)Message, "\033[2J\033[;H"); // Clear terminal and home cursor
-//	  HAL_UART_Transmit(&huart2, Message, MessageLength, 1000);
 
-//	  NEO6_Task(&GpsState);
-//
-//	 	  if((HAL_GetTick() - Timer) > 1000)
-//	 	  {
-//	 		  MessageLength = sprintf((char*)Message, "\033[2J\033[;H"); // Clear terminal and home cursor
-//	 		  HAL_UART_Transmit(&huart2, Message, MessageLength, 1000);
-//
-//	 		  if(NEO6_IsFix(&GpsState))
-//	 		  {
-//	 			  MessageLength = sprintf((char*)Message, "UTC Time: %02d:%02d:%02d\n\r", GpsState.Hour, GpsState.Minute, GpsState.Second);
-//	 			  HAL_UART_Transmit(&huart2, Message, MessageLength, 1000);
-//
-//	 			  MessageLength = sprintf((char*)Message, "Date: %02d.%02d.20%02d\n\r", GpsState.Day, GpsState.Month, GpsState.Year);
-//	 			  HAL_UART_Transmit(&huart2, Message, MessageLength, 1000);
-//
-//	 			  MessageLength = sprintf((char*)Message, "Latitude: %.2f %c\n\r", GpsState.Latitude, GpsState.LatitudeDirection);
-//	 			  HAL_UART_Transmit(&huart2, Message, MessageLength, 1000);
-//
-//	 			  MessageLength = sprintf((char*)Message, "Longitude: %.2f %c\n\r", GpsState.Longitude, GpsState.LongitudeDirection);
-//	 			  HAL_UART_Transmit(&huart2, Message, MessageLength, 1000);
-//
-//	 			  MessageLength = sprintf((char*)Message, "Altitude: %.2f m above sea level\n\r", GpsState.Altitude);
-//	 			  HAL_UART_Transmit(&huart2, Message, MessageLength, 1000);
-//
-//	 			  MessageLength = sprintf((char*)Message, "Speed: %.2f knots, %f km/h\n\r", GpsState.SpeedKnots, GpsState.SpeedKilometers);
-//	 			  HAL_UART_Transmit(&huart2, Message, MessageLength, 1000);
-//
-//	 			  MessageLength = sprintf((char*)Message, "Satelites: %d\n\r", GpsState.SatelitesNumber);
-//	 			  HAL_UART_Transmit(&huart2, Message, MessageLength, 1000);
-//
-//	 			  MessageLength = sprintf((char*)Message, "Dilution of precision: %.2f\n\r", GpsState.Dop);
-//	 			  HAL_UART_Transmit(&huart2, Message, MessageLength, 1000);
-//
-//	 			  MessageLength = sprintf((char*)Message, "Horizontal dilution of precision: %.2f\n\r", GpsState.Hdop);
-//	 			  HAL_UART_Transmit(&huart2, Message, MessageLength, 1000);
-//
-//	 			  MessageLength = sprintf((char*)Message, "Vertical dilution of precision: %.2f\n\r", GpsState.Vdop);
-//	 			  HAL_UART_Transmit(&huart2, Message, MessageLength, 1000);
-//	 		  }
-//	 		  else
-//	 		  {
-//	 			  MessageLength = sprintf((char*)Message, "No Fix\n\r");
-//	 			  HAL_UART_Transmit(&huart2, Message, MessageLength, 1000);
-//	 		  }
-//
-//	 		  Timer = HAL_GetTick();
-//	 	  }
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
