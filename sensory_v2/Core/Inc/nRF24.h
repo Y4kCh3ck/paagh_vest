@@ -202,7 +202,7 @@ void nRF24_EnableMaxRetransmitIRQ(uint8_t onoff);
 // PUSH/PULL DATA TO PAYLOAD
 //
 void nRF24_WriteTXPayload(uint8_t * data, uint8_t size);
-void nRF24_WaitTX();
+int nRF24_WaitTX();
 void nRF24_ReadRXPaylaod(uint8_t *data, uint8_t *size);
 
 //

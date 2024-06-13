@@ -428,17 +428,23 @@ void nRF24_WriteTXPayload(uint8_t * data, uint8_t size)
 #endif
 }
 
-void nRF24_WaitTX()
+int nRF24_WaitTX()
 {
         uint8_t status;
         NRF24_CE_HIGH;
         nRF24_Delay_ms(1);
         NRF24_CE_LOW;
-        do
+
+		nRF24_Delay_ms(100);
+		status = nRF24_ReadStatus();
+        if(!((status & (1<<NRF24_MAX_RT)) || (status & (1<<NRF24_TX_DS))))
         {
-                nRF24_Delay_ms(1);
-                status = nRF24_ReadStatus();
-        }while(!((status & (1<<NRF24_MAX_RT)) || (status & (1<<NRF24_TX_DS))));
+        	return 0;
+        }
+        else
+        {
+        	return 1;
+        }
 
 }
 
@@ -463,9 +469,14 @@ nRF24_TX_Status nRF24_SendPacket(uint8_t* Data, uint8_t Size)
                 return NRF24_NO_TRANSMITTED_PACKET;
 
         nRF24_WriteTXPayload(Data, Size);
-        nRF24_WaitTX();
-
-        return NRF24_TRANSMITTED_PACKET;
+        if(nRF24_WaitTX())
+        {
+        	return NRF24_TRANSMITTED_PACKET;
+        }
+        else
+        {
+        	return NRF24_NO_TRANSMITTED_PACKET;
+        }
 }
 
 nRF24_RX_Status nRF24_ReceivePacket(uint8_t* Data, uint8_t *Size)

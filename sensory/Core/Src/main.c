@@ -46,7 +46,7 @@
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 
-#define LINE_MAX_LENGTH	80
+//#define LINE_MAX_LENGTH	80
 
 /* USER CODE END PD */
 

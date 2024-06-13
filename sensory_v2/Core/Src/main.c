@@ -32,10 +32,11 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdbool.h>
-#include <AHT20.h>
+#include "AHT20.h"
 #include <NEO6.h>
 #include <nRF24.h>
-#include "pv_app.h"
+#include "App/pv_app.h"
+#include "App/pv_pulse.h"
 
 // #include <debug.h>
 
@@ -73,15 +74,12 @@ void SystemClock_Config(void);
 
 NEO6_State GpsState;
 
-bool ADC_EN = false;
-bool GPS_EN = false;
-bool I2C_EN = false;
+uint8_t MessageLength = 0;
+uint8_t Message[255] = {0};
+uint8_t pulse = 0;
 
-volatile uint8_t Uart2ReceivedChar;
-volatile float Temp = 0.0f;
-volatile float Hum = 0.0f;
-volatile uint16_t HeartBeatValue;
-volatile uint16_t HeartBeatArray[20] = {0};
+volatile uint32_t HeartBeatValue;
+volatile uint32_t HeartBeatArray[255] = {0};
 volatile uint8_t HeartBeatIndex = 0;
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
@@ -103,7 +101,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 {
-	if(HeartBeatIndex > 19)
+	if(HeartBeatIndex > 254)
 	{
 		HeartBeatIndex = 0;
 	}
@@ -161,10 +159,10 @@ int main(void)
 
   HAL_TIM_Base_Start_IT(&htim6);
   HAL_ADCEx_Calibration_Start(&hadc, ADC_SINGLE_ENDED);
-  HAL_ADC_Start_DMA(&hadc, (uint32_t*)&HeartBeatValue, 2);
+  HAL_ADC_Start_DMA(&hadc, &HeartBeatValue, 2);
 
 //  uint32_t Timer = HAL_GetTick();
-
+  int pulse = 0;
   while (1)
   {
 
@@ -174,70 +172,21 @@ int main(void)
 
 //	AHT20_Read(&Temp, &Hum); // reads AHT20 measurements every second // timer nie działa więc jest tu
 //	MessageLength = sprintf(Mess, "Temperature = %.1fC\n\r Hum = %.1f\n\r Heartrate = <TODO>\n\r", Temp, Hum);
-//	MessageLength = sprintf(Mess, "HeartbeatArray = %d   index = %d\n\r", HeartBeatArray[HeartBeatIndex], HeartBeatIndex);
-//	HAL_UART_Transmit_IT(&hlpuart1, Mess, MessageLength);
 
-//	HAL_Delay(500);
+	pulse = get_pulse((uint16_t*)HeartBeatArray, 255);
+	MessageLength = sprintf(Message, "pulse = %d\n\r", pulse);
+	HAL_UART_Transmit_IT(&hlpuart1, Message, MessageLength);
 
-	  pv_run();
+	HAL_Delay(100);
+
+//	 pv_run();
 
 
 
 
 	//////////////////// GPS ////////////////////
 
-//	  MessageLength = sprintf((char*)Message, "\033[2J\033[;H"); // Clear terminal and home cursor
-//	  HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 1000);
-//
-//	  NEO6_Task(&GpsState);
-//
-//		  if((HAL_GetTick() - Timer) > 100)
-//		  {
-//			  MessageLength = sprintf((char*)Message, "\033[2J\033[;H"); // Clear terminal and home cursor
-//			  HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 1000);
-//
-//			  if(NEO6_IsFix(&GpsState))
-//			  {
-//				  MessageLength = sprintf((char*)Message, "UTC Time: %02d:%02d:%02d\n\r", GpsState.Hour, GpsState.Minute, GpsState.Second);
-//				  HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 1000);
-//
-//				  MessageLength = sprintf((char*)Message, "Date: %02d.%02d.20%02d\n\r", GpsState.Day, GpsState.Month, GpsState.Year);
-//				  HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 1000);
-//
-//				  MessageLength = sprintf((char*)Message, "Latitude: %.2f %c\n\r", GpsState.Latitude, GpsState.LatitudeDirection);
-//				  HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 1000);
-//
-//				  MessageLength = sprintf((char*)Message, "Longitude: %.2f %c\n\r", GpsState.Longitude, GpsState.LongitudeDirection);
-//				  HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 1000);
-//
-//				  MessageLength = sprintf((char*)Message, "Altitude: %.2f m above sea level\n\r", GpsState.Altitude);
-//				  HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 1000);
-//
-//				  MessageLength = sprintf((char*)Message, "Speed: %.2f knots, %f km/h\n\r", GpsState.SpeedKnots, GpsState.SpeedKilometers);
-//				  HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 1000);
-//
-//				  MessageLength = sprintf((char*)Message, "Satelites: %d\n\r", GpsState.SatelitesNumber);
-//				  HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 1000);
-//
-//				  MessageLength = sprintf((char*)Message, "Dilution of precision: %.2f\n\r", GpsState.Dop);
-//				  HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 1000);
-//
-//				  MessageLength = sprintf((char*)Message, "Horizontal dilution of precision: %.2f\n\r", GpsState.Hdop);
-//				  HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 1000);
-//
-//				  MessageLength = sprintf((char*)Message, "Vertical dilution of precision: %.2f\n\r", GpsState.Vdop);
-//				  HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 1000);
-//
-//				  while(1); // TODO: remove this
-//			  }
-//			  else
-//			  {
-//				  MessageLength = sprintf((char*)Message, "No Fix\n\r");
-//				  HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 1000);
-//			  }
-//
-//			  Timer = HAL_GetTick();
-//		  }
+
   }
   /* USER CODE END 3 */
 }
@@ -264,8 +213,8 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI;
-  RCC_OscInitStruct.PLL.PLLMUL = RCC_PLLMUL_4;
-  RCC_OscInitStruct.PLL.PLLDIV = RCC_PLLDIV_2;
+  RCC_OscInitStruct.PLL.PLLMUL = RCC_PLLMUL_3;
+  RCC_OscInitStruct.PLL.PLLDIV = RCC_PLLDIV_3;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
     Error_Handler();
@@ -276,11 +225,11 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
-  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
+  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV16;
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_1) != HAL_OK)
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK)
   {
     Error_Handler();
   }

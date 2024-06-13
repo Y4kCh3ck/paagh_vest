@@ -6,28 +6,29 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value=""/>
+		<item key="selection" value="GpsState"/>
 		<list key="findhistory">
+			<item value="GpsState"/>
+			<item value="get_pulse"/>
+			<item value="HAL_UART_Transmit_IT"/>
+			<item value="nRF24_WaitTX"/>
+			<item value="nRF24_SendPacket"/>
+			<item value="nRF24_ReadRegister"/>
+			<item value="nRF24_ReadStatus"/>
+			<item value="HAL_ADC_Start_DMA"/>
+			<item value="sensor_init"/>
 			<item value="HAL_GPIO_WritePin(NRF24_CSN_GPIO_Port, NRF24_CSN_Pin, GPIO_PIN_SET)"/>
 			<item value="length"/>
 			<item value="lenght"/>
 			<item value="message"/>
 			<item value="nRF24_TX_Status"/>
-			<item value="nRF24_SendPacket"/>
-			<item value="nRF24_WaitTX"/>
 			<item value="nRF24_WriteTXPayload"/>
-			<item value="nRF24_SetTXAddress"/>
-			<item value="NRF24_IRQ"/>
-			<item value="sensor_init"/>
-			<item value="NRF24_CSN_Pin"/>
-			<item value="nRF24_ReadRegister"/>
-			<item value="nRF24_ReadStatus"/>
-			<item value="NEO6_Init"/>
 		</list>
 		<list key="replacehistory">
+			<item value="HAL_UART_Transmit"/>
+			<item value=""/>
 			<item value="HAL_UART_Transmit_IT"/>
 			<item value="hlpuart1"/>
-			<item value=""/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
