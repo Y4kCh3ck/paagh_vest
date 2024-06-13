@@ -87,7 +87,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
   if (htim == &htim6) {
     HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
 
-    HAL_UART_Transmit_IT(&huart2, ".", 1);
+//    HAL_UART_Transmit_IT(&huart2, ".", 1);
   }
 }
 

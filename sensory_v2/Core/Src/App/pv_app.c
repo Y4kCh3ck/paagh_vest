@@ -98,7 +98,7 @@ void GPS_print(NEO6_State GpsState)
 state_t do_state_init( instance_data_t *data )
 {
 	clear_terminal();
-	MessageLength = sprintf(Message, "state init\n\r");
+	MessageLength = sprintf(Message, "\n\rstate init\n\r");
 	if(NRF24_TRANSMITTED_PACKET != nRF24_SendPacket(Message, MessageLength))
 	{
 		HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 100);
@@ -132,16 +132,16 @@ state_t do_state_standby( instance_data_t *data )
         temperature = get_temperature();
 
     	clear_terminal();
-    	MessageLength = sprintf(Message, "state standby\n\r");
+    	MessageLength = sprintf(Message, "\n\rstate standby\n\r");
     	if(NRF24_TRANSMITTED_PACKET != nRF24_SendPacket(Message, MessageLength))
     	{
     		HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 100);
     	}
 
-		MessageLength = sprintf(Message, "Temperature = %.1fC\n\r Hum = %.1f\n\r", temperature, humidity);
+		MessageLength = sprintf(Message, "Temperature = %.1fC\n\rHum = %.1f\n\r", temperature, humidity);
 		HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 100);
 
-        //if( temperature < 10  || humidity > 80 ) // debug
+        if( temperature < 10  || humidity > 80 )
         {
         	return STATE_RESCUE;
         }
@@ -164,22 +164,21 @@ state_t do_state_rescue( instance_data_t *data )
     while( 1 )
     {
     	clear_terminal();
-    	GPS_print(GpsState);
-    	MessageLength = sprintf(Message, "state rescue\n\r");
+    	MessageLength = sprintf(Message, "\n\rstate rescue\n\r");
     	if(NRF24_TRANSMITTED_PACKET != nRF24_SendPacket(Message, MessageLength))
     	{
     		HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 100);
     	}
-
+    	GPS_print(GpsState);
         HAL_GPIO_TogglePin(USER_LED_GPIO_Port, USER_LED_Pin);
 
         pulse = get_pulse((uint16_t*)HeartBeatArray, 255);
 		MessageLength = sprintf(Message, "Pulse = %d\n\r", pulse);
 		HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 100);
 
-        //if( temperature < 10  || pulse < 40 ) // debug
+        if( temperature < 10  || pulse < 40 )
         {
-        	return STATE_RESCUE;
+        	return STATE_EMERGENCY;
         }
 
 		if(GPIO_PIN_RESET == HAL_GPIO_ReadPin(USER_BUTTON_GPIO_Port, USER_BUTTON_Pin))
@@ -203,7 +202,7 @@ state_t do_state_emergency( instance_data_t *data )
     while( 1 )
     {
     	clear_terminal();
-    	MessageLength = sprintf(Message, "state emergency\n\r");
+    	MessageLength = sprintf(Message, "\n\rstate emergency\n\r");
     	if(NRF24_TRANSMITTED_PACKET != nRF24_SendPacket(Message, MessageLength))
     	{
     		HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 100);
@@ -225,38 +224,12 @@ state_t do_state_emergency( instance_data_t *data )
     return STATE_INIT;
 }
 
-state_t do_state_test( instance_data_t *data )
-{
-    // Simulation of other stated without GPS and Petlie
-    // Low freq led?
-    // If button held go to STANDBY
-    
-    return STATE_STANDBY;
-}
-
-state_t do_state_error( instance_data_t *data )
-{
-    // Well.. fuck
-    // Constant LED
-    // printf("state error");
-    // Maybe something will come up later...
-
-    printf("Error");
-    while( 1 ) {
-        ;;
-    }
-}
-
-
-
 // State table
 state_func_t* const state_table[ NUM_STATES ] = {
     do_state_init,
     do_state_standby,
     do_state_rescue,
     do_state_emergency,
-    do_state_test,
-    do_state_error,
 };
 
 state_t run_state( state_t current_state, instance_data_t *data )

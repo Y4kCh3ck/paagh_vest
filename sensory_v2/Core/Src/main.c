@@ -154,9 +154,6 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 
-//  AHT20_Init();
-//  NEO6_Init(&GpsState, &hlpuart1);
-
   HAL_TIM_Base_Start_IT(&htim6);
   HAL_ADCEx_Calibration_Start(&hadc, ADC_SINGLE_ENDED);
   HAL_ADC_Start_DMA(&hadc, &HeartBeatValue, 2);
@@ -170,16 +167,7 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 
-//	AHT20_Read(&Temp, &Hum); // reads AHT20 measurements every second // timer nie działa więc jest tu
-//	MessageLength = sprintf(Mess, "Temperature = %.1fC\n\r Hum = %.1f\n\r Heartrate = <TODO>\n\r", Temp, Hum);
-
-	pulse = get_pulse((uint16_t*)HeartBeatArray, 255);
-	MessageLength = sprintf(Message, "pulse = %d\n\r", pulse);
-	HAL_UART_Transmit_IT(&hlpuart1, Message, MessageLength);
-
-	HAL_Delay(100);
-
-//	 pv_run();
+	 pv_run();
 
   }
   /* USER CODE END 3 */

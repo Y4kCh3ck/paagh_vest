@@ -1,20 +1,6 @@
-19:07:52 **** Incremental Build of configuration Debug for project sensory ****
+19:43:17 **** Incremental Build of configuration Debug for project sensory ****
 make -j12 all 
 arm-none-eabi-gcc -gdwarf-4 "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -gdwarf-4 "../Core/Src/usart.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L053xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/usart.d" -MT"Core/Src/usart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/usart.o"
-../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
-../Core/Src/main.c:90:35: warning: pointer targets in passing argument 2 of 'HAL_UART_Transmit_IT' differ in signedness [-Wpointer-sign]
-   90 |     HAL_UART_Transmit_IT(&huart2, ".", 1);
-      |                                   ^~~
-      |                                   |
-      |                                   char *
-In file included from ../Core/Inc/stm32l0xx_hal_conf.h:281,
-                 from ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Src/main.c:20:
-../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h:1512:82: note: expected 'const uint8_t *' {aka 'const unsigned char *'} but argument is of type 'char *'
- 1512 | HAL_StatusTypeDef HAL_UART_Transmit_IT(UART_HandleTypeDef *huart, const uint8_t *pData, uint16_t Size);
-      |                                                                   ~~~~~~~~~~~~~~~^~~~~
 ../Core/Src/main.c: In function 'main':
 ../Core/Src/main.c:144:25: warning: pointer targets in passing argument 2 of 'nRF24_SetRXAddress' differ in signedness [-Wpointer-sign]
   144 |   nRF24_SetRXAddress(0, "Odb");
@@ -55,11 +41,11 @@ Finished building target: sensory.elf
 arm-none-eabi-size  sensory.elf 
 arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
    text	   data	    bss	    dec	    hex	filename
-  54844	    476	   3492	  58812	   e5bc	sensory.elf
+  54824	    476	   3492	  58792	   e5a8	sensory.elf
 Finished building: default.size.stdout
  
 Finished building: sensory.list
  
 
-19:07:53 Build Finished. 0 errors, 5 warnings. (took 1s.271ms)
+19:43:18 Build Finished. 0 errors, 4 warnings. (took 1s.82ms)
 
