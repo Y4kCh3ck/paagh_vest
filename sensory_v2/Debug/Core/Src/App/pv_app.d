@@ -33,9 +33,9 @@ Core/Src/App/pv_app.o: ../Core/Src/App/pv_app.c ../Core/Inc/App/pv_app.h \
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_tim_ex.h \
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h \
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart_ex.h \
- ../Core/Inc/spi.h ../Core/Inc/AHT20.h ../Core/Inc/i2c.h \
- ../Core/Inc/usart.h ../Core/Inc/NEO6.h ../Core/Inc/nRF24.h \
- ../Core/Inc/App/pv_pm.h ../Core/Inc/App/pv_sensors.h \
+ ../Core/Inc/spi.h ../Core/Inc/App/AHT20.h ../Core/Inc/i2c.h \
+ ../Core/Inc/usart.h ../Core/Inc/App/NEO6.h ../Core/Inc/App/nRF24.h \
+ ../Core/Inc/main.h ../Core/Inc/App/pv_pm.h ../Core/Inc/App/pv_sensors.h \
  ../Core/Inc/App/pv_pulse.h
 ../Core/Inc/App/pv_app.h:
 ../Core/Inc/adc.h:
@@ -74,11 +74,12 @@ Core/Src/App/pv_app.o: ../Core/Src/App/pv_app.c ../Core/Inc/App/pv_app.h \
 ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart.h:
 ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_uart_ex.h:
 ../Core/Inc/spi.h:
-../Core/Inc/AHT20.h:
+../Core/Inc/App/AHT20.h:
 ../Core/Inc/i2c.h:
 ../Core/Inc/usart.h:
-../Core/Inc/NEO6.h:
-../Core/Inc/nRF24.h:
+../Core/Inc/App/NEO6.h:
+../Core/Inc/App/nRF24.h:
+../Core/Inc/main.h:
 ../Core/Inc/App/pv_pm.h:
 ../Core/Inc/App/pv_sensors.h:
 ../Core/Inc/App/pv_pulse.h:

@@ -1,9 +1,9 @@
 #include "spi.h"
 
 #include "App/pv_sensors.h"
-#include "AHT20.h"
-#include <NEO6.h>
-#include <nRF24.h>
+#include "App/AHT20.h"
+#include "App/NEO6.h"
+#include "App/nRF24.h"
 
 uint8_t tempCounter = 0;
 uint8_t humidityCounter = 0;

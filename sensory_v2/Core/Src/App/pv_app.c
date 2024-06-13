@@ -10,9 +10,9 @@
 #include "adc.h"
 #include "spi.h"
 
-#include "AHT20.h"
-#include <NEO6.h>
-#include <nRF24.h>
+#include "App/AHT20.h"
+#include "App/NEO6.h"
+#include "App/nRF24.h"
 
 #include "App/pv_pm.h"
 #include "App/pv_sensors.h"
@@ -25,6 +25,8 @@ extern uint8_t pulse;
 extern volatile uint32_t HeartBeatValue;
 extern volatile uint32_t HeartBeatArray[255];
 extern volatile uint8_t HeartBeatIndex;
+
+extern NEO6_State GpsState;
 
 // Typedefs
 typedef enum {
@@ -51,57 +53,50 @@ void clear_terminal()
 
 void GPS_print(NEO6_State GpsState)
 {
-	clear_terminal();
 	NEO6_Task(&GpsState);
 
-	if((HAL_GetTick() - Timer) > 100)
+	if(NEO6_IsFix(&GpsState))
 	{
-	  clear_terminal();
+		MessageLength = sprintf((char*)Message, "UTC Time: %02d:%02d:%02d\n\r", GpsState.Hour, GpsState.Minute, GpsState.Second);
+		HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 1000);
 
-	  if(NEO6_IsFix(&GpsState))
-	  {
-		  MessageLength = sprintf((char*)Message, "UTC Time: %02d:%02d:%02d\n\r", GpsState.Hour, GpsState.Minute, GpsState.Second);
-		  HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 1000);
+		MessageLength = sprintf((char*)Message, "Date: %02d.%02d.20%02d\n\r", GpsState.Day, GpsState.Month, GpsState.Year);
+		HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 1000);
 
-		  MessageLength = sprintf((char*)Message, "Date: %02d.%02d.20%02d\n\r", GpsState.Day, GpsState.Month, GpsState.Year);
-		  HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 1000);
+		MessageLength = sprintf((char*)Message, "Latitude: %.2f %c\n\r", GpsState.Latitude, GpsState.LatitudeDirection);
+		HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 1000);
 
-		  MessageLength = sprintf((char*)Message, "Latitude: %.2f %c\n\r", GpsState.Latitude, GpsState.LatitudeDirection);
-		  HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 1000);
+		MessageLength = sprintf((char*)Message, "Longitude: %.2f %c\n\r", GpsState.Longitude, GpsState.LongitudeDirection);
+		HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 1000);
 
-		  MessageLength = sprintf((char*)Message, "Longitude: %.2f %c\n\r", GpsState.Longitude, GpsState.LongitudeDirection);
-		  HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 1000);
+		MessageLength = sprintf((char*)Message, "Altitude: %.2f m above sea level\n\r", GpsState.Altitude);
+		HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 1000);
 
-		  MessageLength = sprintf((char*)Message, "Altitude: %.2f m above sea level\n\r", GpsState.Altitude);
-		  HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 1000);
+		MessageLength = sprintf((char*)Message, "Speed: %.2f knots, %f km/h\n\r", GpsState.SpeedKnots, GpsState.SpeedKilometers);
+		HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 1000);
 
-		  MessageLength = sprintf((char*)Message, "Speed: %.2f knots, %f km/h\n\r", GpsState.SpeedKnots, GpsState.SpeedKilometers);
-		  HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 1000);
+		MessageLength = sprintf((char*)Message, "Satelites: %d\n\r", GpsState.SatelitesNumber);
+		HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 1000);
 
-		  MessageLength = sprintf((char*)Message, "Satelites: %d\n\r", GpsState.SatelitesNumber);
-		  HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 1000);
+		MessageLength = sprintf((char*)Message, "Dilution of precision: %.2f\n\r", GpsState.Dop);
+		HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 1000);
 
-		  MessageLength = sprintf((char*)Message, "Dilution of precision: %.2f\n\r", GpsState.Dop);
-		  HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 1000);
+		MessageLength = sprintf((char*)Message, "Horizontal dilution of precision: %.2f\n\r", GpsState.Hdop);
+		HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 1000);
 
-		  MessageLength = sprintf((char*)Message, "Horizontal dilution of precision: %.2f\n\r", GpsState.Hdop);
-		  HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 1000);
-
-		  MessageLength = sprintf((char*)Message, "Vertical dilution of precision: %.2f\n\r", GpsState.Vdop);
-		  HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 1000);
-	  }
-	  else
-	  {
-		  MessageLength = sprintf((char*)Message, "No Fix\n\r");
-		  HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 1000);
-	  }
-
-	  Timer = HAL_GetTick();
+		MessageLength = sprintf((char*)Message, "Vertical dilution of precision: %.2f\n\r", GpsState.Vdop);
+		HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 1000);
+	}
+	else
+	{
+		MessageLength = sprintf((char*)Message, "GPS: No Fix\n\r");
+		HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 1000);
 	}
 }
 
 // State functions
-state_t do_state_init( instance_data_t *data ) {
+state_t do_state_init( instance_data_t *data )
+{
 	clear_terminal();
 	MessageLength = sprintf(Message, "state init\n\r");
 	if(NRF24_TRANSMITTED_PACKET != nRF24_SendPacket(Message, MessageLength))
@@ -165,10 +160,11 @@ state_t do_state_rescue( instance_data_t *data )
 	power_on_adc_sens();
     HAL_ADC_Start_DMA(&hadc, &HeartBeatValue, 2);
 
-    GPS_print(GpsState);
+
     while( 1 )
     {
     	clear_terminal();
+    	GPS_print(GpsState);
     	MessageLength = sprintf(Message, "state rescue\n\r");
     	if(NRF24_TRANSMITTED_PACKET != nRF24_SendPacket(Message, MessageLength))
     	{
@@ -229,7 +225,8 @@ state_t do_state_emergency( instance_data_t *data )
     return STATE_INIT;
 }
 
-state_t do_state_test( instance_data_t *data ) {
+state_t do_state_test( instance_data_t *data )
+{
     // Simulation of other stated without GPS and Petlie
     // Low freq led?
     // If button held go to STANDBY
@@ -237,7 +234,8 @@ state_t do_state_test( instance_data_t *data ) {
     return STATE_STANDBY;
 }
 
-state_t do_state_error( instance_data_t *data ) {
+state_t do_state_error( instance_data_t *data )
+{
     // Well.. fuck
     // Constant LED
     // printf("state error");
@@ -261,13 +259,15 @@ state_func_t* const state_table[ NUM_STATES ] = {
     do_state_error,
 };
 
-state_t run_state( state_t current_state, instance_data_t *data ) {
+state_t run_state( state_t current_state, instance_data_t *data )
+{
     return state_table[ current_state ](data);
 }
 
 
 // Main loop
-void pv_run() {
+void pv_run()
+{
 
     state_t current_state = STATE_INIT;
     instance_data_t data = { NULL };

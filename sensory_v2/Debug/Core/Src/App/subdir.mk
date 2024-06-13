@@ -5,18 +5,27 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../Core/Src/App/AHT20.c \
+../Core/Src/App/NEO6.c \
+../Core/Src/App/nRF24.c \
 ../Core/Src/App/pv_app.c \
 ../Core/Src/App/pv_pm.c \
 ../Core/Src/App/pv_pulse.c \
 ../Core/Src/App/pv_sensors.c 
 
 OBJS += \
+./Core/Src/App/AHT20.o \
+./Core/Src/App/NEO6.o \
+./Core/Src/App/nRF24.o \
 ./Core/Src/App/pv_app.o \
 ./Core/Src/App/pv_pm.o \
 ./Core/Src/App/pv_pulse.o \
 ./Core/Src/App/pv_sensors.o 
 
 C_DEPS += \
+./Core/Src/App/AHT20.d \
+./Core/Src/App/NEO6.d \
+./Core/Src/App/nRF24.d \
 ./Core/Src/App/pv_app.d \
 ./Core/Src/App/pv_pm.d \
 ./Core/Src/App/pv_pulse.d \
@@ -30,7 +39,7 @@ Core/Src/App/%.o Core/Src/App/%.su Core/Src/App/%.cyclo: ../Core/Src/App/%.c Cor
 clean: clean-Core-2f-Src-2f-App
 
 clean-Core-2f-Src-2f-App:
-	-$(RM) ./Core/Src/App/pv_app.cyclo ./Core/Src/App/pv_app.d ./Core/Src/App/pv_app.o ./Core/Src/App/pv_app.su ./Core/Src/App/pv_pm.cyclo ./Core/Src/App/pv_pm.d ./Core/Src/App/pv_pm.o ./Core/Src/App/pv_pm.su ./Core/Src/App/pv_pulse.cyclo ./Core/Src/App/pv_pulse.d ./Core/Src/App/pv_pulse.o ./Core/Src/App/pv_pulse.su ./Core/Src/App/pv_sensors.cyclo ./Core/Src/App/pv_sensors.d ./Core/Src/App/pv_sensors.o ./Core/Src/App/pv_sensors.su
+	-$(RM) ./Core/Src/App/AHT20.cyclo ./Core/Src/App/AHT20.d ./Core/Src/App/AHT20.o ./Core/Src/App/AHT20.su ./Core/Src/App/NEO6.cyclo ./Core/Src/App/NEO6.d ./Core/Src/App/NEO6.o ./Core/Src/App/NEO6.su ./Core/Src/App/nRF24.cyclo ./Core/Src/App/nRF24.d ./Core/Src/App/nRF24.o ./Core/Src/App/nRF24.su ./Core/Src/App/pv_app.cyclo ./Core/Src/App/pv_app.d ./Core/Src/App/pv_app.o ./Core/Src/App/pv_app.su ./Core/Src/App/pv_pm.cyclo ./Core/Src/App/pv_pm.d ./Core/Src/App/pv_pm.o ./Core/Src/App/pv_pm.su ./Core/Src/App/pv_pulse.cyclo ./Core/Src/App/pv_pulse.d ./Core/Src/App/pv_pulse.o ./Core/Src/App/pv_pulse.su ./Core/Src/App/pv_sensors.cyclo ./Core/Src/App/pv_sensors.d ./Core/Src/App/pv_sensors.o ./Core/Src/App/pv_sensors.su
 
 .PHONY: clean-Core-2f-Src-2f-App
 
