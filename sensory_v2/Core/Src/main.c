@@ -49,8 +49,6 @@
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 
-#define DEBUG
-
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -84,14 +82,7 @@ volatile float Temp = 0.0f;
 volatile float Hum = 0.0f;
 volatile uint16_t HeartBeatValue;
 volatile uint16_t HeartBeatArray[20] = {0};
-static uint8_t HeartBeatIndex = 0;
-
-volatile uint8_t nrf24_rx_flag, nrf24_tx_flag, nrf24_mr_flag;
-uint8_t Nrf24_Message[NRF24_PAYLOAD_SIZE];
-uint8_t Message[32];
-uint8_t MessageLength;
-uint8_t Mess[80];
-
+volatile uint8_t HeartBeatIndex = 0;
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
@@ -103,22 +94,21 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
-  if (htim == &htim6) {
+  if (htim == &htim6)
+  {
 
 
   }
 }
 
-void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc) {
-
-
+void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
+{
 	if(HeartBeatIndex > 19)
 	{
 		HeartBeatIndex = 0;
 	}
 	HeartBeatArray[HeartBeatIndex] = HeartBeatValue;
 	HeartBeatIndex++;
-
 }
 
 /* USER CODE END 0 */
@@ -166,21 +156,14 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 
-  AHT20_Init();
-  NEO6_Init(&GpsState, &hlpuart1);
+//  AHT20_Init();
+//  NEO6_Init(&GpsState, &hlpuart1);
+
   HAL_TIM_Base_Start_IT(&htim6);
-
-
-  // NRF TRANSMITER
-  nRF24_Init(&hspi1);
-  nRF24_SetRXAddress(0, "Nad");
-  nRF24_SetTXAddress("Odb");
-  nRF24_TX_Mode();
-
-  uint32_t Timer = HAL_GetTick();
   HAL_ADCEx_Calibration_Start(&hadc, ADC_SINGLE_ENDED);
   HAL_ADC_Start_DMA(&hadc, (uint32_t*)&HeartBeatValue, 2);
 
+//  uint32_t Timer = HAL_GetTick();
 
   while (1)
   {
@@ -196,14 +179,10 @@ int main(void)
 
 //	HAL_Delay(500);
 
-//	  pv_run();
+	  pv_run();
 
 
-	  MessageLength = sprintf(Message, "%d", 1 );
-	  nRF24_WriteTXPayload(Message, 1);
-	  HAL_Delay(1);
-	  nRF24_WaitTX();
-	  HAL_Delay(1000);
+
 
 	//////////////////// GPS ////////////////////
 

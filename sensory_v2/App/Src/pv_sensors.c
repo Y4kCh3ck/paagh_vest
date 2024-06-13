@@ -1,5 +1,7 @@
 #include "pv_sensors.h"
 #include "AHT20.h"
+#include <NEO6.h>
+#include <nRF24.h>
 
 uint8_t tempCounter = 0;
 uint8_t humidityCounter = 0;
@@ -11,6 +13,13 @@ float humiditySum;
 
 void sensor_init() {
     AHT20_Init();
+    NEO6_Init(&GpsState, &hlpuart1);
+
+    // NRF TRANSMITER
+    nRF24_Init(&hspi1);
+    nRF24_SetRXAddress(0, "Nad");
+    nRF24_SetTXAddress("Odb");
+    nRF24_TX_Mode();
 }
 
 float get_humidity() {    

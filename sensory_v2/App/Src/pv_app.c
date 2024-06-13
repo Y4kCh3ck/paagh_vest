@@ -11,6 +11,9 @@
 #include "pv_pm.h"
 #include "pv_sensors.h"
 
+uint8_t MessageLength;
+uint8_t Message[255];
+
 // Typedefs
 typedef enum {
     STATE_INIT,
@@ -28,10 +31,13 @@ typedef struct instance_data{
 
 typedef state_t state_func_t( instance_data_t *data );
 
-
 // State functions
 state_t do_state_init( instance_data_t *data ) {
-    printf("state init\n");
+	MessageLength = sprintf(Mess, "state init\n\r");
+	if(NRF24_TRANSMITTED_PACKET != nRF24_SendPacket(Message, MessageLength))
+	{
+		HAL_UART_Transmit_IT(&hlpuart1, Message, MessageLength);
+	}
 
     // Power manager setup
     hard_reset_gps();
@@ -48,7 +54,11 @@ state_t do_state_init( instance_data_t *data ) {
 
 state_t do_state_standby( instance_data_t *data ) {
 
-    printf("state standby\n");
+	MessageLength = sprintf(Mess, "state standby\n\r");
+	if(NRF24_TRANSMITTED_PACKET != nRF24_SendPacket(Message, MessageLength))
+	{
+		HAL_UART_Transmit_IT(&hlpuart1, Message, MessageLength);
+	}
 
     // Humidity, Temperature, Pressure, calucate average
     // If parameters not in proper range go to RESCUE
@@ -62,12 +72,13 @@ state_t do_state_standby( instance_data_t *data ) {
         humidity = get_humidity();
         temperature = get_temperature();
 
-        if( temperature < 10 )
-            return STATE_RESCUE;
-
+        if( temperature < 10  || humidity > 80 /* || heartRate > ??*/ )
+        {
+        	return STATE_RESCUE;
+        }
     }
     
-    return STATE_RESCUE;
+    return STATE_STANDBY;
 }
 
 state_t do_state_rescue( instance_data_t *data ) {
@@ -76,6 +87,11 @@ state_t do_state_rescue( instance_data_t *data ) {
     // Pulse read, pulsoximeter read? Time measurement, send SOS using NRF
     // If low pulse and low temperature go to EMERGENCY
     // If button held go to STANDBY
+
+    while( 1 )
+    {
+        HAL_GPIO_TogglePin(USER_LED_GPIO_Port, USER_LED_Pin);
+    }
 
     return STATE_EMERGENCY;
 }

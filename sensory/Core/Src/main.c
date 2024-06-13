@@ -70,8 +70,6 @@ void SystemClock_Config(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
-NEO6_State GpsState;
-
 volatile uint8_t nrf24_rx_flag, nrf24_tx_flag, nrf24_mr_flag;
 uint8_t Nrf24_Message[NRF24_PAYLOAD_SIZE];
 uint8_t Message[32];
@@ -80,36 +78,36 @@ uint8_t Mess[255];
 
 uint8_t value;
 
-static uint8_t line_buffer[LINE_MAX_LENGTH + 1];
-static uint32_t line_length;
+//static uint8_t line_buffer[LINE_MAX_LENGTH + 1];
+//static uint32_t line_length;
+//
+//void line_append(uint8_t value)
+//{
+//	if (value == '\r' || value == '\n') {
+//		if (line_length > 0) {
+//			line_buffer[line_length] = '\0';
+//			printf("Otrzymano: %s\n", line_buffer);
+//			line_length = 0;
+//		}
+//	}
+//	else {
+//		if (line_length >= LINE_MAX_LENGTH) {
+//			line_length = 0;
+//		}
+//		line_buffer[line_length++] = value;
+//	}
+//}
 
-void line_append(uint8_t value)
-{
-	if (value == '\r' || value == '\n') {
-		if (line_length > 0) {
-			line_buffer[line_length] = '\0';
-			printf("Otrzymano: %s\n", line_buffer);
-			line_length = 0;
-		}
-	}
-	else {
-		if (line_length >= LINE_MAX_LENGTH) {
-			line_length = 0;
-		}
-		line_buffer[line_length++] = value;
-	}
-}
-
-int __io_putchar(int ch) // to pc
-{
-  if (ch == '\n') {
-    __io_putchar('\r');
-  }
-
-  HAL_UART_Transmit(&huart2, (uint8_t*)&ch, 1, HAL_MAX_DELAY);
-
-  return 1;
-}
+//int __io_putchar(int ch) // to pc
+//{
+//  if (ch == '\n') {
+//    __io_putchar('\r');
+//  }
+//
+//  HAL_UART_Transmit(&huart2, (uint8_t*)&ch, 1, HAL_MAX_DELAY);
+//
+//  return 1;
+//}
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
