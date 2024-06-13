@@ -32,8 +32,6 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdbool.h>
-#include <AHT20.h>
-#include <NEO6.h>
 #include <nRF24.h>
 
 /* USER CODE END Includes */
@@ -70,55 +68,17 @@ void SystemClock_Config(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
-volatile uint8_t nrf24_rx_flag, nrf24_tx_flag, nrf24_mr_flag;
 uint8_t Nrf24_Message[NRF24_PAYLOAD_SIZE];
-uint8_t Message[32];
+uint8_t UARTMessage[NRF24_PAYLOAD_SIZE];
+uint8_t Message[NRF24_PAYLOAD_SIZE];
 uint8_t MessageLength;
-uint8_t Mess[255];
-
-uint8_t value;
-
-//static uint8_t line_buffer[LINE_MAX_LENGTH + 1];
-//static uint32_t line_length;
-//
-//void line_append(uint8_t value)
-//{
-//	if (value == '\r' || value == '\n') {
-//		if (line_length > 0) {
-//			line_buffer[line_length] = '\0';
-//			printf("Otrzymano: %s\n", line_buffer);
-//			line_length = 0;
-//		}
-//	}
-//	else {
-//		if (line_length >= LINE_MAX_LENGTH) {
-//			line_length = 0;
-//		}
-//		line_buffer[line_length++] = value;
-//	}
-//}
-
-//int __io_putchar(int ch) // to pc
-//{
-//  if (ch == '\n') {
-//    __io_putchar('\r');
-//  }
-//
-//  HAL_UART_Transmit(&huart2, (uint8_t*)&ch, 1, HAL_MAX_DELAY);
-//
-//  return 1;
-//}
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
-  if(huart == GpsState.neo6_huart)
+  if(huart == &hlpuart1)
   {
-    NEO6_ReceiveUartChar(&GpsState);
-  }
-  else if(huart == &hlpuart1)
-  {
-	  HAL_UART_Receive_IT(&hlpuart1, Mess, sizeof(Mess)); // receive from pcb
-	  HAL_UART_Transmit_IT(&huart2, Mess, sizeof(Mess)); // send to pc
+	  HAL_UART_Receive_IT(&hlpuart1, UARTMessage, sizeof(UARTMessage)); // receive from pcb
+	  HAL_UART_Transmit_IT(&huart2, UARTMessage, sizeof(UARTMessage)); // send to pc
   }
 }
 
@@ -130,8 +90,6 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
     HAL_UART_Transmit_IT(&huart2, ".", 1);
   }
 }
-
-
 
 /* USER CODE END 0 */
 
@@ -179,14 +137,14 @@ int main(void)
   /* USER CODE BEGIN WHILE */
 
   HAL_TIM_Base_Start_IT(&htim6);
-  HAL_UART_Receive_IT(&hlpuart1, Mess, sizeof(Mess));
+  HAL_UART_Receive_IT(&hlpuart1, UARTMessage, sizeof(UARTMessage));
 
   // NRF RECEIVER
   nRF24_Init(&hspi1);
   nRF24_SetRXAddress(0, "Odb");
   nRF24_SetTXAddress("Nad");
   nRF24_RX_Mode();
-  uint8_t size = 1;
+  uint8_t size = 0;
 
   while (1)
   {
@@ -195,10 +153,9 @@ int main(void)
 	  if(nRF24_RXAvailible())
 	  {
 		  nRF24_ReadRXPaylaod(Nrf24_Message, &size);
-		  MessageLength = sprintf(Message, "%c\n\r", &size);
+		  MessageLength = sprintf(Message, "%c\n\r", Nrf24_Message);
 		  HAL_UART_Transmit(&huart2, Message, MessageLength, 1000);
 	  }
-
 
     /* USER CODE END WHILE */
 

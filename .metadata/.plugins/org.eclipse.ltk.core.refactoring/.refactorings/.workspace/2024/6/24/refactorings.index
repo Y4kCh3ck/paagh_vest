@@ -7,3 +7,7 @@
 1718286115823	Delete resource 'sensory_v2/Core/Src/App/Inc'
 1718286123857	Delete resource 'sensory_v2/Core/Inc/App/Src'
 1718286127299	Delete resource 'sensory_v2/Core/Inc/App/Inc'
+1718298433717	Delete resource 'sensory/Core/Src/NEO6.c'
+1718298440422	Delete resource 'sensory/Core/Inc/NEO6.h'
+1718298444516	Delete resource 'sensory/Core/Inc/AHT20.h'
+1718298447037	Delete resource 'sensory/Core/Src/AHT20.c'

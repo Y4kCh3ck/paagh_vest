@@ -6,8 +6,10 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="GpsState"/>
+		<item key="selection" value="UARTMessage"/>
 		<list key="findhistory">
+			<item value="Message"/>
+			<item value="nRF24_ReadRXPaylaod"/>
 			<item value="GpsState"/>
 			<item value="get_pulse"/>
 			<item value="HAL_UART_Transmit_IT"/>
@@ -21,10 +23,9 @@
 			<item value="length"/>
 			<item value="lenght"/>
 			<item value="message"/>
-			<item value="nRF24_TX_Status"/>
-			<item value="nRF24_WriteTXPayload"/>
 		</list>
 		<list key="replacehistory">
+			<item value="UARTMessage"/>
 			<item value="HAL_UART_Transmit"/>
 			<item value=""/>
 			<item value="HAL_UART_Transmit_IT"/>

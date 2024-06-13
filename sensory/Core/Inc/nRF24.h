@@ -103,7 +103,7 @@
 #define NRF24_RPD         0x09
 #define NRF24_EN_DPL      2
 
-#define NRF24_PAYLOAD_SIZE 	 1
+#define NRF24_PAYLOAD_SIZE 	 255
 
 #define NRF24_ADDR_SIZE 	 3
 //3 ^^ było 5
