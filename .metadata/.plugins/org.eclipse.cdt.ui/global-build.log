@@ -16755,3 +16755,83 @@ Finished building: default.size.stdout
  
 Finished building: sensory.list
  
+14:40:50 **** Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-gcc -o "sensory_v2.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\IDE_nadajnik_pcb\sensory_v2\STM32L071KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory_v2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory_v2.elf
+ 
+arm-none-eabi-size  sensory_v2.elf 
+arm-none-eabi-objdump -h -S sensory_v2.elf  > "sensory_v2.list"
+   text	   data	    bss	    dec	    hex	filename
+  68484	    476	   4248	  73208	  11df8	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory_v2.list
+ 
+14:41:27 **** Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-4 -o "sensory.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\IDE_odbiornik_STM32_Nucleo_L0\sensory\STM32L053R8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory.map" -Wl,--gc-sections -static -u _printf_float -u _scanf_float --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory.elf
+ 
+arm-none-eabi-size  sensory.elf 
+arm-none-eabi-objdump -h -S sensory.elf  > "sensory.list"
+   text	   data	    bss	    dec	    hex	filename
+  54824	    476	   3492	  58792	   e5a8	sensory.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory.list
+ 
+14:43:12 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/App/pv_pulse.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/App/pv_pulse.d" -MT"Core/Src/App/pv_pulse.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/App/pv_pulse.o"
+../Core/Src/App/pv_pulse.c: In function 'get_pulse':
+../Core/Src/App/pv_pulse.c:47:43: error: 'HEART_BEAT_ARRAY_SIZE' undeclared (first use in this function)
+   47 |                 if(samples_per_period_i < HEART_BEAT_ARRAY_SIZE)
+      |                                           ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/App/pv_pulse.c:47:43: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/App/subdir.mk:37: Core/Src/App/pv_pulse.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+14:43:27 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/App/pv_pulse.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/App/pv_pulse.d" -MT"Core/Src/App/pv_pulse.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/App/pv_pulse.o"
+arm-none-eabi-gcc -o "sensory_v2.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\IDE_nadajnik_pcb\sensory_v2\STM32L071KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory_v2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory_v2.elf
+ 
+arm-none-eabi-size  sensory_v2.elf 
+arm-none-eabi-objdump -h -S sensory_v2.elf  > "sensory_v2.list"
+   text	   data	    bss	    dec	    hex	filename
+  68484	    476	   4248	  73208	  11df8	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory_v2.list
+ 
+14:49:47 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/App/pv_pulse.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/App/pv_pulse.d" -MT"Core/Src/App/pv_pulse.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/App/pv_pulse.o"
+../Core/Src/App/pv_pulse.c: In function 'get_pulse':
+../Core/Src/App/pv_pulse.c:17:47: error: expected ',' or ';' before ')' token
+   17 |     float period = (1 / (1000000 / 160.5) / 2));
+      |                                               ^
+make: *** [Core/Src/App/subdir.mk:37: Core/Src/App/pv_pulse.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+14:50:20 **** Incremental Build of configuration Debug for project sensory_v2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/App/pv_pulse.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L071xx -c -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -u _printf_float -u _scanf_float -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/App/pv_pulse.d" -MT"Core/Src/App/pv_pulse.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/App/pv_pulse.o"
+arm-none-eabi-gcc -o "sensory_v2.elf" @"objects.list"   -mcpu=cortex-m0plus -T"C:\Users\kuba\STM32CubeIDE\workspace_1.14.1\IDE_nadajnik_pcb\sensory_v2\STM32L071KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="sensory_v2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: sensory_v2.elf
+ 
+arm-none-eabi-size  sensory_v2.elf 
+arm-none-eabi-objdump -h -S sensory_v2.elf  > "sensory_v2.list"
+   text	   data	    bss	    dec	    hex	filename
+  68484	    476	   4248	  73208	  11df8	sensory_v2.elf
+Finished building: default.size.stdout
+ 
+Finished building: sensory_v2.list
+ 
+14:50:28 **** Incremental Build of configuration Debug for project sensory ****
+make -j12 all 
+arm-none-eabi-size  sensory.elf 
+   text	   data	    bss	    dec	    hex	filename
+  54824	    476	   3492	  58792	   e5a8	sensory.elf
+Finished building: default.size.stdout
+ 

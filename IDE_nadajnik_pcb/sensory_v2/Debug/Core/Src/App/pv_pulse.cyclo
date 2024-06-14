@@ -1,0 +1,2 @@
+../Core/Src/App/pv_pulse.c:7:9:adc_to_digital	2
+../Core/Src/App/pv_pulse.c:12:5:get_pulse	11

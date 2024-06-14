@@ -1,0 +1,6 @@
+../Core/Src/App/AHT20.c:10:19:AHT20_Master_Transmit	1
+../Core/Src/App/AHT20.c:18:19:AHT20_Master_Receive	1
+../Core/Src/App/AHT20.c:26:19:AHT20_Write_Reg	1
+../Core/Src/App/AHT20.c:34:9:AHT20_Read_Reg	1
+../Core/Src/App/AHT20.c:42:6:AHT20_Init	3
+../Core/Src/App/AHT20.c:66:6:AHT20_Read	3

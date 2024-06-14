@@ -1,8 +1,0 @@
-/**************************************************
- *	Filename: pv_pm.h
- *	Description: Header file for pulse calculation
- **************************************************
- */
-
-#ifndef PULSE_H
-#define PULSE_H

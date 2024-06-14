@@ -1,2 +1,0 @@
-../Core/Src/App/pv_pulse.c:6:9:adc_to_digital	16	static
-../Core/Src/App/pv_pulse.c:11:5:get_pulse	608	dynamic
