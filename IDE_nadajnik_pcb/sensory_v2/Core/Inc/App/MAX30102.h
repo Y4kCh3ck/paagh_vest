@@ -1,5 +1,5 @@
 /**************************************************
- *	Filename: pv_app.c
+ *	Filename: MAX30102.c
  *	Description: Header file for pulsoximeter
  **************************************************
  */
