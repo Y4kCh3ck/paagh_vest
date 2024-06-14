@@ -7,7 +7,7 @@
 
 
 #include "main.h"
-#include "App/NEO6.h"
+#include "NEO6.h"
 #include "string.h" // string manipulations
 #include "stdlib.h" // atoi()
 

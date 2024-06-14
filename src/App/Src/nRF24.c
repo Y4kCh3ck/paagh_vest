@@ -8,7 +8,7 @@
 #include "main.h"
 #include "spi.h"
 
-#include "App/nRF24.h"
+#include "nRF24.h"
 
 static SPI_HandleTypeDef *hspi_nrf;
 

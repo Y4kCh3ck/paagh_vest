@@ -28,7 +28,18 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+
+#include <string.h>
+#include <stdio.h>
+#include <stdbool.h>
+#include "AHT20.h"
+#include "NEO6.h"
+#include <nRF24.h>
 #include "pv_app.h"
+#include "pv_pulse.h"
+
+// #include <debug.h>
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -61,6 +72,37 @@ void SystemClock_Config(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
+NEO6_State GpsState;
+
+volatile uint32_t HeartBeatValue;
+volatile uint32_t HeartBeatArray[HEART_BEAT_ARRAY_SIZE] = {0};
+volatile uint8_t HeartBeatIndex = 0;
+
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+{
+  if(huart == GpsState.neo6_huart)
+  {
+    NEO6_ReceiveUartChar(&GpsState);
+  }
+}
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+  if (htim == &htim6)
+  {
+  }
+}
+
+void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
+{
+	if(HeartBeatIndex > HEART_BEAT_ARRAY_SIZE)
+	{
+		HeartBeatIndex = 0;
+	}
+	HeartBeatArray[HeartBeatIndex] = HeartBeatValue;
+	HeartBeatIndex++;
+}
+
 /* USER CODE END 0 */
 
 /**
@@ -69,8 +111,9 @@ void SystemClock_Config(void);
   */
 int main(void)
 {
-
   /* USER CODE BEGIN 1 */
+
+
 
   /* USER CODE END 1 */
 
@@ -104,12 +147,20 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+
+  HAL_TIM_Base_Start_IT(&htim6);
+  HAL_ADCEx_Calibration_Start(&hadc, ADC_SINGLE_ENDED);
+  HAL_ADC_Start_DMA(&hadc, &HeartBeatValue, 2);
+
   while (1)
   {
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    pv_run();
+
+	 pv_run();
+
   }
   /* USER CODE END 3 */
 }
@@ -136,8 +187,8 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI;
-  RCC_OscInitStruct.PLL.PLLMUL = RCC_PLLMUL_4;
-  RCC_OscInitStruct.PLL.PLLDIV = RCC_PLLDIV_2;
+  RCC_OscInitStruct.PLL.PLLMUL = RCC_PLLMUL_3;
+  RCC_OscInitStruct.PLL.PLLDIV = RCC_PLLDIV_3;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
     Error_Handler();
@@ -148,11 +199,11 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
-  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
+  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV16;
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_1) != HAL_OK)
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK)
   {
     Error_Handler();
   }
