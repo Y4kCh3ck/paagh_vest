@@ -1,5 +1,5 @@
 /**************************************************
- *	Filename: MAX30102.h
+ *	Filename: MAX30102.c
  *	Description: Source file for pulsoximeter
  **************************************************
  */
