@@ -9,6 +9,8 @@
 
 #define INTERRUPT_COUNTER 40
 
+#include <stdint.h>
+
 void sensor_init();
 
 /*
@@ -28,7 +30,7 @@ Must be invoked when flag from interrupt occures
 float get_temperature();
 
 // adc sensors
-int get_pulse();
+int get_pulse( uint16_t* adc_buf, uint16_t arr_size);
 
 // nrf
 void send_nrf();
