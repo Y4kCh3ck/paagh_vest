@@ -43,6 +43,7 @@ App/Src/pv_pulse.c \
 App/Src/AHT20.c \
 App/Src/NEO6.c \
 App/Src/nRF24.c \
+App/Src/MAX30102.c \
 Core/Src/main.c \
 Core/Src/gpio.c \
 Core/Src/adc.c \

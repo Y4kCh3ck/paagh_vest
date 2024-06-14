@@ -4,6 +4,7 @@
 #include "AHT20.h"
 #include "NEO6.h"
 #include "nRF24.h"
+#include "MAX30102.h"
 
 uint8_t tempCounter = 0;
 uint8_t humidityCounter = 0;
@@ -18,6 +19,7 @@ extern NEO6_State GpsState;
 void sensor_init() {
     AHT20_Init();
     NEO6_Init(&GpsState, &hlpuart1);
+    MAX30102_Init();
 
     // NRF TRANSMITER
     nRF24_Init(&hspi1);
@@ -26,7 +28,7 @@ void sensor_init() {
     nRF24_TX_Mode();
 }
 
-float get_humidity() {
+float get_humidity() {    
     float humidity = 0;
 
     AHT20_Read( NULL, &humidity );
@@ -46,7 +48,7 @@ float get_humidity() {
     return averageHumidity;
 }
 
-float get_temperature() {
+float get_temperature() {    
     float temp = 0;
 
     AHT20_Read( &temp, NULL );
@@ -57,7 +59,7 @@ float get_temperature() {
         tempCounter = 0;
     }
     else
-    {
+    {           
         tempSum += temp;
         averageTemp = tempSum / tempCounter;
         tempCounter++;
