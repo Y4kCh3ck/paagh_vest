@@ -18,6 +18,7 @@ extern NEO6_State GpsState;
 void sensor_init() {
     AHT20_Init();
     NEO6_Init(&GpsState, &hlpuart1);
+    MAX30102_Init();
 
     // NRF TRANSMITER
     nRF24_Init(&hspi1);

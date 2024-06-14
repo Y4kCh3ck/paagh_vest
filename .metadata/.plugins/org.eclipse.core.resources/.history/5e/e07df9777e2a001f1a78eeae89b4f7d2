@@ -1,0 +1,68 @@
+/**************************************************
+ *	Filename: pv_app.c
+ *	Description: Source file for pulsoximeter
+ **************************************************
+ */
+
+
+#include "App/MAX30102.h"
+
+uint32_t red_buffer[BUFFER_SIZE];
+uint32_t buffer_index = 0;
+uint32_t ma_index = 0;
+uint32_t ma_sum = 0;
+
+uint32_t ma_buffer[MA_FILTER_SIZE] = {0};
+
+void MAX30102_Init(void) {
+    uint8_t data[2];
+
+    // Reset the sensor
+    data[0] = REG_MODE_CONFIG;
+    data[1] = 0x40;
+    HAL_I2C_Master_Transmit(&hi2c1, MAX30102_ADDRESS, data, 2, HAL_MAX_DELAY);
+    HAL_Delay(10);
+
+    // Enable the interrupt
+    data[0] = REG_INTR_ENABLE_1;
+    data[1] = 0xC0;
+    HAL_I2C_Master_Transmit(&hi2c1, MAX30102_ADDRESS, data, 2, HAL_MAX_DELAY);
+
+    // FIFO Configuration
+    data[0] = REG_FIFO_CONFIG;
+    data[1] = 0x0F;
+    HAL_I2C_Master_Transmit(&hi2c1, MAX30102_ADDRESS, data, 2, HAL_MAX_DELAY);
+
+    // Mode Configuration
+    data[0] = REG_MODE_CONFIG;
+    data[1] = MODE_HEART_RATE;
+    HAL_I2C_Master_Transmit(&hi2c1, MAX30102_ADDRESS, data, 2, HAL_MAX_DELAY);
+
+    // SPO2 Configuration
+    data[0] = REG_SPO2_CONFIG;
+    data[1] = 0x27;
+    HAL_I2C_Master_Transmit(&hi2c1, MAX30102_ADDRESS, data, 2, HAL_MAX_DELAY);
+
+    // LED Pulse Amplitude
+    data[0] = REG_LED1_PA;
+    data[1] = 0x24;
+    HAL_I2C_Master_Transmit(&hi2c1, MAX30102_ADDRESS, data, 2, HAL_MAX_DELAY);
+}
+
+uint32_t MovingAverage(uint32_t new_value) {
+    ma_sum -= ma_buffer[ma_index];
+    ma_sum += new_value;
+    ma_buffer[ma_index] = new_value;
+    ma_index = (ma_index + 1) % MA_FILTER_SIZE;
+
+    return ma_sum / MA_FILTER_SIZE;
+}
+
+
+
+
+
+
+
+
+

@@ -6,8 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="UARTMessage"/>
+		<item key="selection" value="PULSE"/>
 		<list key="findhistory">
+			<item value="pulse"/>
 			<item value="Message"/>
 			<item value="nRF24_ReadRXPaylaod"/>
 			<item value="GpsState"/>
@@ -22,7 +23,6 @@
 			<item value="HAL_GPIO_WritePin(NRF24_CSN_GPIO_Port, NRF24_CSN_Pin, GPIO_PIN_SET)"/>
 			<item value="length"/>
 			<item value="lenght"/>
-			<item value="message"/>
 		</list>
 		<list key="replacehistory">
 			<item value="UARTMessage"/>

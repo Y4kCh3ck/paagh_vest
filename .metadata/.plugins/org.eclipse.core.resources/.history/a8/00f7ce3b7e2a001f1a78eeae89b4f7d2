@@ -1,0 +1,15 @@
+/**************************************************
+ *	Filename: pv_app.c
+ *	Description: Source file for pulsoximeter
+ **************************************************
+ */
+
+
+#include "App/MAX30102.h"
+
+uint32_t red_buffer[BUFFER_SIZE];
+uint32_t buffer_index = 0;
+uint32_t ma_index = 0;
+uint32_t ma_sum = 0;
+
+uint32_t ma_buffer[MA_FILTER_SIZE] = {0};

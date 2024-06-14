@@ -13,6 +13,7 @@
 #include "App/AHT20.h"
 #include "App/NEO6.h"
 #include "App/nRF24.h"
+#include "App/MAX30102.h"
 
 #include "App/pv_pm.h"
 #include "App/pv_sensors.h"
@@ -20,7 +21,6 @@
 
 uint8_t MessageLength = 0;
 uint8_t Message[255] = {0};
-uint8_t pulse = 0;
 
 extern volatile uint32_t HeartBeatValue;
 extern volatile uint32_t HeartBeatArray[255];
@@ -138,7 +138,10 @@ state_t do_state_standby( instance_data_t *data )
     	}
 
 		MessageLength = sprintf(Message, "Temperature = %.1fC\n\rHum = %.1f\n\r", temperature, humidity);
-		HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 100);
+    	if(NRF24_TRANSMITTED_PACKET != nRF24_SendPacket(Message, MessageLength))
+    	{
+    		HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 100);
+    	}
 
         if( temperature < SAFE_TEMP_LIMIT  || humidity > SAFE_HUMID_LIMIT )
         {
@@ -151,20 +154,21 @@ state_t do_state_standby( instance_data_t *data )
 
 state_t do_state_rescue( instance_data_t *data )
 {
-    // Low freq LED
-    // Pulse read, pulsoximeter read? Time measurement, send SOS using NRF
+    // LED
+    // Pulse read, pulsoximeter read, Time measurement, send SOS using NRF
     // If low pulse and low temperature go to EMERGENCY
     // If button held go to STANDBY
 
 	power_on_adc_sens();
     HAL_ADC_Start_DMA(&hadc, &HeartBeatValue, 2);
 
-    float humidity, temperature;
+    float humidity, temperature, pulse;
 
     while( 1 )
     {
         humidity = get_humidity();
         temperature = get_temperature();
+        pulse = CalculateHeartRate();
 
     	clear_terminal();
     	MessageLength = sprintf(Message, "\n\rstate rescue\n\r");
@@ -175,9 +179,11 @@ state_t do_state_rescue( instance_data_t *data )
     	GPS_print(GpsState);
         HAL_GPIO_TogglePin(USER_LED_GPIO_Port, USER_LED_Pin);
 
-        pulse = get_pulse((uint16_t*)HeartBeatArray, 255);
 		MessageLength = sprintf(Message, "Pulse = %d\n\r", pulse);
-		HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 100);
+    	if(NRF24_TRANSMITTED_PACKET != nRF24_SendPacket(Message, MessageLength))
+    	{
+    		HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 100);
+    	}
 
 		MessageLength = sprintf(Message, "      --SOS--      \n\r");
 		if(NRF24_TRANSMITTED_PACKET != nRF24_SendPacket(Message, MessageLength))
@@ -201,7 +207,7 @@ state_t do_state_rescue( instance_data_t *data )
 
 state_t do_state_emergency( instance_data_t *data )
 {
-    // High freq LED
+    // LED
     // Activate Petlier
     // Try to send SOS over NRF
     // If button held goto STANDBY

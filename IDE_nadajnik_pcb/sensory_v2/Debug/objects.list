@@ -1,4 +1,5 @@
 "./Core/Src/App/AHT20.o"
+"./Core/Src/App/MAX30102.o"
 "./Core/Src/App/NEO6.o"
 "./Core/Src/App/nRF24.o"
 "./Core/Src/App/pv_app.o"

@@ -2,7 +2,7 @@
 ../Core/Src/App/pv_app.c:54:6:GPS_print	32	static
 ../Core/Src/App/pv_app.c:98:9:do_state_init	16	static
 ../Core/Src/App/pv_app.c:120:9:do_state_standby	40	static
-../Core/Src/App/pv_app.c:152:9:do_state_rescue	504	static
-../Core/Src/App/pv_app.c:202:9:do_state_emergency	16	static
-../Core/Src/App/pv_app.c:246:9:run_state	16	static
-../Core/Src/App/pv_app.c:253:6:pv_run	24	static
+../Core/Src/App/pv_app.c:155:9:do_state_rescue	512	static
+../Core/Src/App/pv_app.c:208:9:do_state_emergency	16	static
+../Core/Src/App/pv_app.c:252:9:run_state	16	static
+../Core/Src/App/pv_app.c:259:6:pv_run	24	static

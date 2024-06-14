@@ -1,3 +1,3 @@
 ../Core/Src/App/pv_sensors.c:18:6:sensor_init	8	static
-../Core/Src/App/pv_sensors.c:29:7:get_humidity	24	static
-../Core/Src/App/pv_sensors.c:49:7:get_temperature	24	static
+../Core/Src/App/pv_sensors.c:30:7:get_humidity	24	static
+../Core/Src/App/pv_sensors.c:50:7:get_temperature	24	static

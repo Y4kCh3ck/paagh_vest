@@ -1,0 +1,4 @@
+../Core/Src/App/MAX30102.c:21:6:MAX30102_Init	1
+../Core/Src/App/MAX30102.c:56:10:MovingAverage	1
+../Core/Src/App/MAX30102.c:66:6:MAX30102_ReadFIFO	1
+../Core/Src/App/MAX30102.c:74:7:CalculateHeartRate	5

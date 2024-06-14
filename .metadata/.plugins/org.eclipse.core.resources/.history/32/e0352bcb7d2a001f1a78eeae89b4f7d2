@@ -1,0 +1,7 @@
+#ifndef INC_MAX30102S_H_
+#define INC_MAX30102S_H_
+
+#include "main.h"
+
+
+#endif
