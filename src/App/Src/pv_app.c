@@ -8,6 +8,9 @@
 
 #include "pv_pm.h"
 #include "pv_sensors.h"
+#include <stdbool.h>
+#include <stdio.h>
+#include "pv_button.h"
 
 // Typedefs
 typedef enum {
@@ -19,6 +22,10 @@ typedef enum {
     STATE_ERROR,
     NUM_STATES,
 } state_t;
+
+typedef struct instance_data{
+    size_t* additional_data;      
+} instance_data_t;
 
 
 typedef state_t state_func_t( instance_data_t *data );
@@ -87,11 +94,10 @@ state_t do_state_emergency( instance_data_t *data ) {
     // HAL_Delay(200);
     // HAL_GPIO_TogglePin(USER_LED_GPIO_Port, USER_LED_Pin);
 
-    read_button(RETURN_TO_STANDBY);
-    if (data->buttonPressed){
-        data->buttonPressed = false;
+    
+    if (read_button(RETURN_TO_STANDBY)){        
         return STATE_STANDBY;
-    }
+    }    
 
     printf("state emergency\n");
     return STATE_INIT;
