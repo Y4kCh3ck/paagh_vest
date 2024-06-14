@@ -1,5 +1,6 @@
-#ifndef PULSE_H
-#define PULSE_H
+
+#ifndef PV_PULSE_H
+#define PV_PULSE_H
 
 #include <stdint.h>
 
