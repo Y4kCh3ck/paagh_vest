@@ -11,6 +11,9 @@ set(CMAKE_C_STANDARD_REQUIRED True)
 add_executable( PaaghVest
                 main.c
                 pv_app.c
+                pv_button.c
+                pv_pm.c
+                pv_sensors.c
 )
 
 # Include directories

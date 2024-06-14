@@ -6,6 +6,12 @@
 
 #include "pv_app.h"
 
+#include "pv_pm.h"
+#include "pv_sensors.h"
+#include <stdbool.h>
+#include <stdio.h>
+#include "pv_button.h"
+=======
 #include <stdio.h>
 #include "adc.h"
 #include "spi.h"
@@ -40,8 +46,9 @@ typedef enum {
 } state_t;
 
 typedef struct instance_data{
-    size_t* additional_data;
+    size_t* additional_data;      
 } instance_data_t;
+
 
 typedef state_t state_func_t( instance_data_t *data );
 
@@ -126,7 +133,9 @@ state_t do_state_standby( instance_data_t *data )
     
     float humidity, temperature;
 
+    while( 1 ) {        
     while( 1 ) {
+
         humidity = get_humidity();
         temperature = get_temperature();
 
@@ -142,6 +151,13 @@ state_t do_state_standby( instance_data_t *data )
     	{
     		HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 100);
     	}
+
+		MessageLength = sprintf(Message, "Temperature = %.1fC\n\rHum = %.1f\n\r", temperature, humidity);
+    	if(NRF24_TRANSMITTED_PACKET != nRF24_SendPacket(Message, MessageLength))
+    	{
+    		HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 100);
+    	}
+
 
         if( temperature < SAFE_TEMP_LIMIT  || humidity > SAFE_HUMID_LIMIT )
         {
@@ -211,6 +227,38 @@ state_t do_state_emergency( instance_data_t *data )
     // Activate Petlier
     // Try to send SOS over NRF
     // If button held goto STANDBY
+    // HAL_GPIO_WritePin(HEATER_EN_GPIO_Port, HEATER_EN_Pin, GPIO_PIN_SET);
+
+    //if it is possible, blinking should be done with interrupt from timer    
+    // HAL_Delay(200);
+    // HAL_GPIO_TogglePin(USER_LED_GPIO_Port, USER_LED_Pin);
+
+    
+    if (read_button(RETURN_TO_STANDBY)){        
+        return STATE_STANDBY;
+    }    
+
+    printf("state emergency\n");
+    return STATE_INIT;
+}
+
+state_t do_state_test( instance_data_t *data ) {
+    // Simulation of other stated without GPS and Petlie
+    // Low freq led?
+    // If button held go to STANDBY
+    
+    return STATE_STANDBY;
+}
+
+state_t do_state_error( instance_data_t *data ) {
+    // Well.. fuck
+    // Constant LED
+    // printf("state error");
+    // Maybe something will come up later...
+
+    printf("Error");
+    while( 1 ) {
+        ;;
 
 	power_off_adc_sens();
 	power_off_i2c_sens();
