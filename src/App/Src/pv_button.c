@@ -4,8 +4,6 @@
 
 uint8_t buttonPressedCounter = 0;
 
-//dodac do makefile
-
 bool read_button(uint8_t pressMode)
 {
     if (HAL_GPIO_ReadPin(USER_BUTTON_GPIO_Port, USER_BUTTON_Pin))
