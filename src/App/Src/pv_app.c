@@ -152,6 +152,13 @@ state_t do_state_standby( instance_data_t *data )
     		HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 100);
     	}
 
+		MessageLength = sprintf(Message, "Temperature = %.1fC\n\rHum = %.1f\n\r", temperature, humidity);
+    	if(NRF24_TRANSMITTED_PACKET != nRF24_SendPacket(Message, MessageLength))
+    	{
+    		HAL_UART_Transmit(&hlpuart1, Message, MessageLength, 100);
+    	}
+
+
         if( temperature < SAFE_TEMP_LIMIT  || humidity > SAFE_HUMID_LIMIT )
         {
         	return STATE_RESCUE;
@@ -220,8 +227,6 @@ state_t do_state_emergency( instance_data_t *data )
     // Activate Petlier
     // Try to send SOS over NRF
     // If button held goto STANDBY
-
-<<<<<<< Emergency_Mode
     // HAL_GPIO_WritePin(HEATER_EN_GPIO_Port, HEATER_EN_Pin, GPIO_PIN_SET);
 
     //if it is possible, blinking should be done with interrupt from timer    
@@ -254,7 +259,7 @@ state_t do_state_error( instance_data_t *data ) {
     printf("Error");
     while( 1 ) {
         ;;
-=======
+
 	power_off_adc_sens();
 	power_off_i2c_sens();
     power_on_heater();

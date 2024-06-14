@@ -1,0 +1,9 @@
+#ifndef PV_DEFINES_H
+#define PV_DEFINES_H
+
+#define LED_BLINK_FREQ_SLOW 500
+#define LED_BLINK_FREQ_FAST 200 
+
+#define HYPOTHERMIA_PULSE 30
+
+#endif 
