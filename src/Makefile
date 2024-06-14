@@ -40,7 +40,11 @@ App/Src/pv_app.c \
 App/Src/pv_pm.c \
 App/Src/pv_sensors.c \
 App/Src/pv_button.c \
+App/Src/pv_pulse.c \
 App/Src/AHT20.c \
+App/Src/NEO6.c \
+App/Src/nRF24.c \
+App/Src/MAX30102.c \
 Core/Src/main.c \
 Core/Src/gpio.c \
 Core/Src/adc.c \
